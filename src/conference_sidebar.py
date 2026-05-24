@@ -29,7 +29,7 @@ def norm_text(value: Any) -> str:
 
 def parse_conference_result_name(path: Path) -> Tuple[str, str]:
     name = path.name
-    match = re.match(r"^conference-([a-z0-9-]+)-([0-9,-]+)\.supabase\.(?:llm|rerank|rrf)\.json$", name)
+    match = re.match(r"^conference-([a-z0-9-]+?)-([0-9]{4}(?:-[0-9]{4})*)\.supabase\.(?:llm|rerank|rrf)\.json$", name)
     if not match:
         raise ValueError(f"无法从会议结果文件名解析会议和年份：{path}")
     conference = match.group(1).upper()
