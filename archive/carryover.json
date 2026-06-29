@@ -1,130 +1,83 @@
 {
-  "generated_at": "2026-06-29T09:17:05.656998+00:00",
-  "updated_date": "20260531-20260629",
+  "generated_at": "2026-06-29T21:14:40.484007+00:00",
+  "updated_date": "20260629",
   "carryover_days": 9,
   "tag_states": {
     "agent-safety": {
-      "updated_date": "20260531-20260629",
+      "updated_date": "20260629",
       "carryover_days": 9,
       "items": [
         {
-          "id": "2606.24245v1",
+          "id": "2606.27632v1",
           "source": "arxiv",
-          "title": "AutoSpec: Safety Rule Evolution for LLM Agents via Inductive Logic Programming",
-          "abstract": "Large language model (LLM) agents increasingly automate complex tasks by integrating language models with external tools and environments. However, their autonomy poses significant safety risks: agents may execute destructive commands, leak sensitive data, or violate domain constraints. Existing safety approaches face a fundamental tradeoff: hand-crafted rules are interpretable but brittle, with overly conservative rules blocking safe operations (high false positives) while permissive rules miss unsafe behaviors (high false negatives). Neural classifiers lack the interpretability required for safety-critical deployments.   We present AutoSpec, a framework that automatically evolves deployed expert-designed safety rules from user safe/unsafe annotations through counterexample-guided inductive synthesis (CEGIS) guided by inductive logic programming (ILP). Starting from the expert rules and a stream of annotated traces, AutoSpec iteratively evaluates rules, mines false-positive and false-negative counterexamples, uses ILP to learn which predicates discriminate them, generates candidate rule edits, and verifies candidates to select the best revision. The key insight is that ILP efficiently identifies predicates that appear frequently in false negatives but rarely in false positives (or vice versa), dramatically pruning the exponential search space of rule edits. This continues until convergence, producing interpretable rules that balance precision and recall.   We evaluate AutoSpec on 291 execution traces spanning code execution and embodied agent domains. AutoSpec raises rule F1 to 0.98 and 0.93 across the two domains, achieving up to 94% false positive reduction while maintaining high recall, and converges within 4-5 iterations. The ILP-guided approach achieves up to 4.8x higher F1 than heuristic CEGIS. The learned rules are human-readable, auditable, and generalize to unseen scenarios.",
+          "title": "Yuvion LLM: An Adversarially-Aware Large Language Model for Content And AI Safety",
+          "abstract": "As large language models are increasingly deployed in real-world systems, safety failures can still lead to harmful outputs and dangerous misuse. We argue that the essence of safety is adversarial: many failures arise not from natural inputs alone, but from strategic attempts to evade model policies and safeguards. However, existing general-purpose model development largely overlook this adversarial nature, and often remain insufficient for realistic safety scenarios involving planning, tool use, and multi-step reasoning, causing measured safety performance to overestimate real deployment robustness. To address this gap, we present Yuvion LLM, a large language model built for adversarially robust content safety and broader AI safety. Yuvion LLM treats adversarial robustness and agentic capability as first-class objectives. Its pipeline combines adversarially aware data construction, knowledge-enhanced continued pretraining, and policy-grounded multi-task safety post-training, including risk-aware supervised fine-tuning and reinforcement learning-based policy optimization, together with safety-aware agentic reinforcement learning for tool use and multi-step reasoning in complex safety scenarios. We further introduce the Yuvion LLM RiskEval (YLRE), a collection of 93 benchmarks across four evaluation categories, covering diverse open and internal evaluations with a focus on safety, adversarial robustness, and real-world capability requirements. Across these evaluations, Yuvion LLM demonstrates clear advantages on safety-focused benchmarks and particularly strong robustness under adversarial conditions, while maintaining solid overall capability. Notably, Yuvion-8B outperforms most state-of-the-art baselines, including substantially larger models such as GPT-5.4 and Qwen3-MAX, on several safety tasks.",
           "authors": [
-            "Pingchuan Ma",
-            "Zhaoyu Wang",
-            "Zimo Ji",
-            "Yuguang Zhou",
-            "Zhantong Xue",
-            "Zongjie Li",
-            "Shuai Wang",
-            "Xiaoqin Zhang"
+            "Ting Ma",
+            "Xiufeng Huang",
+            "Benlei Cui",
+            "Xiaowen Xu",
+            "Shikai Qiu",
+            "Ruijie Jian",
+            "Hongxing Li",
+            "Guanghui Wang",
+            "Longtao Huang",
+            "Haiwen Hong",
+            "Haolei Xu",
+            "Wenjing Jiang",
+            "Ziwen Xu",
+            "Zhaoyu Fan",
+            "Shaoxuan He",
+            "Chuxi Xiao",
+            "Yujian Li",
+            "Xinyue Chen",
+            "Chunyang Chai",
+            "Wenxuan Liu",
+            "Ziheng Wang",
+            "Dongjie Zhang",
+            "Yangfan Zhou",
+            "Libin Dong",
+            "Yupeng Cao",
+            "Xiaoqian Xia",
+            "Jing Wang",
+            "Zhe Jiang",
+            "Zhenan Ye",
+            "Guang Yang",
+            "Bin Liu",
+            "Wei Peng",
+            "Ziqiang Zhu",
+            "Meihui Lian",
+            "Kaiwen Lv Kacuila",
+            "Haidong Ding",
+            "Bingyu Zhu",
+            "Yan Wang",
+            "Hai Zhao",
+            "Xuan Jin",
+            "Wei Zhao",
+            "Pengfei Sun",
+            "Wei Wang",
+            "Huiming Zhang",
+            "Bin Li",
+            "Hui Xue"
           ],
-          "primary_category": "cs.SE",
+          "primary_category": "cs.CL",
           "categories": [
-            "cs.SE",
-            "cs.AI",
-            "cs.CR"
+            "cs.CL"
           ],
-          "published": "2026-06-23T07:31:03+00:00",
-          "link": "https://arxiv.org/pdf/2606.24245v1",
+          "published": "2026-06-26T01:12:02+00:00",
+          "link": "https://arxiv.org/pdf/2606.27632v1",
           "tags": [
             "keyword:agent-safety",
             "query:agent-safety"
           ],
           "llm_score": 8.0,
-          "llm_evidence_en": "safety rule evolution for LLM agents via inductive logic programming",
-          "llm_evidence_cn": "基于归纳逻辑编程的智能体安全规则演化",
-          "llm_evidence": "基于归纳逻辑编程的智能体安全规则演化",
-          "canonical_evidence": "基于归纳逻辑编程的智能体安全规则演化",
-          "llm_tldr_en": "AutoSpec automatically evolves expert-designed safety rules for LLM agents using inductive logic programming, balancing false positives and false negatives while maintaining interpretability.",
-          "llm_tldr_cn": "针对LLM智能体安全规则手工设计脆弱、泛化差的问题，提出AutoSpec框架，利用归纳逻辑编程从用户安全/不安全标注中自动演化规则。实验表明该方法能在保持可解释性的同时降低误报和漏报，提升安全规则的鲁棒性和适应性。",
-          "llm_tldr": "针对LLM智能体安全规则手工设计脆弱、泛化差的问题，提出AutoSpec框架，利用归纳逻辑编程从用户安全/不安全标注中自动演化规则。实验表明该方法能在保持可解释性的同时降低误报和漏报，提升安全规则的鲁棒性和适应性。",
-          "llm_tags": [
-            "query:agent-safety"
-          ],
-          "matched_query_tag": "query:agent-safety",
-          "matched_query_text": "LLM agent risk assessment and behavior safety recent papers from top venues",
-          "matched_requirement_id": "req-5",
-          "selection_source": "carryover_cache",
-          "paper_id": "2606.24245v1",
-          "carry_days": 1
-        },
-        {
-          "id": "2606.22673v1",
-          "source": "arxiv",
-          "title": "AgentLens: Interpretable Safety Steering via Mechanistic Subspaces for Multi-Turn Coding Agent",
-          "abstract": "Coding agents based on large language models (LLMs) demonstrate remarkable autonomous capabilities, but they also introduce significant safety and misuse risks during multi-turn interactions with external environments. Existing safety mechanisms mainly rely on external guardrails, which have a limited ability to perform fine-grained behavioral control during execution. Meanwhile, recent mechanistic interpretability methods for LLM safety are mostly confined to single-turn or jailbreak-style QA settings, limiting their ability to capture the evolving risk dynamics of multi-turn agent execution. In this paper, we investigate the safety of multi-turn coding agents from an internal perspective. We propose AgentLens (Mechanistic Subspace Intervention and Steering), a white-box defense framework that performs runtime safety detection and representation-level mitigation for coding agents. Unlike conventional agent guardrails, AgentLens detect harmful execution states from step-level hidden representations and mitigate unsafe behavior by intervening in a 10-dimensional subspace within a single layer. To support this research, we introduce the Mechanistic Agent Safety (MAS) benchmark, comprising comprehensively annotated multi-turn execution trajectories across 194 tasks using LLaMA-3.1-8B, Qwen-2.5-7B, and Gemma-2-9B. Extensive experiments show that AgentLens achieves strong safety detection performance, provides preliminary evidence for lookahead risk anticipation, and substantially reduces harmful actions of the coding agent, establishing a foundation for applying mechanistic interpretability to dynamic LLM agent safety. The code is available at: https://github.com/EddyLuo1232/AgentLens",
-          "authors": [
-            "Weidi Luo",
-            "Qiming Zhang",
-            "Yihao Quan",
-            "Mingyu Jin",
-            "Jie Cai",
-            "Chaowei Xiao",
-            "Jingcheng Niu",
-            "Zhen Xiang"
-          ],
-          "primary_category": "cs.AI",
-          "categories": [
-            "cs.AI",
-            "cs.SE"
-          ],
-          "published": "2026-06-21T21:13:55+00:00",
-          "link": "https://arxiv.org/pdf/2606.22673v1",
-          "tags": [
-            "keyword:agent-safety",
-            "query:agent-safety"
-          ],
-          "llm_score": 8.0,
-          "llm_evidence_en": "interpretable safety steering via mechanistic subspaces for multi-turn coding agents",
-          "llm_evidence_cn": "通过机制子空间实现多轮编码智能体的可解释安全引导",
-          "llm_evidence": "通过机制子空间实现多轮编码智能体的可解释安全引导",
-          "canonical_evidence": "通过机制子空间实现多轮编码智能体的可解释安全引导",
-          "llm_tldr_en": "AgentLens uses mechanistic interpretability to construct safety-relevant subspaces for steering multi-turn coding agents, enabling fine-grained behavioral control beyond external guardrails.",
-          "llm_tldr_cn": "外部护栏难以对多轮编码智能体进行细粒度行为控制。本文提出AgentLens，从模型内部视角利用机制可解释性构建安全相关子空间，实现对多轮执行过程中风险动态的监测与干预。实验表明，AgentLens能在不损害有用能力的前提下有效降低不安全行为，为内部安全机制设计提供了新途径。",
-          "llm_tldr": "外部护栏难以对多轮编码智能体进行细粒度行为控制。本文提出AgentLens，从模型内部视角利用机制可解释性构建安全相关子空间，实现对多轮执行过程中风险动态的监测与干预。实验表明，AgentLens能在不损害有用能力的前提下有效降低不安全行为，为内部安全机制设计提供了新途径。",
-          "llm_tags": [
-            "query:agent-safety"
-          ],
-          "matched_query_tag": "query:agent-safety",
-          "matched_query_text": "large language model agent safety benchmark and risk assessment LLM agent behavior monitoring",
-          "matched_requirement_id": "req-1",
-          "selection_source": "carryover_cache",
-          "paper_id": "2606.22673v1",
-          "carry_days": 1
-        },
-        {
-          "id": "2606.26649v1",
-          "source": "arxiv",
-          "title": "Autoformalization of Agent Instructions into Policy-as-Code",
-          "abstract": "Agent safety in high-stakes domains requires formal policy enforcement, but most existing approaches either rely on probabilistic guardrails (fine-tuned classifiers, prompt-based steering) that offer no formal guarantees, or on hand-coded symbolic enforcement that does not scale to the breadth of real policy specifications. We present an autoformalization pipeline that translates agent prompts, MCP tool descriptions, and natural language policy documents into formally verified policies using an LLM-based generator-critic loop. The resulting policies are written in the Cedar Policy Language. On the MedAgentBench benchmark, our autoformalized policies cover substantially more of the source natural-language specification than the hand-coded symbolic enforcement in prior work.",
-          "authors": [
-            "Adam Mondl",
-            "Matthew Maisel",
-            "John H. Brock"
-          ],
-          "primary_category": "cs.AI",
-          "categories": [
-            "cs.AI",
-            "cs.CR"
-          ],
-          "published": "2026-06-25T06:23:15+00:00",
-          "link": "https://arxiv.org/pdf/2606.26649v1",
-          "tags": [
-            "keyword:agent-safety",
-            "query:agent-safety"
-          ],
-          "llm_score": 8.0,
-          "llm_evidence_en": "Autoformalization of agent instructions into formal policies, enabling least privilege enforcement",
-          "llm_evidence_cn": "代理指令自动形式化为策略，支持最小权限执行",
-          "llm_evidence": "代理指令自动形式化为策略，支持最小权限执行",
-          "canonical_evidence": "代理指令自动形式化为策略，支持最小权限执行",
-          "llm_tldr_en": "Uses LLM-based generator-critic loop to translate agent prompts and policy docs into verified Cedar policies, achieving higher coverage than hand-coded enforcement on MedAgentBench.",
-          "llm_tldr_cn": "现有代理安全多依赖概率性防护栏，缺乏形式保障。本文提出自动形式化管道，利用LLM生成-评判循环将自然语言策略转为Cedar形式化策略。在MedAgentBench上覆盖范围远超手工编码方案。这为代理权限安全提供了可验证的保障，可直接用于工具调用安全合规。",
-          "llm_tldr": "现有代理安全多依赖概率性防护栏，缺乏形式保障。本文提出自动形式化管道，利用LLM生成-评判循环将自然语言策略转为Cedar形式化策略。在MedAgentBench上覆盖范围远超手工编码方案。这为代理权限安全提供了可验证的保障，可直接用于工具调用安全合规。",
+          "llm_evidence_en": "Adversarially-aware LLM for content and AI safety addressing tool use and multi-step reasoning",
+          "llm_evidence_cn": "对抗性感知的LLM，针对工具使用和多步推理场景的安全性",
+          "llm_evidence": "对抗性感知的LLM，针对工具使用和多步推理场景的安全性",
+          "canonical_evidence": "对抗性感知的LLM，针对工具使用和多步推理场景的安全性",
+          "llm_tldr_en": "Yuvion LLM is adversarially-aware, improving safety in scenarios involving planning, tool use, and multi-step reasoning beyond standard content safety.",
+          "llm_tldr_cn": "现有LLM安全训练忽视对抗性攻击和复杂场景，导致实际部署安全性被高估。Yuvion LLM专门针对规划、工具使用和多步推理中的安全风险进行对抗性训练。在多个基准上评估显示，其在工具调用场景下安全性显著优于同类模型。该工作为agent安全提供了更强的对抗鲁棒模型。",
+          "llm_tldr": "现有LLM安全训练忽视对抗性攻击和复杂场景，导致实际部署安全性被高估。Yuvion LLM专门针对规划、工具使用和多步推理中的安全风险进行对抗性训练。在多个基准上评估显示，其在工具调用场景下安全性显著优于同类模型。该工作为agent安全提供了更强的对抗鲁棒模型。",
           "llm_tags": [
             "query:agent-safety"
           ],
@@ -132,52 +85,7 @@
           "matched_query_text": "tool calling agent security least privilege permission injection vulnerability LLM tool security",
           "matched_requirement_id": "req-2",
           "selection_source": "carryover_cache",
-          "paper_id": "2606.26649v1",
-          "carry_days": 1
-        },
-        {
-          "id": "2606.24245v2",
-          "source": "arxiv",
-          "title": "AutoSpec: Safety Rule Evolution for LLM Agents via Inductive Logic Programming",
-          "abstract": "Large language model (LLM) agents increasingly automate complex tasks by integrating language models with external tools and environments. However, their autonomy poses significant safety risks: agents may execute destructive commands, leak sensitive data, or violate domain constraints. Existing safety approaches face a fundamental tradeoff: hand-crafted rules are interpretable but brittle, with overly conservative rules blocking safe operations (high false positives) while permissive rules miss unsafe behaviors (high false negatives). Neural classifiers lack the interpretability required for safety-critical deployments.   We present AutoSpec, a framework that automatically evolves deployed expert-designed safety rules from user safe/unsafe annotations through counterexample-guided inductive synthesis (CEGIS) guided by inductive logic programming (ILP). Starting from the expert rules and a stream of annotated traces, AutoSpec iteratively evaluates rules, mines false-positive and false-negative counterexamples, uses ILP to learn which predicates discriminate them, generates candidate rule edits, and verifies candidates to select the best revision. The key insight is that ILP efficiently identifies predicates that appear frequently in false negatives but rarely in false positives (or vice versa), dramatically pruning the exponential search space of rule edits. This continues until convergence, producing interpretable rules that balance precision and recall.   We evaluate AutoSpec on 291 execution traces spanning code execution and embodied agent domains. AutoSpec raises rule F1 to 0.98 and 0.93 across the two domains, achieving up to 94% false positive reduction while maintaining high recall, and converges within 4-5 iterations. The ILP-guided approach achieves up to 4.8x higher F1 than heuristic CEGIS. The learned rules are human-readable, auditable, and generalize to unseen scenarios.",
-          "authors": [
-            "Pingchuan Ma",
-            "Zhaoyu Wang",
-            "Zimo Ji",
-            "Yuguang Zhou",
-            "Zhantong Xue",
-            "Zongjie Li",
-            "Shuai Wang",
-            "Xiaoqin Zhang"
-          ],
-          "primary_category": "cs.SE",
-          "categories": [
-            "cs.SE",
-            "cs.AI",
-            "cs.CR"
-          ],
-          "published": "2026-06-23T07:31:03+00:00",
-          "link": "https://arxiv.org/pdf/2606.24245v2",
-          "tags": [
-            "keyword:agent-safety",
-            "query:agent-safety"
-          ],
-          "llm_score": 8.0,
-          "llm_evidence_en": "automatically evolves safety rules for LLM agents from annotations",
-          "llm_evidence_cn": "从标注中自动演化LLM代理安全规则",
-          "llm_evidence": "从标注中自动演化LLM代理安全规则",
-          "canonical_evidence": "从标注中自动演化LLM代理安全规则",
-          "llm_tldr_en": "AutoSpec uses inductive logic programming to evolve interpretable safety rules for LLM agents from safe/unsafe annotations, balancing accuracy and false positives.",
-          "llm_tldr_cn": "现有LLM代理安全规则手工设计脆弱，易误报或漏报，而神经网络缺乏可解释性。该论文提出AutoSpec，利用归纳逻辑编程从用户标注的安全/不安全示例中自动演化可解释安全规则。演化出的规则在保持高准确率的同时减少误报，便于审计和调整，为代理安全提供了可进化的可解释保障。",
-          "llm_tldr": "现有LLM代理安全规则手工设计脆弱，易误报或漏报，而神经网络缺乏可解释性。该论文提出AutoSpec，利用归纳逻辑编程从用户标注的安全/不安全示例中自动演化可解释安全规则。演化出的规则在保持高准确率的同时减少误报，便于审计和调整，为代理安全提供了可进化的可解释保障。",
-          "llm_tags": [
-            "query:agent-safety"
-          ],
-          "matched_query_tag": "query:agent-safety",
-          "matched_query_text": "LLM agent risk assessment and behavior safety recent papers from top venues",
-          "matched_requirement_id": "req-5",
-          "selection_source": "carryover_cache",
-          "paper_id": "2606.24245v2",
+          "paper_id": "2606.27632v1",
           "carry_days": 1
         }
       ]

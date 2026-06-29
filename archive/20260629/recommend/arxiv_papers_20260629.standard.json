@@ -1,0 +1,979 @@
+{
+  "mode": "standard",
+  "generated_at": "2026-06-29T21:14:40.482204+00:00",
+  "stats": {
+    "mode": "standard",
+    "tag_count": 1,
+    "deep_divecandidates": 21,
+    "deep_cap": 6,
+    "deep_selected": 13,
+    "quick_candidates": 14,
+    "quick_skim_target": 11,
+    "quick_selected": 11
+  },
+  "deep_dive": [
+    {
+      "id": "2606.22673v1",
+      "source": "arxiv",
+      "title": "AgentLens: Interpretable Safety Steering via Mechanistic Subspaces for Multi-Turn Coding Agent",
+      "abstract": "Coding agents based on large language models (LLMs) demonstrate remarkable autonomous capabilities, but they also introduce significant safety and misuse risks during multi-turn interactions with external environments. Existing safety mechanisms mainly rely on external guardrails, which have a limited ability to perform fine-grained behavioral control during execution. Meanwhile, recent mechanistic interpretability methods for LLM safety are mostly confined to single-turn or jailbreak-style QA settings, limiting their ability to capture the evolving risk dynamics of multi-turn agent execution. In this paper, we investigate the safety of multi-turn coding agents from an internal perspective. We propose AgentLens (Mechanistic Subspace Intervention and Steering), a white-box defense framework that performs runtime safety detection and representation-level mitigation for coding agents. Unlike conventional agent guardrails, AgentLens detect harmful execution states from step-level hidden representations and mitigate unsafe behavior by intervening in a 10-dimensional subspace within a single layer. To support this research, we introduce the Mechanistic Agent Safety (MAS) benchmark, comprising comprehensively annotated multi-turn execution trajectories across 194 tasks using LLaMA-3.1-8B, Qwen-2.5-7B, and Gemma-2-9B. Extensive experiments show that AgentLens achieves strong safety detection performance, provides preliminary evidence for lookahead risk anticipation, and substantially reduces harmful actions of the coding agent, establishing a foundation for applying mechanistic interpretability to dynamic LLM agent safety. The code is available at: https://github.com/EddyLuo1232/AgentLens",
+      "authors": [
+        "Weidi Luo",
+        "Qiming Zhang",
+        "Yihao Quan",
+        "Mingyu Jin",
+        "Jie Cai",
+        "Chaowei Xiao",
+        "Jingcheng Niu",
+        "Zhen Xiang"
+      ],
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI",
+        "cs.SE"
+      ],
+      "published": "2026-06-21T21:13:55+00:00",
+      "link": "https://arxiv.org/pdf/2606.22673v1",
+      "tags": [
+        "keyword:agent-safety",
+        "query:agent-safety"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "interpretable safety steering for multi-turn coding agents",
+      "llm_evidence_cn": "多轮编码代理的可解释安全引导",
+      "llm_evidence": "多轮编码代理的可解释安全引导",
+      "canonical_evidence": "多轮编码代理的可解释安全引导",
+      "llm_tldr_en": "Proposes AgentLens, a mechanistic subspace approach for fine-grained safety control in multi-turn coding agents. Directly targets agent behavior monitoring and risk dynamics.",
+      "llm_tldr_cn": "该论文针对多轮编码代理的安全风险，从内部表征入手提出AgentLens方法，通过识别与安全相关的机理子空间实现细粒度的行为控制。该方法能够捕捉多轮交互中动态变化的风险状态，超越了传统外部护栏和单轮安全方法，为代理行为监控提供了新的可解释视角。",
+      "llm_tldr": "该论文针对多轮编码代理的安全风险，从内部表征入手提出AgentLens方法，通过识别与安全相关的机理子空间实现细粒度的行为控制。该方法能够捕捉多轮交互中动态变化的风险状态，超越了传统外部护栏和单轮安全方法，为代理行为监控提供了新的可解释视角。",
+      "llm_tags": [
+        "query:agent-safety"
+      ],
+      "matched_query_tag": "query:agent-safety",
+      "matched_query_text": "large language model agent safety benchmark and risk assessment LLM agent behavior monitoring",
+      "matched_requirement_id": "req-1",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2606.23075v1",
+      "source": "arxiv",
+      "title": "Safety in Self-Evolving LLM Agent Systems: Threats, Amplification, and Case Studies",
+      "abstract": "Self-evolving LLM agent systems, which autonomously update their model parameters, memory, tools, and architectures, introduce a qualitatively new threat landscape in which adversarial influences become permanently encoded, self-amplify across generations, and propagate through populations without sustained attacker access. We present a systematic security and privacy analysis organized around the Module-Lifecycle Attack Surface (MLAS) matrix, which decomposes the attack surface into five functional modules (Brain, Cognitive Resource, Execution, Self-Design, Collective) $\\times$ five lifecycle stages (Bootstrap, Propose, Evaluate, Commit, Serve). Analysis of the resulting 25 cells reveals that 17 face critical threats for which no effective partial mitigation. We identify seven cross-cutting amplification effects that interact synergistically and cannot be addressed by securing individual modules in isolation. Comparative case studies of two open-source frameworks demonstrate that evolution-native design activates $3.5\\times$ more attack surface cells and achieves a 100% attack persistence rate (40/40 payloads across all CIA+Privacy categories), while co-located security scanners block only 2.5% of attacks. Our findings establish that self-evolution converts every known attack category from session-bounded to lineage-persistent, gives rise to entirely new attack classes, and renders static defenses structurally inadequate, motivating evolution-aware security frameworks and formal verification for self-modifying systems.",
+      "authors": [
+        "Ruixiao Lin",
+        "Xinhao Deng",
+        "Qingming Li",
+        "Jianan Ma",
+        "Yunhao Feng",
+        "Yuqi Qing",
+        "Zhenyuan Li",
+        "Yechao Zhang",
+        "Shiwen Cui",
+        "Changhua Meng",
+        "Tianwei Zhang",
+        "Xingjun Ma",
+        "Qi Li",
+        "Ke Xu",
+        "Shouling Ji"
+      ],
+      "primary_category": "cs.CR",
+      "categories": [
+        "cs.CR",
+        "cs.AI"
+      ],
+      "published": "2026-06-22T09:23:50+00:00",
+      "link": "https://arxiv.org/pdf/2606.23075v1",
+      "tags": [
+        "keyword:agent-safety",
+        "query:agent-safety"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "Systematic security analysis of self-evolving LLM agents",
+      "llm_evidence_cn": "自演化LLM代理系统的安全威胁分析",
+      "llm_evidence": "自演化LLM代理系统的安全威胁分析",
+      "canonical_evidence": "自演化LLM代理系统的安全威胁分析",
+      "llm_tldr_en": "Systematic security analysis of self-evolving LLM agent systems using the Module-Lifecycle Attack Surface matrix reveals 17 out of 25 cells face critical threats with no effective defense.",
+      "llm_tldr_cn": "自演化LLM代理系统能自主更新参数、记忆和工具，带来了新的威胁景观：对抗性影响可永久编码、跨代自放大和群体传播而不需要持续攻击者访问。本文提出模块-生命周期攻击面（MLAS）矩阵，系统分析5个功能模块×5个生命周期阶段共25个单元格，发现17个存在尚无有效防御的关键威胁。案例研究展示了攻击的具体实施路径和放大效应。",
+      "llm_tldr": "自演化LLM代理系统能自主更新参数、记忆和工具，带来了新的威胁景观：对抗性影响可永久编码、跨代自放大和群体传播而不需要持续攻击者访问。本文提出模块-生命周期攻击面（MLAS）矩阵，系统分析5个功能模块×5个生命周期阶段共25个单元格，发现17个存在尚无有效防御的关键威胁。案例研究展示了攻击的具体实施路径和放大效应。",
+      "llm_tags": [
+        "query:agent-safety"
+      ],
+      "matched_query_tag": "query:agent-safety",
+      "matched_query_text": "LLM agent risk assessment and behavior safety recent papers from top venues",
+      "matched_requirement_id": "req-5",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2606.23189v1",
+      "source": "arxiv",
+      "title": "Capable but Careless: Do Computer-Use Agents Follow Contextual Integrity?",
+      "abstract": "Computer-use agents (CUAs) now act on a user's behalf across personal applications such as email, calendars, and to-do lists. This cross-application access is useful, but it also creates a privacy risk that has been largely overlooked: when an agent works in one context, it can pull in information from another that is inappropriate in that context. Hence, we introduce AgentCIBench, an evaluation harness that turns this risk into executable, deterministically scored scenarios. We target three common failure modes in CUAs: visual co-location, where the agent pulls in prohibited items that sit next to the task target in the UI; task-ambiguity overshare, where the agent dumps dense personal state in response to an under-specified prompt; and recipient misalignment, where the agent sends content to an addressee for whom it is inappropriate. We evaluate 15 frontier agents and find a surprisingly high failure rate: 11 of 15 leak on more than 50% of scenarios, with an average leakage of 67.9%, and the same failures persist when agents act end-to-end in the environment to complete the task. We release AgentCIBench to encourage the development of safer computer-use agents and position contextual disclosure testing as a pre-deployment safety check.",
+      "authors": [
+        "Anmol Goel",
+        "Iryna Gurevych"
+      ],
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "published": "2026-06-22T11:36:58+00:00",
+      "link": "https://arxiv.org/pdf/2606.23189v1",
+      "tags": [
+        "keyword:agent-safety",
+        "query:agent-safety"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "evaluates privacy risks and permission misuse in computer-use agents via AgentCIBench",
+      "llm_evidence_cn": "通过AgentCIBench评估计算机使用代理的隐私风险和权限滥用",
+      "llm_evidence": "通过AgentCIBench评估计算机使用代理的隐私风险和权限滥用",
+      "canonical_evidence": "通过AgentCIBench评估计算机使用代理的隐私风险和权限滥用",
+      "llm_tldr_en": "Introduces AgentCIBench to evaluate contextual integrity failures in computer-use agents, testing for oversharing due to visual co-location, task ambiguity, and recipient misrouting.",
+      "llm_tldr_cn": "计算机使用代理跨应用操作时可能在不恰当上下文中泄露隐私信息。本文提出AgentCIBench评估框架，将此类风险转化为可执行的确定性评分场景，涵盖视觉共位、任务模糊过度分享和收件人误发三类典型故障模式。实验揭示了现有代理在隐私保护方面的不足。该基准为代理权限安全提供了评估工具。",
+      "llm_tldr": "计算机使用代理跨应用操作时可能在不恰当上下文中泄露隐私信息。本文提出AgentCIBench评估框架，将此类风险转化为可执行的确定性评分场景，涵盖视觉共位、任务模糊过度分享和收件人误发三类典型故障模式。实验揭示了现有代理在隐私保护方面的不足。该基准为代理权限安全提供了评估工具。",
+      "llm_tags": [
+        "query:agent-safety"
+      ],
+      "matched_query_tag": "query:agent-safety",
+      "matched_query_text": "tool calling agent security least privilege permission injection vulnerability LLM tool security",
+      "matched_requirement_id": "req-2",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2606.23416v1",
+      "source": "arxiv",
+      "title": "Detecting Malicious Agent Skills in the Wild using Attention",
+      "abstract": "LLM agents increasingly load skills, file-based packages of natural-language instructions written by third parties and distributed through marketplaces, that execute with the user's privileges. A single malicious skill can exfiltrate data, hijack the agent, or persist as a supply-chain foothold, which turns the skill marketplace into a new attack surface for agentic systems. Prompt-injection defenses do not carry over to this setting. They rely on a boundary between trusted instructions and untrusted data, whereas a skill is itself a body of instructions, so an injected command sits among many legitimate ones and inherits their authority. We present Locate-and-Judge, a two-stage detector designed for this regime. A lightweight locator scores the structural spans of a skill by the instruction-following attention each span draws and retains only the top-K. A judge then examines the retained spans in detail. Concentrating the costly judgment on a few high-attention spans lets the detector audit an entire marketplace instead of a sample. Compared to direct LLM-based scanning, this approach offers an order-of-magnitude cost reduction, dramatically increasing its scalability at a small cost to recall, and it dominates keyword and regex baselines at comparable expense. Deployed at marketplace scale and at negligible cost, Locate-and-Judge flags skills with high precision, the majority of which we manually confirmed as malicious, surfacing dozens of live malicious skills, including several disguised as benign functionality and many that SkillSpector and Cisco Skill Scanner fail to detect. We release the resulting labeled dataset.",
+      "authors": [
+        "Bacem Etteib",
+        "Daniele Lunghi",
+        "Tégawendé F. Bissyandé"
+      ],
+      "primary_category": "cs.CR",
+      "categories": [
+        "cs.CR",
+        "cs.AI"
+      ],
+      "published": "2026-06-22T14:41:06+00:00",
+      "link": "https://arxiv.org/pdf/2606.23416v1",
+      "tags": [
+        "keyword:agent-safety",
+        "query:agent-safety"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "Detects malicious agent skills in marketplaces, addressing permission and injection security",
+      "llm_evidence_cn": "检测市场中恶意代理技能，针对权限和注入安全",
+      "llm_evidence": "检测市场中恶意代理技能，针对权限和注入安全",
+      "canonical_evidence": "检测市场中恶意代理技能，针对权限和注入安全",
+      "llm_tldr_en": "Proposes Locate-and-Judge, a two-stage detector for malicious skills in LLM agent marketplaces.",
+      "llm_tldr_cn": "针对LLM代理技能市场中的恶意技能注入攻击，提出两阶段检测器Locate-and-Judge：轻量定位器扫描结构异常，深度判断器精确识别恶意指令，解决了常规提示注入防御不适用于技能指令本身的难题，有效防御数据泄露和代理劫持。",
+      "llm_tldr": "针对LLM代理技能市场中的恶意技能注入攻击，提出两阶段检测器Locate-and-Judge：轻量定位器扫描结构异常，深度判断器精确识别恶意指令，解决了常规提示注入防御不适用于技能指令本身的难题，有效防御数据泄露和代理劫持。",
+      "llm_tags": [
+        "query:agent-safety"
+      ],
+      "matched_query_tag": "query:agent-safety",
+      "matched_query_text": "tool calling agent security least privilege permission injection vulnerability LLM tool security",
+      "matched_requirement_id": "req-2",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2606.24245v1",
+      "source": "arxiv",
+      "title": "AutoSpec: Safety Rule Evolution for LLM Agents via Inductive Logic Programming",
+      "abstract": "Large language model (LLM) agents increasingly automate complex tasks by integrating language models with external tools and environments. However, their autonomy poses significant safety risks: agents may execute destructive commands, leak sensitive data, or violate domain constraints. Existing safety approaches face a fundamental tradeoff: hand-crafted rules are interpretable but brittle, with overly conservative rules blocking safe operations (high false positives) while permissive rules miss unsafe behaviors (high false negatives). Neural classifiers lack the interpretability required for safety-critical deployments.   We present AutoSpec, a framework that automatically evolves deployed expert-designed safety rules from user safe/unsafe annotations through counterexample-guided inductive synthesis (CEGIS) guided by inductive logic programming (ILP). Starting from the expert rules and a stream of annotated traces, AutoSpec iteratively evaluates rules, mines false-positive and false-negative counterexamples, uses ILP to learn which predicates discriminate them, generates candidate rule edits, and verifies candidates to select the best revision. The key insight is that ILP efficiently identifies predicates that appear frequently in false negatives but rarely in false positives (or vice versa), dramatically pruning the exponential search space of rule edits. This continues until convergence, producing interpretable rules that balance precision and recall.   We evaluate AutoSpec on 291 execution traces spanning code execution and embodied agent domains. AutoSpec raises rule F1 to 0.98 and 0.93 across the two domains, achieving up to 94% false positive reduction while maintaining high recall, and converges within 4-5 iterations. The ILP-guided approach achieves up to 4.8x higher F1 than heuristic CEGIS. The learned rules are human-readable, auditable, and generalize to unseen scenarios.",
+      "authors": [
+        "Pingchuan Ma",
+        "Zhaoyu Wang",
+        "Zimo Ji",
+        "Yuguang Zhou",
+        "Zhantong Xue",
+        "Zongjie Li",
+        "Shuai Wang",
+        "Xiaoqin Zhang"
+      ],
+      "primary_category": "cs.SE",
+      "categories": [
+        "cs.SE",
+        "cs.AI",
+        "cs.CR"
+      ],
+      "published": "2026-06-23T07:31:03+00:00",
+      "link": "https://arxiv.org/pdf/2606.24245v1",
+      "tags": [
+        "keyword:agent-safety",
+        "query:agent-safety"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "Automatic safety rule evolution for LLM agents via inductive logic programming",
+      "llm_evidence_cn": "通过归纳逻辑编程自动演化LLM agent安全规则",
+      "llm_evidence": "通过归纳逻辑编程自动演化LLM agent安全规则",
+      "canonical_evidence": "通过归纳逻辑编程自动演化LLM agent安全规则",
+      "llm_tldr_en": "AutoSpec evolves safety rules for LLM agents automatically from safe/unsafe annotations, interpretably addressing tradeoffs between false positives and negatives.",
+      "llm_tldr_cn": "现有LLM agent安全规则要么过于保守导致高误报，要么过于宽松导致漏报。AutoSpec利用归纳逻辑编程从用户标注中自动演化安全规则，生成可解释的规则集。实验表明其能够平衡误报和漏报，且规则可审计。该工作为agent工具调用安全提供了自动化、可解释的规则管理方案。",
+      "llm_tldr": "现有LLM agent安全规则要么过于保守导致高误报，要么过于宽松导致漏报。AutoSpec利用归纳逻辑编程从用户标注中自动演化安全规则，生成可解释的规则集。实验表明其能够平衡误报和漏报，且规则可审计。该工作为agent工具调用安全提供了自动化、可解释的规则管理方案。",
+      "llm_tags": [
+        "query:agent-safety"
+      ],
+      "matched_query_tag": "query:agent-safety",
+      "matched_query_text": "tool calling agent security least privilege permission injection vulnerability LLM tool security",
+      "matched_requirement_id": "req-2",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2606.24245v2",
+      "source": "arxiv",
+      "title": "AutoSpec: Safety Rule Evolution for LLM Agents via Inductive Logic Programming",
+      "abstract": "Large language model (LLM) agents increasingly automate complex tasks by integrating language models with external tools and environments. However, their autonomy poses significant safety risks: agents may execute destructive commands, leak sensitive data, or violate domain constraints. Existing safety approaches face a fundamental tradeoff: hand-crafted rules are interpretable but brittle, with overly conservative rules blocking safe operations (high false positives) while permissive rules miss unsafe behaviors (high false negatives). Neural classifiers lack the interpretability required for safety-critical deployments.   We present AutoSpec, a framework that automatically evolves deployed expert-designed safety rules from user safe/unsafe annotations through counterexample-guided inductive synthesis (CEGIS) guided by inductive logic programming (ILP). Starting from the expert rules and a stream of annotated traces, AutoSpec iteratively evaluates rules, mines false-positive and false-negative counterexamples, uses ILP to learn which predicates discriminate them, generates candidate rule edits, and verifies candidates to select the best revision. The key insight is that ILP efficiently identifies predicates that appear frequently in false negatives but rarely in false positives (or vice versa), dramatically pruning the exponential search space of rule edits. This continues until convergence, producing interpretable rules that balance precision and recall.   We evaluate AutoSpec on 291 execution traces spanning code execution and embodied agent domains. AutoSpec raises rule F1 to 0.98 and 0.93 across the two domains, achieving up to 94% false positive reduction while maintaining high recall, and converges within 4-5 iterations. The ILP-guided approach achieves up to 4.8x higher F1 than heuristic CEGIS. The learned rules are human-readable, auditable, and generalize to unseen scenarios.",
+      "authors": [
+        "Pingchuan Ma",
+        "Zhaoyu Wang",
+        "Zimo Ji",
+        "Yuguang Zhou",
+        "Zhantong Xue",
+        "Zongjie Li",
+        "Shuai Wang",
+        "Xiaoqin Zhang"
+      ],
+      "primary_category": "cs.SE",
+      "categories": [
+        "cs.SE",
+        "cs.AI",
+        "cs.CR"
+      ],
+      "published": "2026-06-23T07:31:03+00:00",
+      "link": "https://arxiv.org/pdf/2606.24245v2",
+      "tags": [
+        "keyword:agent-safety",
+        "query:agent-safety"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "safety rule evolution for LLM agents via inductive logic programming",
+      "llm_evidence_cn": "通过归纳逻辑编程自动演化LLM代理安全规则",
+      "llm_evidence": "通过归纳逻辑编程自动演化LLM代理安全规则",
+      "canonical_evidence": "通过归纳逻辑编程自动演化LLM代理安全规则",
+      "llm_tldr_en": "AutoSpec automatically evolves expert-designed safety rules from user annotations, balancing false positives and negatives. Directly relevant to tool-calling security and safety rule management.",
+      "llm_tldr_cn": "该论文提出AutoSpec框架，通过归纳逻辑编程从用户标注的安全/不安全示例中自动演化专家设计的安全规则，解决了手工规则过于保守或宽松的问题。自动生成的规则保持可解释性，同时降低了误报和漏报，直接支持工具调用代理的安全规则管理与演化。",
+      "llm_tldr": "该论文提出AutoSpec框架，通过归纳逻辑编程从用户标注的安全/不安全示例中自动演化专家设计的安全规则，解决了手工规则过于保守或宽松的问题。自动生成的规则保持可解释性，同时降低了误报和漏报，直接支持工具调用代理的安全规则管理与演化。",
+      "llm_tags": [
+        "query:agent-safety"
+      ],
+      "matched_query_tag": "query:agent-safety",
+      "matched_query_text": "tool calling agent security least privilege permission injection vulnerability LLM tool security",
+      "matched_requirement_id": "req-2",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2606.24322v1",
+      "source": "arxiv",
+      "title": "Securing LLM-Agent Long-Term Memory Against Poisoning: Non-Malleable, Origin-Bound Authority with Machine-Checked Guarantees",
+      "abstract": "LLM agents increasingly rely on persistent long-term memory, which creates a critical vulnerability that we study here: memory poisoning. An adversary can store untrusted content in one session that later steers a consequential action, such as a payment, a setting change, or data exfiltration, in a future session. Existing defenses base a memory item's authority to act on either its content (detection or trust-scoring) or its derivation history (lineage). We show that both signals are malleable. An attacker can launder an untrusted origin through three channels specific to LLM agents: the agent's own summarization, a trusted-tool echo, and manufactured corroboration. Each makes the content look benign and breaks or flips its derivation edge to ``trusted.'' We formalize malleability for the memory write-retrieve-act pipeline and prove a machine-checked separation theorem. No content- or lineage-based defense is sound under laundering (T1), write-time origin binding is necessary (T2), and non-malleable origin-bound authority with Sybil-resistant corroboration-gated elevation is sufficient (T3). Our construction, TMA-NM (Tamper-evident Memory Authority, Non-Malleable), instantiates non-malleable information-flow control (IFC) for LLM-agent memory. A cross-defense, cross-attack, and cross-model benchmark over eight frontier models shows that existing defenses fail exactly where the theory predicts (up to 68% laundering attack-success), while TMA-NM reaches 0% attack success on both direct and laundering attacks across all models and channels, at full legitimate utility. We release the benchmark, harness, and machine-checked TLA+ models to support reproducibility.",
+      "authors": [
+        "Yedidel Louck"
+      ],
+      "primary_category": "cs.CR",
+      "categories": [
+        "cs.CR"
+      ],
+      "published": "2026-06-23T08:57:50+00:00",
+      "link": "https://arxiv.org/pdf/2606.24322v1",
+      "tags": [
+        "keyword:agent-safety",
+        "query:agent-safety"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "security of LLM agent long-term memory against poisoning",
+      "llm_evidence_cn": "LLM代理长期记忆防投毒安全",
+      "llm_evidence": "LLM代理长期记忆防投毒安全",
+      "canonical_evidence": "LLM代理长期记忆防投毒安全",
+      "llm_tldr_en": "Identifies memory poisoning vulnerability in LLM agents and proposes non-malleable origin-bound authority with machine-checked guarantees. Directly relevant to tool-calling agent security and permission injection.",
+      "llm_tldr_cn": "该论文发现LLM代理的长期记忆存在投毒漏洞：攻击者可在一次会话中注入恶意内容影响未来行动。现有基于内容或谱系的防御均可被绕过。作者提出不可篡改的、绑定来源的权限机制，并具有机器可验证的保证，直接解决工具调用中的权限安全和记忆投毒问题。",
+      "llm_tldr": "该论文发现LLM代理的长期记忆存在投毒漏洞：攻击者可在一次会话中注入恶意内容影响未来行动。现有基于内容或谱系的防御均可被绕过。作者提出不可篡改的、绑定来源的权限机制，并具有机器可验证的保证，直接解决工具调用中的权限安全和记忆投毒问题。",
+      "llm_tags": [
+        "query:agent-safety"
+      ],
+      "matched_query_tag": "query:agent-safety",
+      "matched_query_text": "tool calling agent security least privilege permission injection vulnerability LLM tool security",
+      "matched_requirement_id": "req-2",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2606.25629v1",
+      "source": "arxiv",
+      "title": "Event-Adaptive Motion Planning with Distilled Vision-Language Model in Safety-Critical Situations",
+      "abstract": "Robot navigation in safety-critical scenarios faces significant challenges from unforeseen semantic events, where collisions arise primarily from the unpredictable behaviors of dynamic agents rather than unseen objects. While large vision-language models (VLMs) offer remarkable capabilities in commonsense reasoning, frequently invoking them within the continuous control loop introduces severe computational latency, fundamentally destabilizing physical execution. To address these challenges, we propose event-adaptive motion planning (EAMP), an efficient framework for VLM-based robot navigation. Specifically, a prompt-configurable semantic event trigger (PC-SET) selectively activates semantic intervention by continuously monitoring short temporal clips for behavioral anomalies. Upon triggering, an event-triggered distilled SemNav-VLM, fine-tuned via physically verified semantic distillation, maps detected anomalies into discrete strategy-level decisions. Subsequently, a semantic model predictive control (SMPC) module translates these strategies into dynamic reconfigurations of optimization objectives and geometric references. Extensive experiments in safety-critical logistics scenarios demonstrate that EAMP effectively aligns high-level reasoning with low-level control, significantly improving dynamic safety margins over existing baselines while preserving real-time efficiency.",
+      "authors": [
+        "Zhenwei Huang",
+        "Changsheng You",
+        "Shuai Wang",
+        "Chao Zhou",
+        "Wei Xu",
+        "Yi Gong"
+      ],
+      "primary_category": "cs.RO",
+      "categories": [
+        "cs.RO",
+        "eess.SP"
+      ],
+      "published": "2026-06-24T09:35:26+00:00",
+      "link": "https://arxiv.org/pdf/2606.25629v1",
+      "tags": [
+        "keyword:agent-safety",
+        "query:agent-safety"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "Event-adaptive motion planning for robot safety using distilled VLM",
+      "llm_evidence_cn": "基于蒸馏VLM的事件自适应运动规划保障机器人安全",
+      "llm_evidence": "基于蒸馏VLM的事件自适应运动规划保障机器人安全",
+      "canonical_evidence": "基于蒸馏VLM的事件自适应运动规划保障机器人安全",
+      "llm_tldr_en": "Event-Adaptive Motion Planning (EAMP) uses a prompt-configurable semantic event trigger to selectively invoke a distilled VLM for safety-critical robot navigation, reducing latency while handling semantic events.",
+      "llm_tldr_cn": "安全关键场景中机器人导航面临不可预测语义事件的挑战，大视觉语言模型虽有常识推理能力但频繁调用会导致计算延迟破坏物理执行。本文提出事件自适应运动规划（EAMP），通过可配置语义事件触发器（PC-SET）选择性激活蒸馏后的VLM进行语义干预，在保持实时性的同时处理动态代理的意外行为。",
+      "llm_tldr": "安全关键场景中机器人导航面临不可预测语义事件的挑战，大视觉语言模型虽有常识推理能力但频繁调用会导致计算延迟破坏物理执行。本文提出事件自适应运动规划（EAMP），通过可配置语义事件触发器（PC-SET）选择性激活蒸馏后的VLM进行语义干预，在保持实时性的同时处理动态代理的意外行为。",
+      "llm_tags": [
+        "query:agent-safety"
+      ],
+      "matched_query_tag": "query:agent-safety",
+      "matched_query_text": "embodied AI safety vision language action safety robot safety benchmark physical safety risk aware planning",
+      "matched_requirement_id": "req-4",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2606.26377v1",
+      "source": "arxiv",
+      "title": "Verifying Intent and Harm: A Unified Defense Against LLM-Generated Threats",
+      "abstract": "Large language models (LLMs) are increasingly deployed in interactive applications, yet they remain vulnerable to adversarial interactions that induce harmful, deceptive, or policy-violating outputs. Existing defenses typically analyze either user prompts or generated outputs, but not both. However, many real-world attacks exploit a separation between adversarial intent expressed in the prompt and actionable harm manifested only in the response. As a result, prompt-only and response-only defenses frequently miss unsafe interactions that appear benign when viewed from either side in isolation. We present a verification-centric defense framework that jointly evaluates prompt intent and response harm before an LLM response is delivered to a user. The framework employs specialized analysts for intent and harm assessment together with a Judge for conflict resolution. We formalize a threat model for prompt-response attacks and evaluate the framework across five threat categories: jailbreaks, prompt injection, phishing, cyber abuse, and harmful content. Experiments on multiple benchmark datasets show that jointly verifying prompt intent and response harm consistently outperforms single-sided defenses and single-agent reasoning baselines. Across threat categories, the framework improves average F1 from 0.90 for the strongest applicable baselines to 0.95 while reducing the average attack success rate to 4.1 percent. Compared with a Single-Agent+CoT baseline, it improves average F1 from 0.87 to 0.95 and reduces the false positive rate on benign-sensitive requests from 0.12 to 0.06. We further evaluate architecture-aware adaptive attacks in which the attacker knows the verifier structure and attempts to bypass individual verification components. Our results suggest that prompt-response verification provides a practical foundation for securing LLM applications against evolving adversarial threats.",
+      "authors": [
+        "Poojitha Thota",
+        "Yun Lei",
+        "Santhosh Thangaraj",
+        "Siddhartha Reddy Jonnalagadda",
+        "Shirin Nilizadeh"
+      ],
+      "primary_category": "cs.CR",
+      "categories": [
+        "cs.CR"
+      ],
+      "published": "2026-06-24T21:00:39+00:00",
+      "link": "https://arxiv.org/pdf/2606.26377v1",
+      "tags": [
+        "keyword:agent-safety",
+        "query:agent-safety"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "joint evaluation of prompt intent and response harm for LLM safety",
+      "llm_evidence_cn": "联合评估提示意图和响应危害的LLM安全验证框架",
+      "llm_evidence": "联合评估提示意图和响应危害的LLM安全验证框架",
+      "canonical_evidence": "联合评估提示意图和响应危害的LLM安全验证框架",
+      "llm_tldr_en": "Proposes a verification-centric defense that jointly evaluates prompt intent and response harm to catch adversarial LLM attacks that exploit the separation between intent and harm.",
+      "llm_tldr_cn": "现有LLM防御通常只分析提示或响应之一，但许多攻击利用意图与危害的分离来逃避检测。本文提出一种验证中心防御框架，联合评估提示意图和响应危害，在LLM响应交付前拦截不安全交互。实验表明该方法能有效检测跨分离面的攻击，弥补了单侧防御的盲区。该工作为LLM安全监控提供了新的联合验证思路。",
+      "llm_tldr": "现有LLM防御通常只分析提示或响应之一，但许多攻击利用意图与危害的分离来逃避检测。本文提出一种验证中心防御框架，联合评估提示意图和响应危害，在LLM响应交付前拦截不安全交互。实验表明该方法能有效检测跨分离面的攻击，弥补了单侧防御的盲区。该工作为LLM安全监控提供了新的联合验证思路。",
+      "llm_tags": [
+        "query:agent-safety"
+      ],
+      "matched_query_tag": "query:agent-safety",
+      "matched_query_text": "LLM agent risk assessment and behavior safety recent papers from top venues",
+      "matched_requirement_id": "req-5",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2606.26479v1",
+      "source": "arxiv",
+      "title": "Adaptive Evaluation of Out-of-Band Defenses Against Prompt Injection in LLM Agents",
+      "abstract": "Recent work (2024 to 2026) has converged on a strategy for defending tool-using LLM agents against indirect prompt injection: rather than training the model to refuse malicious instructions, enforce security outside the model with a deterministic policy that mediates the agent's actions. Systems such as CaMeL, FIDES, Progent, RTBAS, and FORGE realize this with capabilities, information-flow labels, and reference monitors, and several report near-elimination of attacks on the AgentDojo benchmark. We make two contributions. First, we organize these out-of-band defenses as instances of classical integrity protection (Biba), reference monitoring, and least privilege, yielding a structured comparison of what they do and do not cover. Second, we warn that every one of them is validated only on static benchmarks (a fixed set of injection attempts), the same methodology that made in-band defenses look strong until adaptive, defense-aware attacks broke twelve of them at over 90% success; we specify the threat model and protocol an adaptive evaluation requires. We then run that protocol as an independent reproduction and extension of Progent's own adaptive-attack analysis, on AgentDojo, with an open-weight agent (Qwen2.5-7B) self-hosted on a single H200, a setting its authors did not test. Averaged over three runs, the defense held: Progent cut mean attack success roughly sixfold (25.8% to 4.2%), and a hand-crafted adaptive attack did not raise it (2.6%). This is one small-scale data point on a weak model with a single black-box attack template; a stronger optimized (white-box GCG) attack remains open. The result is consistent with, but does not establish, the hypothesis that deterministic out-of-band enforcement is a harder target for an adaptive attacker than in-band detection.",
+      "authors": [
+        "Praneeth Narisetty",
+        "Shiva Nagendra Babu Kore",
+        "Uday Kumar Reddy Kattamanchi",
+        "Jayaram Kumarapu"
+      ],
+      "primary_category": "cs.CR",
+      "categories": [
+        "cs.CR",
+        "cs.AI",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "published": "2026-06-25T00:35:23+00:00",
+      "link": "https://arxiv.org/pdf/2606.26479v1",
+      "tags": [
+        "keyword:agent-safety",
+        "query:agent-safety"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "Evaluation of out-of-band defenses against prompt injection using least privilege",
+      "llm_evidence_cn": "基于最小权限原则的提示注入带外防御评估",
+      "llm_evidence": "基于最小权限原则的提示注入带外防御评估",
+      "canonical_evidence": "基于最小权限原则的提示注入带外防御评估",
+      "llm_tldr_en": "Organizes out-of-band defenses for LLM agent prompt injection as classical integrity protection and least privilege, proposing adaptive evaluation to reveal remaining vulnerabilities.",
+      "llm_tldr_cn": "针对LLM代理的间接提示注入，近年出现一种带外防御策略：在模型外部用确定性策略强制代理动作，遵循最小权限原则。本文系统梳理了CaMeL、FIDES、Progent等系统，将其归类为经典完整性保护、引用监控和最小权限实例。然后提出适应性评估方法，揭示这些防御在对抗性测试中仍存在可被利用的漏洞。",
+      "llm_tldr": "针对LLM代理的间接提示注入，近年出现一种带外防御策略：在模型外部用确定性策略强制代理动作，遵循最小权限原则。本文系统梳理了CaMeL、FIDES、Progent等系统，将其归类为经典完整性保护、引用监控和最小权限实例。然后提出适应性评估方法，揭示这些防御在对抗性测试中仍存在可被利用的漏洞。",
+      "llm_tags": [
+        "query:agent-safety"
+      ],
+      "matched_query_tag": "query:agent-safety",
+      "matched_query_text": "tool calling agent security least privilege permission injection vulnerability LLM tool security",
+      "matched_requirement_id": "req-2",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2606.26924v1",
+      "source": "arxiv",
+      "title": "A Deterministic Control Plane for LLM Coding Agents",
+      "abstract": "LLM coding harnesses grant agents broad file and shell access, yet the configuration layer that steers them -- rules files, agent definitions, IDE-specific markdown -- is largely unmanaged. A prevalence study of 10,008 public GitHub repositories (n=6,145 agent config files) finds that agent configurations propagate as undeclared shared components: 10.1% of tracked paths are SHA-256 exact duplicates across independent repositories (fork-adjusted, threshold-independent), with 75.5% of clone pairs crossing organisational boundaries. Two further patterns are indicative: configurations are rarely revised (58% single-commit; 0.4 vs 0.6 commits/month age-normalised against CI/CD workflows), and rarely declare permission boundaries (<1% of agent configs vs 33% of Actions workflows, n=31 true positives).   We propose a deterministic control plane above the harness that maps one-to-one to these gaps. Rel(AI)Build treats agent definitions as a managed supply chain (SHA-256 content addressing, HMAC-stamped lockfiles, hash-chained audit logs); enforces tiered permissions and attack-derived blocklists before LLM invocation; gates feature work through a phase state machine with requirement-to-file-to-test traceability; compiles a single canonical definition to seven IDE targets; and detects prompt drift via Jaccard similarity. Conformance tests on injected violations confirm each mechanism enforces its stated invariant; developer outcomes remain future work. Governance of this layer must be deterministic and tool-agnostic -- not delegated to further LLM orchestration.",
+      "authors": [
+        "Padmaraj Madatha"
+      ],
+      "primary_category": "cs.SE",
+      "categories": [
+        "cs.SE",
+        "cs.AI",
+        "cs.CR"
+      ],
+      "published": "2026-06-25T12:02:18+00:00",
+      "link": "https://arxiv.org/pdf/2606.26924v1",
+      "tags": [
+        "keyword:agent-safety",
+        "query:agent-safety"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "control plane for LLM coding agents with permission boundary analysis",
+      "llm_evidence_cn": "LLM编码代理控制平面与权限边界分析",
+      "llm_evidence": "LLM编码代理控制平面与权限边界分析",
+      "canonical_evidence": "LLM编码代理控制平面与权限边界分析",
+      "llm_tldr_en": "Studies agent configuration propagation and permission declarations in 10K+ repos, finding <1% declare boundaries. Directly relevant to least privilege and permission injection in tool-calling agent security.",
+      "llm_tldr_cn": "该论文对一万多个GitHub仓库中LLM编码代理的配置文件进行了大规模实证研究，发现配置广泛重复、极少修改且几乎不声明权限边界（<1%），而CI/CD工作流中有33%声明了权限。这直接揭示了工具调用代理中最小权限原则缺失的问题，为权限安全研究提供了实证基础。",
+      "llm_tldr": "该论文对一万多个GitHub仓库中LLM编码代理的配置文件进行了大规模实证研究，发现配置广泛重复、极少修改且几乎不声明权限边界（<1%），而CI/CD工作流中有33%声明了权限。这直接揭示了工具调用代理中最小权限原则缺失的问题，为权限安全研究提供了实证基础。",
+      "llm_tags": [
+        "query:agent-safety"
+      ],
+      "matched_query_tag": "query:agent-safety",
+      "matched_query_text": "tool calling agent security least privilege permission injection vulnerability LLM tool security",
+      "matched_requirement_id": "req-2",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2606.27027v1",
+      "source": "arxiv",
+      "title": "ShareLock: A Stealthy Multi-Tool Threshold Poisoning Attack Against MCP",
+      "abstract": "With the rapid evolution of LLM-driven agents, Model Context Protocol (MCP), an open protocol bridging LLMs with external tools, has quickly become foundational to modern agent ecosystems. However, the expanding adoption of MCP has also introduced novel security concerns such as Tool Poisoning Attack (TPA), which exploit LLM-server interactions to inject malicious prompts. Existing poisoning schemes typically adopt a monolithic plaintext embedding paradigm, which fails to withstand manual inspection or automated detectors. Current research still lacks a systematic analysis on multi-tool poisoning, where multiple tools can be exploited cooperatively to disperse detection risk. In this paper, we introduce ShareLock, a multi-tool threshold poisoning framework that utilizes Shamir's threshold scheme to ensure exceptional stealth and fault tolerance. ShareLock distributes the malicious instruction as benign-looking secret shares across multiple tool descriptions, achieving both information-theoretic secrecy and attack robustness against moderate auditing. After a covert reconstruction trigger is planted during server update, the aggregated shares reconstruct the hidden instruction, resulting in critical breaches of system assets or private data. To evaluate the realistic threat of ShareLock, we constructed a comprehensive benchmark encompassing four multi-tool scenarios and conducted extensive experiments across mainstream LLMs on two distinct MCP clients. Our results demonstrate that ShareLock significantly outperforms existing single-tool poisoning strategies in tool description-based detection while maintaining an average attack success rate exceeding 90%.",
+      "authors": [
+        "Liwei Liu",
+        "Tianzhu Han",
+        "Zijian Liu",
+        "Zishu Dong",
+        "Na Ruan"
+      ],
+      "primary_category": "cs.CR",
+      "categories": [
+        "cs.CR",
+        "cs.AI"
+      ],
+      "published": "2026-06-25T13:35:28+00:00",
+      "link": "https://arxiv.org/pdf/2606.27027v1",
+      "tags": [
+        "keyword:agent-safety",
+        "query:agent-safety"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "Multi-tool threshold poisoning attack on MCP, directly targets LLM tool security and injection vulnerability",
+      "llm_evidence_cn": "针对MCP的多工具阈值投毒攻击，直接涉及LLM工具安全与注入漏洞",
+      "llm_evidence": "针对MCP的多工具阈值投毒攻击，直接涉及LLM工具安全与注入漏洞",
+      "canonical_evidence": "针对MCP的多工具阈值投毒攻击，直接涉及LLM工具安全与注入漏洞",
+      "llm_tldr_en": "Proposes ShareLock, a stealthy multi-tool threshold poisoning attack against MCP, exploiting cooperative tool poisoning to bypass detection.",
+      "llm_tldr_cn": "针对MCP协议的多工具阈值投毒攻击ShareLock，利用多个工具协同分散检测风险，攻破了现有单工具明文嵌入范式，揭示了LLM代理工具安全的新威胁面，为权限提升和注入攻击提供了隐蔽手段。",
+      "llm_tldr": "针对MCP协议的多工具阈值投毒攻击ShareLock，利用多个工具协同分散检测风险，攻破了现有单工具明文嵌入范式，揭示了LLM代理工具安全的新威胁面，为权限提升和注入攻击提供了隐蔽手段。",
+      "llm_tags": [
+        "query:agent-safety"
+      ],
+      "matched_query_tag": "query:agent-safety",
+      "matched_query_text": "tool calling agent security least privilege permission injection vulnerability LLM tool security",
+      "matched_requirement_id": "req-2",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2606.28061v1",
+      "source": "arxiv",
+      "title": "ToolPrivacyBench: Benchmarking Purpose-Bound Privacy in Tool-Using LLM Agents",
+      "abstract": "Large language models (LLMs) have increasingly moved from standalone text generation systems to agents that invoke external tools, access environments, and execute multi-step tasks. However, conventional function-calling benchmarks mainly evaluate task completion and API correctness, while privacy evaluation benchmarks typically focus on final responses or privacy judgments. Neither perspective captures purpose-bound information flow across an executed multi-tool trajectory. Motivated by this limitation in current agent evaluation, ToolPrivacyBench audits whether task-private atoms are routed only to authorized tools and downstream sinks, thereby evaluating both task completion and privacy over-disclosure during tool use. The benchmark contains 2,150 cases, including 1,150 fully synthetic privacy-sensitive business workflows and 1,000 cases adapted from existing multi-tool and function-calling benchmarks. Each case is represented by a policy knowledge base. After an agent executes against mock business backends, the evaluator compares recorded tool arguments and backend audit logs with this policy knowledge base. The evaluation covers nine widely used agents to characterize purpose-bound privacy over-disclosure. The results show that successful tool execution does not imply appropriate privacy disclosure: an agent may complete a task while transmitting unnecessary private information through intermediate tool calls. ToolPrivacyBench therefore formalizes a need-to-know disclosure boundary, under which each tool should receive only the information necessary for its stated purpose, and uses trajectory-level auditing to identify privacy over-disclosure in multi-tool workflows.",
+      "authors": [
+        "Shijing Hu",
+        "Liang Liu",
+        "Zhu Meng",
+        "Zhicheng Zhao"
+      ],
+      "primary_category": "cs.CR",
+      "categories": [
+        "cs.CR",
+        "cs.AI"
+      ],
+      "published": "2026-06-26T13:08:46+00:00",
+      "link": "https://arxiv.org/pdf/2606.28061v1",
+      "tags": [
+        "keyword:agent-safety",
+        "query:agent-safety"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "Privacy benchmark for tool-using LLM agents evaluating purpose-bound information flow",
+      "llm_evidence_cn": "面向工具型LLM agent的隐私基准，评估目的受限信息流",
+      "llm_evidence": "面向工具型LLM agent的隐私基准，评估目的受限信息流",
+      "canonical_evidence": "面向工具型LLM agent的隐私基准，评估目的受限信息流",
+      "llm_tldr_en": "ToolPrivacyBench is a benchmark auditing whether task-private atoms are routed only to authorized tools in multi-tool LLM agents, evaluating both task completion and privacy over-disclosure.",
+      "llm_tldr_cn": "现有函数调用基准仅评估任务完成和API正确性，隐私基准仅关注最终响应。ToolPrivacyBench提出面向工具调用轨迹的目的受限隐私审计，检查任务私有信息是否只流向授权工具。该基准包含多工具场景，实验揭示大量隐私过度泄露。该工作为LLM agent工具安全提供了关键评估手段。",
+      "llm_tldr": "现有函数调用基准仅评估任务完成和API正确性，隐私基准仅关注最终响应。ToolPrivacyBench提出面向工具调用轨迹的目的受限隐私审计，检查任务私有信息是否只流向授权工具。该基准包含多工具场景，实验揭示大量隐私过度泄露。该工作为LLM agent工具安全提供了关键评估手段。",
+      "llm_tags": [
+        "query:agent-safety"
+      ],
+      "matched_query_tag": "query:agent-safety",
+      "matched_query_text": "tool calling agent security least privilege permission injection vulnerability LLM tool security",
+      "matched_requirement_id": "req-2",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "quick_skim": [
+    {
+      "id": "2606.22263v1",
+      "source": "arxiv",
+      "title": "Revelio: Cost-Efficient Agentic Memory Safety Vulnerability Detection For Repository-Scale Codebases",
+      "abstract": "Memory safety vulnerabilities remain a significant threat even for projects with extensive fuzzing and manual auditing. Recent results suggest that large language models hold great promise for detecting such vulnerabilities, but they are unreliable, at risk of hallucination, and challenging to scale to repository-size codebases. This paper presents Revelio, a cost-efficient end-to-end agentic framework for memory-safety vulnerability discovery. Revelio addresses the problem of hallucination by generating an executable Proof-of-Vulnerability, which is checked with a deterministic sanitizer. It reduces cost using inexpensive LLMs and lightweight static analysis to help generate and rank vulnerability hypotheses, reporting vulnerabilities only when they can be reproduced and confirmed by a sanitizer. We evaluated Revelio on seven production-quality projects that had been continuously fuzzed for five to eight years, as well as on 100 randomly selected Arvo projects from the CyberGym benchmark. With around one hour per project and a total cost of $300, Revelio discovered 19 previously unknown memory-safety vulnerabilities. On benchmarks, Revelio outperformed frontier coding agents across diverse backbone models at comparable token costs. Our results suggest that Revelio enables scalable and trustworthy end-to-end LLM-based memory-safety vulnerability detection.",
+      "authors": [
+        "Yiwei Hou",
+        "Hao Wang",
+        "Muxi Lyu",
+        "Marius Momeu",
+        "Eric Nguyen",
+        "Taige Yang",
+        "Koushik Sen",
+        "Dawn Song",
+        "David Wagner"
+      ],
+      "primary_category": "cs.CR",
+      "categories": [
+        "cs.CR",
+        "cs.AI",
+        "cs.MA",
+        "cs.SE"
+      ],
+      "published": "2026-06-20T23:17:23+00:00",
+      "link": "https://arxiv.org/pdf/2606.22263v1",
+      "tags": [
+        "keyword:agent-safety"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "Cost-efficient agentic memory safety vulnerability detection, using LLM agents for security",
+      "llm_evidence_cn": "成本高效的Agent内存安全漏洞检测，利用LLM代理进行安全分析",
+      "llm_evidence": "成本高效的Agent内存安全漏洞检测，利用LLM代理进行安全分析",
+      "canonical_evidence": "成本高效的Agent内存安全漏洞检测，利用LLM代理进行安全分析",
+      "llm_tldr_en": "Presents Revelio, an agentic framework for memory-safety vulnerability discovery that generates executable PoV to reduce hallucination.",
+      "llm_tldr_cn": "针对内存安全漏洞检测的不可靠和高成本问题，提出Revelio框架，通过LLM代理生成可执行漏洞证明（PoV）并结合确定性检测器验证，利用轻量级静态分析辅助假设排序，在仓库级代码库上实现了高效且准确的漏洞发现。",
+      "llm_tldr": "针对内存安全漏洞检测的不可靠和高成本问题，提出Revelio框架，通过LLM代理生成可执行漏洞证明（PoV）并结合确定性检测器验证，利用轻量级静态分析辅助假设排序，在仓库级代码库上实现了高效且准确的漏洞发现。",
+      "llm_tags": [
+        "query:agent-safety"
+      ],
+      "matched_query_tag": "query:agent-safety",
+      "matched_query_text": "tool calling agent security least privilege permission injection vulnerability LLM tool security",
+      "matched_requirement_id": "req-2",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "8plus"
+    },
+    {
+      "id": "2606.22613v1",
+      "source": "arxiv",
+      "title": "SkillAudit: From Fixed-Suite Benchmarking to Skill-Centered Assessment",
+      "abstract": "Agent skills have become a practical way to extend large language model agents, but the growing skill ecosystem still lacks a reliable way to judge whether a skill is worth deploying. Existing evaluation methods remain largely anchored to fixed task suites, assessing skills through performance on predefined tasks and environments. As skill marketplaces expand, this paradigm becomes inadequate: fixed suites can conflate a skill's marginal contribution with backbone strength and miss its value when tasks fall outside the skill's intended scope. We introduce SkillAudit, an end-to-end framework for skill-centered assessment that takes an arbitrary agent skill as input and automatically generates a comprehensive, multi-dimensional evaluation report spanning utility, efficiency/cost, and safety. SkillAudit focuses on the skill artifact itself and constructs capability-aligned evaluation tasks directly from the skill package. The generated tasks are conducted in isolated sandbox environments to collect execution evidence, followed by automated checks with LLM-based judging to produce auditable results. To dissect the agent skills, we propose the baseline comparison principle to measure utility and efficiency/cost, and introduce a two-stage detection paradigm combining static semantic analysis with dynamic runtime verification to assess safety risks. After scanning top-ranked real-world skill packages spanning 23 occupational categories, we found that over 7% of skills are at risky status.",
+      "authors": [
+        "Dexu Yu",
+        "Youhua Li",
+        "Zhaoyang Guan",
+        "Xianhao Lin",
+        "Jining Luan",
+        "Zihao Rao",
+        "Xuanqi Lan",
+        "Yang Ran",
+        "Bo Lan",
+        "Nai-Xin Zhai",
+        "Hanwen Du",
+        "Junchen Fu",
+        "Wenhao Deng",
+        "Yongxin Ni",
+        "Chunxiao Li"
+      ],
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-06-21T17:40:05+00:00",
+      "link": "https://arxiv.org/pdf/2606.22613v1",
+      "tags": [
+        "keyword:agent-safety",
+        "query:agent-safety"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "Skill-centered assessment framework for LLM agents",
+      "llm_evidence_cn": "LLM代理技能评估框架",
+      "llm_evidence": "LLM代理技能评估框架",
+      "canonical_evidence": "LLM代理技能评估框架",
+      "llm_tldr_en": "SkillAudit generates comprehensive multi-dimensional evaluation reports for arbitrary agent skills, moving beyond fixed-suite benchmarks to better assess marginal contribution.",
+      "llm_tldr_cn": "现有代理技能评估依赖固定任务套件，无法区分技能本身与骨干模型的贡献。SkillAudit提出以技能为中心的评估框架，输入任意技能自动生成多维评估报告，包括能力边界、贡献分解和失败模式分析。该方法为代理安全的基准测试和风险识别提供了更细粒度的视角。",
+      "llm_tldr": "现有代理技能评估依赖固定任务套件，无法区分技能本身与骨干模型的贡献。SkillAudit提出以技能为中心的评估框架，输入任意技能自动生成多维评估报告，包括能力边界、贡献分解和失败模式分析。该方法为代理安全的基准测试和风险识别提供了更细粒度的视角。",
+      "llm_tags": [
+        "query:agent-safety"
+      ],
+      "matched_query_tag": "query:agent-safety",
+      "matched_query_text": "large language model agent safety benchmark and risk assessment LLM agent behavior monitoring",
+      "matched_requirement_id": "req-1",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "2606.22873v1",
+      "source": "arxiv",
+      "title": "SingGuard: A Policy-Adaptive Multimodal LLM Guardrail with Dynamic Reasoning",
+      "abstract": "Vision-language models (VLMs) are increasingly deployed in consumer, medical, financial, and enterprise applications. This broad deployment expands the safety surface: risks can arise from multimodal question answering, assistant responses, and cross-modal composition, while moderation policies may vary across products, regions, and deployment stages. Most existing guardrails either rely on fixed taxonomies or target only a narrow set of interaction settings, which limits their adaptability when safety rules change at deployment time. We present \\textbf{SingGuard}, a policy-adaptive multimodal guardrail model family for safety assessment in multimodal conversations. SingGuard treats the active policy as a runtime input: given natural-language rules, it checks the target content against the active policy rule by rule and predicts both the safety label and the triggered rule. To balance efficiency and interpretability, SingGuard supports fast, hybrid, and slow inference regimes along a fast-to-slow reasoning spectrum, ranging from direct safety judgments to policy-grounded deliberation. We further optimize this behavior with fast--slow decoupled reinforcement learning. We also introduce \\textbf{SingGuard-Bench}, a multimodal guardrail benchmark with 56{,}340 examples spanning 80+ fine-grained risk types across multimodal QA, adversarial attack, and dynamic-rule evaluation settings, including cross-modal joint-risk cases where each modality is harmless in isolation but their composition implies unsafe intent. Across six benchmark families (35 datasets), SingGuard achieves state-of-the-art average F1 in every family. Dynamic-rule evaluation further shows improved policy-following accuracy from 0.6465 to 0.7415 under runtime policy shifts. Our code is available at https://github.com/inclusionAI/Sing-Guard.",
+      "authors": [
+        "SingGuard Team"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "cs.CL"
+      ],
+      "published": "2026-06-22T05:37:43+00:00",
+      "link": "https://arxiv.org/pdf/2606.22873v1",
+      "tags": [
+        "keyword:agent-safety",
+        "query:agent-safety"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "Policy-adaptive multimodal guardrail for safety assessment, directly relevant to LLM agent risk assessment",
+      "llm_evidence_cn": "策略自适应多模态护栏用于安全评估，直接相关LLM代理风险评估",
+      "llm_evidence": "策略自适应多模态护栏用于安全评估，直接相关LLM代理风险评估",
+      "canonical_evidence": "策略自适应多模态护栏用于安全评估，直接相关LLM代理风险评估",
+      "llm_tldr_en": "Presents SingGuard, a policy-adaptive multimodal guardrail for safety assessment in multimodal conversations.",
+      "llm_tldr_cn": "针对多模态对话中安全风险随部署政策变化的问题，提出SingGuard系列模型，将活跃政策作为运行时输入，动态调整安全评估标准，无需重新训练即可适应不同产品、地区的规则，大幅提升多模态LLM代理安全护栏的灵活性和可部署性。",
+      "llm_tldr": "针对多模态对话中安全风险随部署政策变化的问题，提出SingGuard系列模型，将活跃政策作为运行时输入，动态调整安全评估标准，无需重新训练即可适应不同产品、地区的规则，大幅提升多模态LLM代理安全护栏的灵活性和可部署性。",
+      "llm_tags": [
+        "query:agent-safety"
+      ],
+      "matched_query_tag": "query:agent-safety",
+      "matched_query_text": "LLM agent risk assessment and behavior safety recent papers from top venues",
+      "matched_requirement_id": "req-5",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "8plus"
+    },
+    {
+      "id": "2606.22698v1",
+      "source": "arxiv",
+      "title": "Black-Box Forensics for Conversational LLM Agents",
+      "abstract": "As LLM-powered scams proliferate, black-box forensics for conversational LLM agents offers a path to accountability for systems hidden behind anonymous endpoints. Identifying the base model behind a chatbot endpoint (attribution), without model parameter access or knowledge of the hidden system prompt, would let investigators trace AI-enabled scams back to the providers whose models power them. Detecting when two endpoints run the exact same system prompt (fingerprinting), even one novel and unseen, would link individual scams into criminal networks and expose silent API changes. We conduct an empirical investigation of both capabilities. Our attribution classifiers identify the base model behind an agent with 98% accuracy from a few turns of non-adversarial conversation. Attribution of system prompts, while possible, requires retraining on a large amount of data for each prompt; system prompts in the wild are unbounded and ever-changing, making this approach costly. To tackle this more open-ended setting, our cross-encoder fingerprinting method achieves an AUC of 0.768 and an F1 of 0.703 on entirely unseen system prompts, and aggregating 50 interaction conversations from each target agent boosts AUC to 0.943. Conversational agents with unseen system prompts can thus be fingerprinted with robust accuracy from a few turns of ordinary conversation.",
+      "authors": [
+        "Isadora White",
+        "Yasaman Jafari",
+        "Taylor Berg-Kirkpatrick"
+      ],
+      "primary_category": "cs.CR",
+      "categories": [
+        "cs.CR",
+        "cs.CL"
+      ],
+      "published": "2026-06-21T22:24:55+00:00",
+      "link": "https://arxiv.org/pdf/2606.22698v1",
+      "tags": [
+        "keyword:agent-safety",
+        "query:agent-safety"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "Black-box forensics for LLM agents, enabling attribution and fingerprinting for risk assessment",
+      "llm_evidence_cn": "针对LLM代理的黑盒取证，实现归因和指纹识别，辅助风险评估",
+      "llm_evidence": "针对LLM代理的黑盒取证，实现归因和指纹识别，辅助风险评估",
+      "canonical_evidence": "针对LLM代理的黑盒取证，实现归因和指纹识别，辅助风险评估",
+      "llm_tldr_en": "Investigates attribution and fingerprinting for conversational LLM agents, achieving 98% base model identification accuracy.",
+      "llm_tldr_cn": "针对LLM驱动诈骗的溯源难题，研究黑盒环境下对话代理的归因与指纹识别：通过非对抗性对话特征，以98%准确率识别基座模型，并能检测不同端点是否运行相同系统提示，为代理行为安全和风险溯源提供了有力工具。",
+      "llm_tldr": "针对LLM驱动诈骗的溯源难题，研究黑盒环境下对话代理的归因与指纹识别：通过非对抗性对话特征，以98%准确率识别基座模型，并能检测不同端点是否运行相同系统提示，为代理行为安全和风险溯源提供了有力工具。",
+      "llm_tags": [
+        "query:agent-safety"
+      ],
+      "matched_query_tag": "query:agent-safety",
+      "matched_query_text": "LLM agent risk assessment and behavior safety recent papers from top venues",
+      "matched_requirement_id": "req-5",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "2606.22873v3",
+      "source": "arxiv",
+      "title": "SingGuard: A Policy-Adaptive Multimodal LLM Guardrail with Dynamic Reasoning",
+      "abstract": "Vision-language models (VLMs) are increasingly deployed in consumer, medical, financial, and enterprise applications. This broad deployment expands the safety surface: risks can arise from multimodal question answering, assistant responses, and cross-modal composition, while moderation policies may vary across products, regions, and deployment stages. Most existing guardrails either rely on fixed taxonomies or target only a narrow set of interaction settings, which limits their adaptability when safety rules change at deployment time. We present \\textbf{SingGuard}, a policy-adaptive multimodal guardrail model family for safety assessment in multimodal conversations. SingGuard treats the active policy as a runtime input: given natural-language rules, it checks the target content against the active policy rule by rule and predicts both the safety label and the triggered rule. To balance efficiency and interpretability, SingGuard supports fast, hybrid, and slow inference regimes along a fast-to-slow reasoning spectrum, ranging from direct safety judgments to policy-grounded deliberation. We further optimize this behavior with fast--slow decoupled reinforcement learning. We also introduce \\textbf{SingGuard-Bench}, a multimodal guardrail benchmark with 56{,}340 examples spanning 80+ fine-grained risk types across multimodal QA, adversarial attack, and dynamic-rule evaluation settings, including cross-modal joint-risk cases where each modality is harmless in isolation but their composition implies unsafe intent. Across six benchmark families (35 datasets), SingGuard achieves state-of-the-art average F1 in every family. Dynamic-rule evaluation further shows improved policy-following accuracy from 0.6465 to 0.7415 under runtime policy shifts. Our code is available at https://github.com/inclusionAI/Sing-Guard.",
+      "authors": [
+        "SingGuard Team"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "cs.CL"
+      ],
+      "published": "2026-06-22T05:37:43+00:00",
+      "link": "https://arxiv.org/pdf/2606.22873v3",
+      "tags": [
+        "keyword:agent-safety",
+        "query:agent-safety"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "Policy-adaptive multimodal guardrail for safety assessment, directly relevant to LLM agent risk assessment",
+      "llm_evidence_cn": "策略自适应多模态护栏用于安全评估，直接相关LLM代理风险评估",
+      "llm_evidence": "策略自适应多模态护栏用于安全评估，直接相关LLM代理风险评估",
+      "canonical_evidence": "策略自适应多模态护栏用于安全评估，直接相关LLM代理风险评估",
+      "llm_tldr_en": "Presents SingGuard, a policy-adaptive multimodal guardrail for safety assessment in multimodal conversations.",
+      "llm_tldr_cn": "针对多模态对话中安全风险随部署政策变化的问题，提出SingGuard系列模型，将活跃政策作为运行时输入，动态调整安全评估标准，无需重新训练即可适应不同产品、地区的规则，大幅提升多模态LLM代理安全护栏的灵活性和可部署性。",
+      "llm_tldr": "针对多模态对话中安全风险随部署政策变化的问题，提出SingGuard系列模型，将活跃政策作为运行时输入，动态调整安全评估标准，无需重新训练即可适应不同产品、地区的规则，大幅提升多模态LLM代理安全护栏的灵活性和可部署性。",
+      "llm_tags": [
+        "query:agent-safety"
+      ],
+      "matched_query_tag": "query:agent-safety",
+      "matched_query_text": "LLM agent risk assessment and behavior safety recent papers from top venues",
+      "matched_requirement_id": "req-5",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "8plus"
+    },
+    {
+      "id": "2606.22873v2",
+      "source": "arxiv",
+      "title": "SingGuard: A Policy-Adaptive Multimodal LLM Guardrail with Dynamic Reasoning",
+      "abstract": "Vision-language models (VLMs) are increasingly deployed in consumer, medical, financial, and enterprise applications. This broad deployment expands the safety surface: risks can arise from multimodal question answering, assistant responses, and cross-modal composition, while moderation policies may vary across products, regions, and deployment stages. Most existing guardrails either rely on fixed taxonomies or target only a narrow set of interaction settings, which limits their adaptability when safety rules change at deployment time. We present \\textbf{SingGuard}, a policy-adaptive multimodal guardrail model family for safety assessment in multimodal conversations. SingGuard treats the active policy as a runtime input: given natural-language rules, it checks the target content against the active policy rule by rule and predicts both the safety label and the triggered rule. To balance efficiency and interpretability, SingGuard supports fast, hybrid, and slow inference regimes along a fast-to-slow reasoning spectrum, ranging from direct safety judgments to policy-grounded deliberation. We further optimize this behavior with fast--slow decoupled reinforcement learning. We also introduce \\textbf{SingGuard-Bench}, a multimodal guardrail benchmark with 56{,}340 examples spanning 80+ fine-grained risk types across multimodal QA, adversarial attack, and dynamic-rule evaluation settings, including cross-modal joint-risk cases where each modality is harmless in isolation but their composition implies unsafe intent. Across six benchmark families (35 datasets), SingGuard achieves state-of-the-art average F1 in every family. Dynamic-rule evaluation further shows improved policy-following accuracy from 0.6465 to 0.7415 under runtime policy shifts. Our code is available at https://github.com/inclusionAI/Sing-Guard.",
+      "authors": [
+        "SingGuard Team"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "cs.CL"
+      ],
+      "published": "2026-06-22T05:37:43+00:00",
+      "link": "https://arxiv.org/pdf/2606.22873v2",
+      "tags": [
+        "keyword:agent-safety",
+        "query:agent-safety"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "Policy-adaptive multimodal guardrail for safety assessment in conversations",
+      "llm_evidence_cn": "可适应策略的多模态安全护栏，用于对话安全评估",
+      "llm_evidence": "可适应策略的多模态安全护栏，用于对话安全评估",
+      "canonical_evidence": "可适应策略的多模态安全护栏，用于对话安全评估",
+      "llm_tldr_en": "SingGuard presents a policy-adaptive multimodal guardrail that treats safety policy as runtime input, enabling flexible safety assessment in multimodal conversations.",
+      "llm_tldr_cn": "现有安全护栏依赖固定分类，难以适应部署时策略变化。SingGuard提出将活动策略作为运行时输入，构建可自适应策略的多模态安全护栏。在多种对话场景下评估，该模型能灵活适应不同安全规则，有效检测有害内容。该工作为LLM agent安全评估提供了动态可配置的防护方案。",
+      "llm_tldr": "现有安全护栏依赖固定分类，难以适应部署时策略变化。SingGuard提出将活动策略作为运行时输入，构建可自适应策略的多模态安全护栏。在多种对话场景下评估，该模型能灵活适应不同安全规则，有效检测有害内容。该工作为LLM agent安全评估提供了动态可配置的防护方案。",
+      "llm_tags": [
+        "query:agent-safety"
+      ],
+      "matched_query_tag": "query:agent-safety",
+      "matched_query_text": "large language model agent safety benchmark and risk assessment LLM agent behavior monitoring",
+      "matched_requirement_id": "req-1",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "2606.24626v1",
+      "source": "arxiv",
+      "title": "SAFARI: Scaling Long Horizon Agentic Fault Attribution via Active Investigation",
+      "abstract": "As autonomous agents tackle increasingly complex multi-step, multi-agent tasks, their execution trajectories have scaled beyond the constraints of even the largest context windows. Current methods for effectively diagnosing agent failures load the full trajectory into an LLM's context window, which suffers from attention dilution and fails when agentic traces inevitably exceed context limits. To address this, we introduce SAFARI (Scaling long-horizon Agentic Fault AttRibution via active Investigation), a framework that replaces linear context loading with a tool-augmented diagnostic loop. By equipping LLMs with a specialized toolbox to read and search trajectory segments alongside a persistent Short-Term Memory (STM) for cross-turn reasoning, SAFARI effectively decouples diagnostic accuracy from architectural context limits. Our experiments demonstrate that SAFARI outperforms state-of-the-art results by 20% on the Who&When dataset within a 1M token budget, and by 19% on TRAIL GAIA subset on a 25K token budget. Most significantly, SAFARI maintains a 0.58 precision even when the target fault resides 5x beyond the model's native context window, a scenario where traditional evaluators fail entirely.",
+      "authors": [
+        "Chenyang Zhu",
+        "Jiayu Yao",
+        "Kushal Chawla",
+        "Youbing Yin",
+        "Nathan Wolfe",
+        "Pengshan Cai",
+        "Jingyu Wu",
+        "Spencer Hong",
+        "Sangwoo Cho",
+        "Shi-Xiong Zhang",
+        "Daben Liu",
+        "Sambit Sahu",
+        "Erin Babinsky"
+      ],
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-06-23T14:23:40+00:00",
+      "link": "https://arxiv.org/pdf/2606.24626v1",
+      "tags": [
+        "keyword:agent-safety",
+        "query:agent-safety"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "Agent fault attribution via active investigation for behavior monitoring",
+      "llm_evidence_cn": "通过主动调查进行代理故障归因以支持行为监控",
+      "llm_evidence": "通过主动调查进行代理故障归因以支持行为监控",
+      "canonical_evidence": "通过主动调查进行代理故障归因以支持行为监控",
+      "llm_tldr_en": "SAFARI replaces linear context loading with a tool-augmented diagnostic loop and short-term memory for scaling agent fault attribution beyond context limits.",
+      "llm_tldr_cn": "多步多代理任务轨迹超出上下文窗口限制时，现有故障诊断方法失效。SAFARI框架用工具增强的诊断循环替代线性上下文加载：为LLM配备专用工具箱读取和搜索轨迹片段，并加入持久短期记忆支持跨轮推理。实验表明SAFARI能在超长轨迹上有效归因故障点，为代理行为监控和风险识别提供了可扩展的诊断方案。",
+      "llm_tldr": "多步多代理任务轨迹超出上下文窗口限制时，现有故障诊断方法失效。SAFARI框架用工具增强的诊断循环替代线性上下文加载：为LLM配备专用工具箱读取和搜索轨迹片段，并加入持久短期记忆支持跨轮推理。实验表明SAFARI能在超长轨迹上有效归因故障点，为代理行为监控和风险识别提供了可扩展的诊断方案。",
+      "llm_tags": [
+        "query:agent-safety"
+      ],
+      "matched_query_tag": "query:agent-safety",
+      "matched_query_text": "LLM agent risk assessment and behavior safety recent papers from top venues",
+      "matched_requirement_id": "req-5",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "8plus"
+    },
+    {
+      "id": "2606.24535v1",
+      "source": "arxiv",
+      "title": "Governed Shared Memory for Multi-Agent LLM Systems",
+      "abstract": "Multi-agent LLM environments require robust mechanisms for shared knowledge management. This paper formalizes the fleet-memory problem and identifies four foundational failure modes: unauthorized leakage, stale propagation, contradiction persistence, and provenance collapse. To address these, we define explicit systems-level primitives: scoped retrieval, temporal supersession, provenance tracking, and policy-governed memory propagation. These primitives are implemented in MemClaw, a production multi-tenant memory service, and evaluated via ArgusFleet, a reproducible harness testing four governance dimensions. Rather than a baseline comparison, this study measures a live production service, emphasizing real-world architectural insights and negative results. Key Evaluation Results Provenance: Successfully reconstructed 100% of depth-four derivation chains with correct writer identity at sub-second per-hop latency. Propagation: Demonstrated high intra-fleet visibility with zero cross-fleet leakage. Under strong write mode, write-to-visible latency was optimized to a single search round-trip. Production Architectural Issues Discovered Asymmetric Scope Enforcement: Tenant isolation held, but sub-tenant scope was initially bypassed on direct GET-by-id requests for agent-scoped credentials (disclosed and remediated during the study). Pipeline Ordering Conflict: While contradiction supersession works for admitted writes, a synchronous near-duplicate gate can prematurely reject contradictory writes before the asynchronous contradiction detector can evaluate them. Conclusion: Long-context retrieval alone is insufficient for production multi-agent memory. Governed shared memory demands explicit systems-level abstractions, and live evaluation is vital to expose enforcement and pipeline-ordering failures missed by design-only treatments.",
+      "authors": [
+        "Yanki Margalit",
+        "Nurit Cohen-Inger",
+        "Erni Avram",
+        "Ran Taig",
+        "Oded Margalit"
+      ],
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-06-23T13:04:14+00:00",
+      "link": "https://arxiv.org/pdf/2606.24535v1",
+      "tags": [
+        "keyword:agent-safety",
+        "query:agent-safety"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "Formalizes fleet-memory failure modes including unauthorized leakage, relevant to agent safety governance",
+      "llm_evidence_cn": "形式化多代理内存的泄漏等故障模式，与代理安全治理相关",
+      "llm_evidence": "形式化多代理内存的泄漏等故障模式，与代理安全治理相关",
+      "canonical_evidence": "形式化多代理内存的泄漏等故障模式，与代理安全治理相关",
+      "llm_tldr_en": "Formalizes fleet-memory failure modes in multi-agent LLM systems and proposes MemClaw with governance primitives.",
+      "llm_tldr_cn": "本文形式化多代理LLM系统中的舰队内存问题，识别出未授权泄漏、过时传播、矛盾持久化和溯源崩溃四种故障模式，提出MemClaw服务实现作用域检索、时间替代、溯源追踪和策略治理等原语，为多代理系统的安全共享内存提供了系统级解决方案。",
+      "llm_tldr": "本文形式化多代理LLM系统中的舰队内存问题，识别出未授权泄漏、过时传播、矛盾持久化和溯源崩溃四种故障模式，提出MemClaw服务实现作用域检索、时间替代、溯源追踪和策略治理等原语，为多代理系统的安全共享内存提供了系统级解决方案。",
+      "llm_tags": [
+        "query:agent-safety:composite"
+      ],
+      "matched_query_tag": "query:agent-safety:composite",
+      "matched_query_text": "Papers central to 根据用户博士背景，聚焦风险识别与安全管控，包括LLM/Agent风险识别、权限安全、算力网安全、分布式训练可靠性、云边端推理、网络靶场等方向，抓取2024-2026年顶会/顶刊论文。, especially work that connects or combines: large language model agent safety benchmark and risk assessment LLM agent behavior monitoring; tool calling agent security least privilege permission injection vulnerability LLM tool security; distributed AI training network reliability RDMA congestion control RoCE fault diagnosis straggler detection; embodied AI safety vision language action safety robot safety benchmark physical safety risk aware planning; LLM agent risk assessment and behavior safety recent papers from top venues.",
+      "matched_requirement_id": "req-composite-agent-safety",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "2606.25332v1",
+      "source": "arxiv",
+      "title": "Decoupling Reconnaissance and Exploitation: Measuring the Capability Boundaries of LLM-Based Web Penetration Testing",
+      "abstract": "Large Language Models (LLMs) have shown promise for automated penetration testing, yet existing end-to-end black-box evaluations are highly susceptible to error cascading: failures in early reconnaissance can mask an agent's actual ability to exploit vulnerabilities. To more accurately characterize these capabilities, we propose a two-stage decoupled evaluation framework that separates exploit execution from reconnaissance. Using ground-truth injection and knowledge-driven ablation across 70 high-fidelity web vulnerability testbeds, our framework isolates exploitation performance from reconnaissance noise. We empirically evaluate five open-source penetration-testing agents, covering multiagent, monolithic, and graph-driven architectures, on a strictly aligned subset of 50 representative vulnerabilities. The results reveal a substantial capability gap. With accurate vulnerability context, agents achieve a functional success rate of up to 90.0%, whereas autonomous reconnaissance, measured by targeted vulnerability recall, plateaus at approximately 50.0%, primarily due to failures in parsing unstructured telemetry. Cross-architectural analysis further reveals distinct capability niches: multi-agent isolation is more effective for long-sequence interactions such as de-serialization, while monolithic and graph-driven designs perform better on short-chain injections and cross-session access-control vulnerabilities, respectively. This decoupled evaluation work provides a fine-grained benchmarking protocol and an empirical basis for designing next-generation automated offensive security agents.",
+      "authors": [
+        "Liwei Yu",
+        "Shuo Li",
+        "Ming Zhou",
+        "Ge Chu",
+        "Yan Guo"
+      ],
+      "primary_category": "cs.CR",
+      "categories": [
+        "cs.CR",
+        "cs.AI"
+      ],
+      "published": "2026-06-24T02:51:58+00:00",
+      "link": "https://arxiv.org/pdf/2606.25332v1",
+      "tags": [
+        "keyword:agent-safety",
+        "query:agent-safety"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "decoupled evaluation framework for LLM penetration testing",
+      "llm_evidence_cn": "LLM渗透测试的解耦评估框架",
+      "llm_evidence": "LLM渗透测试的解耦评估框架",
+      "canonical_evidence": "LLM渗透测试的解耦评估框架",
+      "llm_tldr_en": "Proposes a two-stage decoupled evaluation for LLM-based web penetration testing, isolating exploitation from reconnaissance. Relevant to tool-calling security and vulnerability injection assessment.",
+      "llm_tldr_cn": "该论文针对LLM驱动的自动渗透测试，提出两阶段解耦评估框架，将利用阶段与侦察阶段分离，通过真实注入和知识驱动消融在70个高保真测试床上评估。这有助于准确测量LLM代理的漏洞利用能力，直接关联工具调用安全中的注入漏洞评估。",
+      "llm_tldr": "该论文针对LLM驱动的自动渗透测试，提出两阶段解耦评估框架，将利用阶段与侦察阶段分离，通过真实注入和知识驱动消融在70个高保真测试床上评估。这有助于准确测量LLM代理的漏洞利用能力，直接关联工具调用安全中的注入漏洞评估。",
+      "llm_tags": [
+        "query:agent-safety"
+      ],
+      "matched_query_tag": "query:agent-safety",
+      "matched_query_text": "tool calling agent security least privilege permission injection vulnerability LLM tool security",
+      "matched_requirement_id": "req-2",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "8plus"
+    },
+    {
+      "id": "2606.25442v1",
+      "source": "arxiv",
+      "title": "PolicyAlign: Direct Policy-Based Safety Alignment for Large Language Models",
+      "abstract": "Safety alignment of large language models (LLMs) typically depends on high-quality supervision data, such as safe demonstrations or preference pairs. However, in real-world deployment, emerging safety requirements are often specified as natural-language policies, while corresponding supervision data may be costly, delayed, or unavailable. This creates a mismatch between rapidly evolving safety policies and conventional data-driven alignment methods. To address this, we propose PolicyAlign, a simple yet effective framework for directly aligning LLMs with safety policies. Given a safety policy, PolicyAlign first synthesizes policy-violating instructions and then performs on-policy self-distillation to internalize policy-guided behavior. To improve training stability and data efficiency, we further introduce Policy-Sensitive Filtering, which selects instructions where the policy induces the largest behavioral shift. Experiments across multiple models show that PolicyAlign consistently improves safety while maintaining low over-refusal and preserving general capabilities. PolicyAlign also generalizes to medical, legal, and financial safety scenarios, highlighting its potential as a scalable and maintainable approach to policy-based LLM safety alignment. The code is released at https://github.com/Qwen-Applications/PolicyAlign.",
+      "authors": [
+        "Chang Wu",
+        "Junfeng Fang",
+        "Houcheng Jiang",
+        "Kai Tang",
+        "Pengyu Cheng",
+        "Xiaoxi Jiang",
+        "Guanjun Jiang",
+        "Xiang Wang"
+      ],
+      "primary_category": "cs.CL",
+      "categories": [
+        "cs.CL"
+      ],
+      "published": "2026-06-24T06:10:33+00:00",
+      "link": "https://arxiv.org/pdf/2606.25442v1",
+      "tags": [
+        "keyword:agent-safety",
+        "query:agent-safety"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "Direct policy-based safety alignment for LLMs",
+      "llm_evidence_cn": "基于策略的LLM安全对齐方法",
+      "llm_evidence": "基于策略的LLM安全对齐方法",
+      "canonical_evidence": "基于策略的LLM安全对齐方法",
+      "llm_tldr_en": "PolicyAlign aligns LLMs with safety policies by synthesizing policy-violating instructions and performing on-policy self-distillation, addressing the mismatch between evolving policies and data-driven methods.",
+      "llm_tldr_cn": "现有LLM安全对齐依赖高质量监督数据，但实际部署中安全策略常以自然语言形式出现且缺乏对应数据。PolicyAlign提出直接基于策略的对齐框架：先合成违反策略的指令，再通过在线自蒸馏将策略引导的行为内化到模型中。该方法无需预先收集偏好对，能快速适应新策略。实验表明PolicyAlign在多个安全基准上达到甚至超越传统数据驱动方法。",
+      "llm_tldr": "现有LLM安全对齐依赖高质量监督数据，但实际部署中安全策略常以自然语言形式出现且缺乏对应数据。PolicyAlign提出直接基于策略的对齐框架：先合成违反策略的指令，再通过在线自蒸馏将策略引导的行为内化到模型中。该方法无需预先收集偏好对，能快速适应新策略。实验表明PolicyAlign在多个安全基准上达到甚至超越传统数据驱动方法。",
+      "llm_tags": [
+        "query:agent-safety"
+      ],
+      "matched_query_tag": "query:agent-safety",
+      "matched_query_text": "large language model agent safety benchmark and risk assessment LLM agent behavior monitoring",
+      "matched_requirement_id": "req-1",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "8plus"
+    },
+    {
+      "id": "2606.26649v1",
+      "source": "arxiv",
+      "title": "Autoformalization of Agent Instructions into Policy-as-Code",
+      "abstract": "Agent safety in high-stakes domains requires formal policy enforcement, but most existing approaches either rely on probabilistic guardrails (fine-tuned classifiers, prompt-based steering) that offer no formal guarantees, or on hand-coded symbolic enforcement that does not scale to the breadth of real policy specifications. We present an autoformalization pipeline that translates agent prompts, MCP tool descriptions, and natural language policy documents into formally verified policies using an LLM-based generator-critic loop. The resulting policies are written in the Cedar Policy Language. On the MedAgentBench benchmark, our autoformalized policies cover substantially more of the source natural-language specification than the hand-coded symbolic enforcement in prior work.",
+      "authors": [
+        "Adam Mondl",
+        "Matthew Maisel",
+        "John H. Brock"
+      ],
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI",
+        "cs.CR"
+      ],
+      "published": "2026-06-25T06:23:15+00:00",
+      "link": "https://arxiv.org/pdf/2606.26649v1",
+      "tags": [
+        "keyword:agent-safety",
+        "query:agent-safety"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "Autoformalizes agent instructions into formal policies for tool security",
+      "llm_evidence_cn": "自动形式化代理指令以增强工具调用安全",
+      "llm_evidence": "自动形式化代理指令以增强工具调用安全",
+      "canonical_evidence": "自动形式化代理指令以增强工具调用安全",
+      "llm_tldr_en": "Autoformalization pipeline translates agent prompts, MCP tool descriptions, and natural language policies into formally verified Cedar policies, achieving broader coverage than hand-coded enforcement on MedAgentBench.",
+      "llm_tldr_cn": "高安全场景中代理安全需要形式化策略执行，但现有方法要么缺乏形式保证，要么手工编码扩展性差。本文提出自动形式化流水线，利用LLM生成器-批评家循环将代理提示、MCP工具描述和自然语言策略自动转化为Cedar形式化策略。在MedAgentBench上，自动策略覆盖范围远超手工编码方法，为工具调用代理提供了可验证的安全保障。",
+      "llm_tldr": "高安全场景中代理安全需要形式化策略执行，但现有方法要么缺乏形式保证，要么手工编码扩展性差。本文提出自动形式化流水线，利用LLM生成器-批评家循环将代理提示、MCP工具描述和自然语言策略自动转化为Cedar形式化策略。在MedAgentBench上，自动策略覆盖范围远超手工编码方法，为工具调用代理提供了可验证的安全保障。",
+      "llm_tags": [
+        "query:agent-safety"
+      ],
+      "matched_query_tag": "query:agent-safety",
+      "matched_query_text": "tool calling agent security least privilege permission injection vulnerability LLM tool security",
+      "matched_requirement_id": "req-2",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "8plus"
+    }
+  ]
+}
