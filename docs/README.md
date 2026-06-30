@@ -6,92 +6,61 @@
 </div>
 
 ## 每次日报
-- 最新运行日期：2026-06-29
-- 运行时间：2026-06-29 21:32:09 UTC
+- 最新运行日期：2026-06-30
+- 运行时间：2026-06-30 22:08:32 UTC
 - 运行状态：成功
-- 本次总论文数：24
-- 精读区：13
-- 速读区：11
+- 本次总论文数：13
+- 精读区：6
+- 速读区：7
 
 ### 今日简报（AI）
-今日日报聚焦多轮编码智能体安全控制与自我进化LLM系统的威胁与案例分析，精读两篇均获9.0高分。最值得关注的是《AgentLens》提出的机械子空间可解释安全转向方法，以及《Safety in Self-Evolving LLM Agent Systems》对系统自我进化过程中安全威胁的系统性剖析。建议优先精读这两篇9.0分文章以掌握前沿安全控制机制，同时可速读《Revelio》和《SingGuard》了解代码级记忆安全漏洞检测与多模态护栏技术。
-- 详情：[/202606/29/README](/202606/29/README)
+今日聚焦LLM安全与AI Agent行为规范，精读了两篇9分论文。  
+最值得关注方向：拒绝对齐（RAS）衡量LLM安全水平，以及运行时行为强制（VIGIL）确保Agent技能规范。  
+建议优先阅读这两篇精读论文，并留意Agent协作中KV缓存完整性等新兴安全风险。
+- 详情：[/202606/30/README](/202606/30/README)
 
 ### 精读区论文标签
-1. [AgentLens: Interpretable Safety Steering via Mechanistic Subspaces for Multi-Turn Coding Agent](/202606/29/2606.22673v1-agentlens-interpretable-safety-steering-via-mechanistic-subspaces-for-multi-turn-coding-agent)  
+1. [RAS: Measuring LLM Safety Through Refusal Alignment](/202606/30/2606.25750v1-ras-measuring-llm-safety-through-refusal-alignment)  
    标签：评分：9.0/10、query:agent-safety
-   evidence：多轮编码代理的可解释安全引导
-2. [Safety in Self-Evolving LLM Agent Systems: Threats, Amplification, and Case Studies](/202606/29/2606.23075v1-safety-in-self-evolving-llm-agent-systems-threats-amplification-and-case-studies)  
+   evidence：通过内部表示测量LLM安全
+2. [VIGIL: Runtime Enforcement of Behavioral Specifications in AI Agent Skills](/202606/30/2606.26524v1-vigil-runtime-enforcement-of-behavioral-specifications-in-ai-agent-skills)  
    标签：评分：9.0/10、query:agent-safety
-   evidence：自演化LLM代理系统的安全威胁分析
-3. [Capable but Careless: Do Computer-Use Agents Follow Contextual Integrity?](/202606/29/2606.23189v1-capable-but-careless-do-computer-use-agents-follow-contextual-integrity)  
+   evidence：AI智能体技能的行为规范运行时执行，涉及工具安全与权限控制
+3. [LLM agents security duality: a comprehensive survey of self-security and empowered cybersecurity](/202606/30/2606.28450v1-llm-agents-security-duality-a-comprehensive-survey-of-self-security-and-empowered-cybersecurity)  
    标签：评分：9.0/10、query:agent-safety
-   evidence：通过AgentCIBench评估计算机使用代理的隐私风险和权限滥用
-4. [Detecting Malicious Agent Skills in the Wild using Attention](/202606/29/2606.23416v1-detecting-malicious-agent-skills-in-the-wild-using-attention)  
+   evidence：关于LLM智能体安全的全面综述，涵盖威胁、缓解措施及赋能网络安全
+4. [Capability Gates Are Not Authorization: Confused-Deputy Failures in LLM Agent Frameworks](/202606/30/2606.28679v1-capability-gates-are-not-authorization-confused-deputy-failures-in-llm-agent-frameworks)  
    标签：评分：9.0/10、query:agent-safety
-   evidence：检测市场中恶意代理技能，针对权限和注入安全
-5. [AutoSpec: Safety Rule Evolution for LLM Agents via Inductive Logic Programming](/202606/29/2606.24245v1-autospec-safety-rule-evolution-for-llm-agents-via-inductive-logic-programming)  
+   evidence：直接解决工具调用Agent的授权、最小权限和权限注入漏洞问题
+5. [Agent Safety Is Action Alignment](/202606/30/2606.28739v1-agent-safety-is-action-alignment)  
    标签：评分：9.0/10、query:agent-safety
-   evidence：通过归纳逻辑编程自动演化LLM agent安全规则
-6. [AutoSpec: Safety Rule Evolution for LLM Agents via Inductive Logic Programming](/202606/29/2606.24245v2-autospec-safety-rule-evolution-for-llm-agents-via-inductive-logic-programming)  
+   evidence：论证Agent安全在于行动对齐而非内容拒绝，直接指导Agent行为监控与风险评估
+6. [EvalSafetyGap: A Hybrid Survey and Conceptual Framework for LLM Evaluation-Safety Failures](/202606/30/2606.30219v1-evalsafetygap-a-hybrid-survey-and-conceptual-framework-for-llm-evaluation-safety-failures)  
    标签：评分：9.0/10、query:agent-safety
-   evidence：通过归纳逻辑编程自动演化LLM代理安全规则
-7. [Securing LLM-Agent Long-Term Memory Against Poisoning: Non-Malleable, Origin-Bound Authority with Machine-Checked Guarantees](/202606/29/2606.24322v1-securing-llm-agent-long-term-memory-against-poisoning-non-malleable-origin-bound-authority-with-machine-checked-guarantees)  
-   标签：评分：9.0/10、query:agent-safety
-   evidence：LLM代理长期记忆防投毒安全
-8. [Event-Adaptive Motion Planning with Distilled Vision-Language Model in Safety-Critical Situations](/202606/29/2606.25629v1-event-adaptive-motion-planning-with-distilled-vision-language-model-in-safety-critical-situations)  
-   标签：评分：9.0/10、query:agent-safety
-   evidence：基于蒸馏VLM的事件自适应运动规划保障机器人安全
-9. [Verifying Intent and Harm: A Unified Defense Against LLM-Generated Threats](/202606/29/2606.26377v1-verifying-intent-and-harm-a-unified-defense-against-llm-generated-threats)  
-   标签：评分：9.0/10、query:agent-safety
-   evidence：联合评估提示意图和响应危害的LLM安全验证框架
-10. [Adaptive Evaluation of Out-of-Band Defenses Against Prompt Injection in LLM Agents](/202606/29/2606.26479v1-adaptive-evaluation-of-out-of-band-defenses-against-prompt-injection-in-llm-agents)  
-   标签：评分：9.0/10、query:agent-safety
-   evidence：基于最小权限原则的提示注入带外防御评估
-11. [A Deterministic Control Plane for LLM Coding Agents](/202606/29/2606.26924v1-a-deterministic-control-plane-for-llm-coding-agents)  
-   标签：评分：9.0/10、query:agent-safety
-   evidence：LLM编码代理控制平面与权限边界分析
-12. [ShareLock: A Stealthy Multi-Tool Threshold Poisoning Attack Against MCP](/202606/29/2606.27027v1-sharelock-a-stealthy-multi-tool-threshold-poisoning-attack-against-mcp)  
-   标签：评分：9.0/10、query:agent-safety
-   evidence：针对MCP的多工具阈值投毒攻击，直接涉及LLM工具安全与注入漏洞
-13. [ToolPrivacyBench: Benchmarking Purpose-Bound Privacy in Tool-Using LLM Agents](/202606/29/2606.28061v1-toolprivacybench-benchmarking-purpose-bound-privacy-in-tool-using-llm-agents)  
-   标签：评分：9.0/10、query:agent-safety
-   evidence：面向工具型LLM agent的隐私基准，评估目的受限信息流
+   evidence：LLM评估安全故障的混合调查与概念框架，覆盖基准有效性和安全评估
 
 ### 速读区论文标签
-1. [Revelio: Cost-Efficient Agentic Memory Safety Vulnerability Detection For Repository-Scale Codebases](/202606/29/2606.22263v1-revelio-cost-efficient-agentic-memory-safety-vulnerability-detection-for-repository-scale-codebases)  
+1. [Agents That Know Too Much: A Data-Centric Survey of Privacy in LLM Agents](/202606/30/2606.26627v1-agents-that-know-too-much-a-data-centric-survey-of-privacy-in-llm-agents)  
    标签：评分：8.0/10、query:agent-safety
-   evidence：成本高效的Agent内存安全漏洞检测，利用LLM代理进行安全分析
-2. [SingGuard: A Policy-Adaptive Multimodal LLM Guardrail with Dynamic Reasoning](/202606/29/2606.22873v1-singguard-a-policy-adaptive-multimodal-llm-guardrail-with-dynamic-reasoning)  
+   evidence：LLM智能体隐私综述，涵盖权限与数据泄露
+2. [Formal Security Analysis of Agent Protocol Composition](/202606/30/2606.28690v1-formal-security-analysis-of-agent-protocol-composition)  
    标签：评分：8.0/10、query:agent-safety
-   evidence：策略自适应多模态护栏用于安全评估，直接相关LLM代理风险评估
-3. [SingGuard: A Policy-Adaptive Multimodal LLM Guardrail with Dynamic Reasoning](/202606/29/2606.22873v3-singguard-a-policy-adaptive-multimodal-llm-guardrail-with-dynamic-reasoning)  
+   evidence：对智能体协议组合进行形式化安全分析，针对工具和委托安全
+3. [When Latent Agents Lie: KV-Cache Integrity in Multi-Agent LLM Collaboration](/202606/30/2606.28958v1-when-latent-agents-lie-kv-cache-integrity-in-multi-agent-llm-collaboration)  
    标签：评分：8.0/10、query:agent-safety
-   evidence：策略自适应多模态护栏用于安全评估，直接相关LLM代理风险评估
-4. [SAFARI: Scaling Long Horizon Agentic Fault Attribution via Active Investigation](/202606/29/2606.24626v1-safari-scaling-long-horizon-agentic-fault-attribution-via-active-investigation)  
+   evidence：研究多Agent协作中隐式状态完整性问题，与Agent行为风险评估相关
+4. [Linguistic Firewall: Geometry as Defense in Multi-Agent Systems Routing](/202606/30/2606.30555v1-linguistic-firewall-geometry-as-defense-in-multi-agent-systems-routing)  
    标签：评分：8.0/10、query:agent-safety
-   evidence：通过主动调查进行代理故障归因以支持行为监控
-5. [Decoupling Reconnaissance and Exploitation: Measuring the Capability Boundaries of LLM-Based Web Penetration Testing](/202606/29/2606.25332v1-decoupling-reconnaissance-and-exploitation-measuring-the-capability-boundaries-of-llm-based-web-penetration-testing)  
-   标签：评分：8.0/10、query:agent-safety
-   evidence：LLM渗透测试的解耦评估框架
-6. [PolicyAlign: Direct Policy-Based Safety Alignment for Large Language Models](/202606/29/2606.25442v1-policyalign-direct-policy-based-safety-alignment-for-large-language-models)  
-   标签：评分：8.0/10、query:agent-safety
-   evidence：基于策略的LLM安全对齐方法
-7. [Autoformalization of Agent Instructions into Policy-as-Code](/202606/29/2606.26649v1-autoformalization-of-agent-instructions-into-policy-as-code)  
-   标签：评分：8.0/10、query:agent-safety
-   evidence：自动形式化代理指令以增强工具调用安全
-8. [SkillAudit: From Fixed-Suite Benchmarking to Skill-Centered Assessment](/202606/29/2606.22613v1-skillaudit-from-fixed-suite-benchmarking-to-skill-centered-assessment)  
+   evidence：通过几何防御方法保护多智能体系统路由免受恶意智能体攻击，提升安全性
+5. [Affective AI Safety: The Missing Piece in LLM Safety](/202606/30/2606.23380v2-affective-ai-safety-the-missing-piece-in-llm-safety)  
    标签：评分：7.0/10、query:agent-safety
-   evidence：LLM代理技能评估框架
-9. [Black-Box Forensics for Conversational LLM Agents](/202606/29/2606.22698v1-black-box-forensics-for-conversational-llm-agents)  
-   标签：评分：7.0/10、query:agent-safety
-   evidence：针对LLM代理的黑盒取证，实现归因和指纹识别，辅助风险评估
-10. [SingGuard: A Policy-Adaptive Multimodal LLM Guardrail with Dynamic Reasoning](/202606/29/2606.22873v2-singguard-a-policy-adaptive-multimodal-llm-guardrail-with-dynamic-reasoning)  
-   标签：评分：7.0/10、query:agent-safety
-   evidence：可适应策略的多模态安全护栏，用于对话安全评估
-11. [Governed Shared Memory for Multi-Agent LLM Systems](/202606/29/2606.24535v1-governed-shared-memory-for-multi-agent-llm-systems)  
-   标签：评分：7.0/10、query:agent-safety
-   evidence：形式化多代理内存的泄漏等故障模式，与代理安全治理相关
+   evidence：提出情感安全分类，扩展LLM安全范围
+6. [Safe and Generalizable Hierarchical Multi-Agent RL via Constraint Manifold Control](/202606/30/2606.24010v1-safe-and-generalizable-hierarchical-multi-agent-rl-via-constraint-manifold-control)  
+   标签：评分：6.0/10、query:agent-safety
+   evidence：多智能体安全约束，提供理论保证
+7. [Yuvion LLM: An Adversarially-Aware Large Language Model for Content And AI Safety](/202606/30/2606.27632v1-yuvion-llm-an-adversarially-aware-large-language-model-for-content-and-ai-safety)  
+   标签：评分：6.0/10、query:agent-safety
+   evidence：对抗感知的LLM用于内容与AI安全，广泛适用于AI安全复合主题
 
 
 <div class="dpr-home-promo-card">

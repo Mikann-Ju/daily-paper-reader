@@ -1,94 +1,12 @@
 {
-  "generated_at": "2026-06-29T21:14:40.484007+00:00",
-  "updated_date": "20260629",
+  "generated_at": "2026-06-30T21:58:43.369492+00:00",
+  "updated_date": "20260630",
   "carryover_days": 9,
   "tag_states": {
     "agent-safety": {
-      "updated_date": "20260629",
+      "updated_date": "20260630",
       "carryover_days": 9,
-      "items": [
-        {
-          "id": "2606.27632v1",
-          "source": "arxiv",
-          "title": "Yuvion LLM: An Adversarially-Aware Large Language Model for Content And AI Safety",
-          "abstract": "As large language models are increasingly deployed in real-world systems, safety failures can still lead to harmful outputs and dangerous misuse. We argue that the essence of safety is adversarial: many failures arise not from natural inputs alone, but from strategic attempts to evade model policies and safeguards. However, existing general-purpose model development largely overlook this adversarial nature, and often remain insufficient for realistic safety scenarios involving planning, tool use, and multi-step reasoning, causing measured safety performance to overestimate real deployment robustness. To address this gap, we present Yuvion LLM, a large language model built for adversarially robust content safety and broader AI safety. Yuvion LLM treats adversarial robustness and agentic capability as first-class objectives. Its pipeline combines adversarially aware data construction, knowledge-enhanced continued pretraining, and policy-grounded multi-task safety post-training, including risk-aware supervised fine-tuning and reinforcement learning-based policy optimization, together with safety-aware agentic reinforcement learning for tool use and multi-step reasoning in complex safety scenarios. We further introduce the Yuvion LLM RiskEval (YLRE), a collection of 93 benchmarks across four evaluation categories, covering diverse open and internal evaluations with a focus on safety, adversarial robustness, and real-world capability requirements. Across these evaluations, Yuvion LLM demonstrates clear advantages on safety-focused benchmarks and particularly strong robustness under adversarial conditions, while maintaining solid overall capability. Notably, Yuvion-8B outperforms most state-of-the-art baselines, including substantially larger models such as GPT-5.4 and Qwen3-MAX, on several safety tasks.",
-          "authors": [
-            "Ting Ma",
-            "Xiufeng Huang",
-            "Benlei Cui",
-            "Xiaowen Xu",
-            "Shikai Qiu",
-            "Ruijie Jian",
-            "Hongxing Li",
-            "Guanghui Wang",
-            "Longtao Huang",
-            "Haiwen Hong",
-            "Haolei Xu",
-            "Wenjing Jiang",
-            "Ziwen Xu",
-            "Zhaoyu Fan",
-            "Shaoxuan He",
-            "Chuxi Xiao",
-            "Yujian Li",
-            "Xinyue Chen",
-            "Chunyang Chai",
-            "Wenxuan Liu",
-            "Ziheng Wang",
-            "Dongjie Zhang",
-            "Yangfan Zhou",
-            "Libin Dong",
-            "Yupeng Cao",
-            "Xiaoqian Xia",
-            "Jing Wang",
-            "Zhe Jiang",
-            "Zhenan Ye",
-            "Guang Yang",
-            "Bin Liu",
-            "Wei Peng",
-            "Ziqiang Zhu",
-            "Meihui Lian",
-            "Kaiwen Lv Kacuila",
-            "Haidong Ding",
-            "Bingyu Zhu",
-            "Yan Wang",
-            "Hai Zhao",
-            "Xuan Jin",
-            "Wei Zhao",
-            "Pengfei Sun",
-            "Wei Wang",
-            "Huiming Zhang",
-            "Bin Li",
-            "Hui Xue"
-          ],
-          "primary_category": "cs.CL",
-          "categories": [
-            "cs.CL"
-          ],
-          "published": "2026-06-26T01:12:02+00:00",
-          "link": "https://arxiv.org/pdf/2606.27632v1",
-          "tags": [
-            "keyword:agent-safety",
-            "query:agent-safety"
-          ],
-          "llm_score": 8.0,
-          "llm_evidence_en": "Adversarially-aware LLM for content and AI safety addressing tool use and multi-step reasoning",
-          "llm_evidence_cn": "对抗性感知的LLM，针对工具使用和多步推理场景的安全性",
-          "llm_evidence": "对抗性感知的LLM，针对工具使用和多步推理场景的安全性",
-          "canonical_evidence": "对抗性感知的LLM，针对工具使用和多步推理场景的安全性",
-          "llm_tldr_en": "Yuvion LLM is adversarially-aware, improving safety in scenarios involving planning, tool use, and multi-step reasoning beyond standard content safety.",
-          "llm_tldr_cn": "现有LLM安全训练忽视对抗性攻击和复杂场景，导致实际部署安全性被高估。Yuvion LLM专门针对规划、工具使用和多步推理中的安全风险进行对抗性训练。在多个基准上评估显示，其在工具调用场景下安全性显著优于同类模型。该工作为agent安全提供了更强的对抗鲁棒模型。",
-          "llm_tldr": "现有LLM安全训练忽视对抗性攻击和复杂场景，导致实际部署安全性被高估。Yuvion LLM专门针对规划、工具使用和多步推理中的安全风险进行对抗性训练。在多个基准上评估显示，其在工具调用场景下安全性显著优于同类模型。该工作为agent安全提供了更强的对抗鲁棒模型。",
-          "llm_tags": [
-            "query:agent-safety"
-          ],
-          "matched_query_tag": "query:agent-safety",
-          "matched_query_text": "tool calling agent security least privilege permission injection vulnerability LLM tool security",
-          "matched_requirement_id": "req-2",
-          "selection_source": "carryover_cache",
-          "paper_id": "2606.27632v1",
-          "carry_days": 1
-        }
-      ]
+      "items": []
     }
   }
 }
