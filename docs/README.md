@@ -6,61 +6,53 @@
 </div>
 
 ## 每次日报
-- 最新运行日期：2026-06-30
-- 运行时间：2026-06-30 22:08:32 UTC
+- 最新运行日期：2026-07-01
+- 运行时间：2026-07-01 21:02:26 UTC
 - 运行状态：成功
-- 本次总论文数：13
+- 本次总论文数：11
 - 精读区：6
-- 速读区：7
+- 速读区：5
 
 ### 今日简报（AI）
-今日聚焦LLM安全与AI Agent行为规范，精读了两篇9分论文。  
-最值得关注方向：拒绝对齐（RAS）衡量LLM安全水平，以及运行时行为强制（VIGIL）确保Agent技能规范。  
-建议优先阅读这两篇精读论文，并留意Agent协作中KV缓存完整性等新兴安全风险。
-- 详情：[/202606/30/README](/202606/30/README)
+今日聚焦多模态智能体安全基准与LLM代理训练后调优，并系统梳理了LLM漏洞全生命周期。最值得关注的是《ForesightSafety-VLA》提出的VLA模型统一诊断安全基准，以及《The Interplay of Harness Design and Post-Training in LLM Agents》揭示的缰绳设计与后训练协同效应。建议优先精读前者以掌握多模态agent安全评估方法论，同时速读漏洞综述以规避常见攻击风险。
+- 详情：[/202607/01/README](/202607/01/README)
 
 ### 精读区论文标签
-1. [RAS: Measuring LLM Safety Through Refusal Alignment](/202606/30/2606.25750v1-ras-measuring-llm-safety-through-refusal-alignment)  
+1. [ForesightSafety-VLA: A Unified Diagnostic Safety Benchmark for Vision-Language-Action Models](/202607/01/2606.27079v1-foresightsafety-vla-a-unified-diagnostic-safety-benchmark-for-vision-language-action-models)  
    标签：评分：9.0/10、query:agent-safety
-   evidence：通过内部表示测量LLM安全
-2. [VIGIL: Runtime Enforcement of Behavioral Specifications in AI Agent Skills](/202606/30/2606.26524v1-vigil-runtime-enforcement-of-behavioral-specifications-in-ai-agent-skills)  
-   标签：评分：9.0/10、query:agent-safety
-   evidence：AI智能体技能的行为规范运行时执行，涉及工具安全与权限控制
-3. [LLM agents security duality: a comprehensive survey of self-security and empowered cybersecurity](/202606/30/2606.28450v1-llm-agents-security-duality-a-comprehensive-survey-of-self-security-and-empowered-cybersecurity)  
-   标签：评分：9.0/10、query:agent-safety
-   evidence：关于LLM智能体安全的全面综述，涵盖威胁、缓解措施及赋能网络安全
-4. [Capability Gates Are Not Authorization: Confused-Deputy Failures in LLM Agent Frameworks](/202606/30/2606.28679v1-capability-gates-are-not-authorization-confused-deputy-failures-in-llm-agent-frameworks)  
-   标签：评分：9.0/10、query:agent-safety
-   evidence：直接解决工具调用Agent的授权、最小权限和权限注入漏洞问题
-5. [Agent Safety Is Action Alignment](/202606/30/2606.28739v1-agent-safety-is-action-alignment)  
-   标签：评分：9.0/10、query:agent-safety
-   evidence：论证Agent安全在于行动对齐而非内容拒绝，直接指导Agent行为监控与风险评估
-6. [EvalSafetyGap: A Hybrid Survey and Conceptual Framework for LLM Evaluation-Safety Failures](/202606/30/2606.30219v1-evalsafetygap-a-hybrid-survey-and-conceptual-framework-for-llm-evaluation-safety-failures)  
-   标签：评分：9.0/10、query:agent-safety
-   evidence：LLM评估安全故障的混合调查与概念框架，覆盖基准有效性和安全评估
+   evidence：具身AI安全基准测试VLA模型
+2. [The Interplay of Harness Design and Post-Training in LLM Agents](/202607/01/2606.25447v1-the-interplay-of-harness-design-and-post-training-in-llm-agents)  
+   标签：评分：8.0/10、query:agent-safety
+   evidence：分析了支架设计如何影响工具暴露和代理行为变化，与最小权限和工具安全相关
+3. [Inherited Circuits, Learned Semantics: How Fine-Tuning Creates Evasion Vulnerabilities Invisible to Standard Evaluation](/202607/01/2606.27091v1-inherited-circuits-learned-semantics-how-fine-tuning-creates-evasion-vulnerabilities-invisible-to-standard-evaluation)  
+   标签：评分：8.0/10、query:agent-safety
+   evidence：在微调LLM安全分类器中识别出行为保持变换下的逃逸漏洞，与注入漏洞评估相关
+4. [Yuvion LLM: An Adversarially-Aware Large Language Model for Content And AI Safety](/202607/01/2606.27632v1-yuvion-llm-an-adversarially-aware-large-language-model-for-content-and-ai-safety)  
+   标签：评分：8.0/10、query:agent-safety
+   evidence：对抗感知的LLM用于内容和AI安全，与agent风险评估和行为安全直接相关
+5. [Why Trust Your Agent? Empirical Security Gains from TRiSM-Guided Agentic Workflows in Healthcare](/202607/01/2606.28666v1-why-trust-your-agent-empirical-security-gains-from-trism-guided-agentic-workflows-in-healthcare)  
+   标签：评分：8.0/10、query:agent-safety
+   evidence：将TRiSM框架应用于医疗agent工作流安全，涉及信任、风险和安全管控
+6. [MESA: Prioritizing Vulnerable Communication Channels for Securing Multi-Agent Systems](/202607/01/2606.30602v1-mesa-prioritizing-vulnerable-communication-channels-for-securing-multi-agent-systems)  
+   标签：评分：8.0/10、query:agent-safety
+   evidence：多代理通信通道安全优先级排序
 
 ### 速读区论文标签
-1. [Agents That Know Too Much: A Data-Centric Survey of Privacy in LLM Agents](/202606/30/2606.26627v1-agents-that-know-too-much-a-data-centric-survey-of-privacy-in-llm-agents)  
+1. [A Lifecycle and Application-Stack Survey of Large Language Model Vulnerabilities: Attacks, Risks, Defenses, and Open Problems](/202607/01/2606.31639v1-a-lifecycle-and-application-stack-survey-of-large-language-model-vulnerabilities-attacks-risks-defenses-and-open-problems)  
    标签：评分：8.0/10、query:agent-safety
-   evidence：LLM智能体隐私综述，涵盖权限与数据泄露
-2. [Formal Security Analysis of Agent Protocol Composition](/202606/30/2606.28690v1-formal-security-analysis-of-agent-protocol-composition)  
-   标签：评分：8.0/10、query:agent-safety
-   evidence：对智能体协议组合进行形式化安全分析，针对工具和委托安全
-3. [When Latent Agents Lie: KV-Cache Integrity in Multi-Agent LLM Collaboration](/202606/30/2606.28958v1-when-latent-agents-lie-kv-cache-integrity-in-multi-agent-llm-collaboration)  
-   标签：评分：8.0/10、query:agent-safety
-   evidence：研究多Agent协作中隐式状态完整性问题，与Agent行为风险评估相关
-4. [Linguistic Firewall: Geometry as Defense in Multi-Agent Systems Routing](/202606/30/2606.30555v1-linguistic-firewall-geometry-as-defense-in-multi-agent-systems-routing)  
-   标签：评分：8.0/10、query:agent-safety
-   evidence：通过几何防御方法保护多智能体系统路由免受恶意智能体攻击，提升安全性
-5. [Affective AI Safety: The Missing Piece in LLM Safety](/202606/30/2606.23380v2-affective-ai-safety-the-missing-piece-in-llm-safety)  
+   evidence：LLM漏洞综述覆盖工具调用、agent和生命周期安全，匹配工具安全和风险评估
+2. [Governed Shared Memory for Multi-Agent LLM Systems](/202607/01/2606.24535v1-governed-shared-memory-for-multi-agent-llm-systems)  
    标签：评分：7.0/10、query:agent-safety
-   evidence：提出情感安全分类，扩展LLM安全范围
-6. [Safe and Generalizable Hierarchical Multi-Agent RL via Constraint Manifold Control](/202606/30/2606.24010v1-safe-and-generalizable-hierarchical-multi-agent-rl-via-constraint-manifold-control)  
+   evidence：多代理内存安全与未授权泄露预防
+3. [Instruction Bleed: Cross-Module Interference in Prompt-Composed Agentic Systems](/202607/01/2606.26356v1-instruction-bleed-cross-module-interference-in-prompt-composed-agentic-systems)  
+   标签：评分：7.0/10、query:agent-safety
+   evidence：提示组合代理系统中的组成性行为泄露
+4. [QVal: Cheaply Evaluating Dense Supervision Signals for Long-Horizon LLM Agents](/202607/01/2606.32034v1-qval-cheaply-evaluating-dense-supervision-signals-for-long-horizon-llm-agents)  
+   标签：评分：7.0/10、query:agent-safety
+   evidence：评估长时域LLM代理的密集监督信号
+5. [Characterizing Large Language Model Agentic Workflows: A Study on N8n Ecosystem](/202607/01/2606.29116v1-characterizing-large-language-model-agentic-workflows-a-study-on-n8n-ecosystem)  
    标签：评分：6.0/10、query:agent-safety
-   evidence：多智能体安全约束，提供理论保证
-7. [Yuvion LLM: An Adversarially-Aware Large Language Model for Content And AI Safety](/202606/30/2606.27632v1-yuvion-llm-an-adversarially-aware-large-language-model-for-content-and-ai-safety)  
-   标签：评分：6.0/10、query:agent-safety
-   evidence：对抗感知的LLM用于内容与AI安全，广泛适用于AI安全复合主题
+   evidence：对LLM代理工作流的实证研究为代理行为监控和可靠性提供了洞察
 
 
 <div class="dpr-home-promo-card">

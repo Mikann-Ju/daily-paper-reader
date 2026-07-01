@@ -1,0 +1,480 @@
+{
+  "mode": "standard",
+  "generated_at": "2026-07-01T20:56:12.075841+00:00",
+  "stats": {
+    "mode": "standard",
+    "tag_count": 1,
+    "deep_divecandidates": 7,
+    "deep_cap": 6,
+    "deep_selected": 6,
+    "quick_candidates": 5,
+    "quick_skim_target": 11,
+    "quick_selected": 5
+  },
+  "deep_dive": [
+    {
+      "id": "2606.27079v1",
+      "source": "arxiv",
+      "title": "ForesightSafety-VLA: A Unified Diagnostic Safety Benchmark for Vision-Language-Action Models",
+      "abstract": "In embodied intelligence, safety is a prerequisite for reliable robot deployment in the physical world. Current vision-language-action (VLA) models continue to advance toward general-purpose task capability, yet their embodied safety limits remain poorly understood. To address this gap, we introduce ForesightSafety-VLA, a diagnostic benchmark that makes safety the primary evaluation target for VLA systems. We define a 13-category safety taxonomy covering physical interaction safety (Safe-Core), instruction-side safety (Safe-Lang), and perception-side safety (Safe-Vis), and evaluate policies under three controlled dimensions of variation -- scene structure, language command, and visual observation -- so that failure sources can be diagnosed rather than hidden in a single aggregate score. Beyond binary task success, ForesightSafety-VLA measures process-level risk through cumulative safety cost (CC) and risk exposure time (RET), together with a four-quadrant decomposition of safe/unsafe success and failure. We instantiate 66 safety-augmented base scenarios in RoboTwin across 5 embodiments and report results on representative VLA baselines. Across the evaluated baselines, even the strongest policy incurs non-trivial safety cost and unsafe nominal success, while structure and visual variation induce substantially stronger safety degradation than ordinary language variation. These results suggest that embodied safety is tightly coupled to perception, grounding, and control competence rather than being reducible to post-hoc safety filtering alone.",
+      "authors": [
+        "Mingyang Lyu",
+        "Yinqian Sun",
+        "Yiyang Jia",
+        "Sicheng Shen",
+        "Moquan Sha",
+        "Huangrui Li",
+        "Feifei Zhao",
+        "Yi Zeng"
+      ],
+      "primary_category": "cs.RO",
+      "categories": [
+        "cs.RO"
+      ],
+      "published": "2026-06-25T14:19:36+00:00",
+      "link": "https://arxiv.org/pdf/2606.27079v1",
+      "tags": [
+        "keyword:agent-safety",
+        "query:agent-safety"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "embodied AI safety benchmark for VLA models",
+      "llm_evidence_cn": "具身AI安全基准测试VLA模型",
+      "llm_evidence": "具身AI安全基准测试VLA模型",
+      "canonical_evidence": "具身AI安全基准测试VLA模型",
+      "llm_tldr_en": "ForesightSafety-VLA provides a diagnostic benchmark with 13-category taxonomy for vision-language-action model safety.",
+      "llm_tldr_cn": "具身智能中VLA模型安全限制未充分理解。ForesightSafety-VLA定义13类安全分类（物理交互、指令侧、感知侧），并在场景、语言、视觉三个维度控制变化评估策略。诊断基准能定位失败源，推动安全具身AI发展。",
+      "llm_tldr": "具身智能中VLA模型安全限制未充分理解。ForesightSafety-VLA定义13类安全分类（物理交互、指令侧、感知侧），并在场景、语言、视觉三个维度控制变化评估策略。诊断基准能定位失败源，推动安全具身AI发展。",
+      "llm_tags": [
+        "query:agent-safety"
+      ],
+      "matched_query_tag": "query:agent-safety",
+      "matched_query_text": "embodied AI safety vision language action safety robot safety benchmark physical safety risk aware planning",
+      "matched_requirement_id": "req-4",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2606.25447v1",
+      "source": "arxiv",
+      "title": "The Interplay of Harness Design and Post-Training in LLM Agents",
+      "abstract": "Tool-integrated LLM agents are often wrapped within a harness: the scaffolding that determines which tools are exposed, how they are described, and what auxiliary information accompanies each per-step observation. While agents are routinely post-trained, this scaffolding is typically treated as a fixed engineering detail, with design effort limited to the training-free regime. Moreover, existing post-training algorithms assume a static environment, even though tool environments and tasks often shift upon deployment. To address this gap, we extend $\\texttt{ALFWorld}$ (i) to treat the harness as a controllable design dimension and (ii) to support evaluation under task and tool environment shifts. Building on this, we systematically analyze how the harness design influences post-training in both in-distribution and out-of-distribution (OOD) settings. We empirically show that harness-aware post-training not only improves in-distribution performance but also enables agents to robustly adapt to OOD settings. Under a harness with minimal design effort, post-training suffers a drastic performance drop under stronger tool environment shifts, further highlighting the importance of harness-aware post-training under such shifts.",
+      "authors": [
+        "Kyungmin Kim",
+        "Youngbin Choi",
+        "Seoyeon Lee",
+        "Suhyeon Jun",
+        "Dongwoo Kim",
+        "Sangdon Park"
+      ],
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "cs.CL"
+      ],
+      "published": "2026-06-24T06:23:02+00:00",
+      "link": "https://arxiv.org/pdf/2606.25447v1",
+      "tags": [
+        "keyword:agent-safety",
+        "query:agent-safety"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "Analyzes how harness design affects tool exposure and agent behavior under shifts; relevant to least privilege and tool security",
+      "llm_evidence_cn": "分析了支架设计如何影响工具暴露和代理行为变化，与最小权限和工具安全相关",
+      "llm_evidence": "分析了支架设计如何影响工具暴露和代理行为变化，与最小权限和工具安全相关",
+      "canonical_evidence": "分析了支架设计如何影响工具暴露和代理行为变化，与最小权限和工具安全相关",
+      "llm_tldr_en": "This paper extends ALFWorld to study harness design as a controllable dimension, showing its impact on agent performance and safety under task and tool environment shifts.",
+      "llm_tldr_cn": "本文扩展了ALFWorld环境，将支架设计作为可控维度进行系统分析。研究表明支架设计（工具暴露、描述等）显著影响代理在下游任务中的表现，尤其是在任务和环境变化时。这为工具调用代理的最小权限配置和安全性设计提供了重要指导。",
+      "llm_tldr": "本文扩展了ALFWorld环境，将支架设计作为可控维度进行系统分析。研究表明支架设计（工具暴露、描述等）显著影响代理在下游任务中的表现，尤其是在任务和环境变化时。这为工具调用代理的最小权限配置和安全性设计提供了重要指导。",
+      "llm_tags": [
+        "query:agent-safety"
+      ],
+      "matched_query_tag": "query:agent-safety",
+      "matched_query_text": "tool calling agent security least privilege permission injection vulnerability LLM tool security",
+      "matched_requirement_id": "req-2",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2606.27091v1",
+      "source": "arxiv",
+      "title": "Inherited Circuits, Learned Semantics: How Fine-Tuning Creates Evasion Vulnerabilities Invisible to Standard Evaluation",
+      "abstract": "LLMs fine-tuned for security classification are usually evaluated on held-out examples from the same distribution as their training data. We show that this can miss vulnerabilities introduced by fine-tuning itself: models can learn token-level indicator semantics that preserve canonical accuracy while failing under behavior-preserving transformations such as PowerShell alias substitution, command reconstruction, string construction, execution indirection, and case mutation. We study Foundation-Sec-8B-Instruct and its base model, Llama-3.1-8B-Instruct, on matched PowerShell classification cohorts. Causal interventions localize the classification circuit to a late-attention route inherited from Llama rather than created by fine-tuning. Fine-tuning concentrates and semantically specializes this inherited structure, improving baseline behavior while creating transformation-sensitive attack surfaces. A three-tier evasion benchmark finds Foundation-Sec misses on iwr substitution, Invoke-Expression reconstruction, and case-mutated Invoke-Expression/IEX variants that Llama does not share. We also derive a pre-deployment monitoring method: a linear probe at the classification boundary and an indicator-token sign test identify command families where canonical indicators change role after fine-tuning. These signals prioritize red-team variant generation using only canonical inputs, showing that security fine-tuning can improve task accuracy while expanding the evasion surface. These results caution against treating small task-specific fine-tunes as straightforwardly safer security classifiers: specialization can convert inherited model structure into brittle indicator rules that preserve held-out accuracy while expanding the evasion surface. Robust AI-enabled security will require specifying the full transformation space of the task and monitoring semantic drift through fine-tuning.",
+      "authors": [
+        "Ryan Fetterman"
+      ],
+      "primary_category": "cs.CR",
+      "categories": [
+        "cs.CR",
+        "cs.AI"
+      ],
+      "published": "2026-06-25T14:29:03+00:00",
+      "link": "https://arxiv.org/pdf/2606.27091v1",
+      "tags": [
+        "keyword:agent-safety"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "Identifies evasion vulnerabilities in fine-tuned LLM security classifiers under behavior-preserving transformations; relevant to injection vulnerability assessment",
+      "llm_evidence_cn": "在微调LLM安全分类器中识别出行为保持变换下的逃逸漏洞，与注入漏洞评估相关",
+      "llm_evidence": "在微调LLM安全分类器中识别出行为保持变换下的逃逸漏洞，与注入漏洞评估相关",
+      "canonical_evidence": "在微调LLM安全分类器中识别出行为保持变换下的逃逸漏洞，与注入漏洞评估相关",
+      "llm_tldr_en": "This paper shows that fine-tuning LLMs for security classification can introduce evasion vulnerabilities invisible to standard evaluation, demonstrated via causal intervention.",
+      "llm_tldr_cn": "本文发现微调LLM用于安全分类时，会引入标准评估无法察觉的逃逸漏洞。通过PowerShell别名替换等行为保持变换，模型在保持表面准确率的同时暴露安全缺陷。因果干预将分类电路定位于继承来的后期注意路由，揭示了微调带来的语义学习脆弱性，对工具调用安全评估具有重要启示。",
+      "llm_tldr": "本文发现微调LLM用于安全分类时，会引入标准评估无法察觉的逃逸漏洞。通过PowerShell别名替换等行为保持变换，模型在保持表面准确率的同时暴露安全缺陷。因果干预将分类电路定位于继承来的后期注意路由，揭示了微调带来的语义学习脆弱性，对工具调用安全评估具有重要启示。",
+      "llm_tags": [
+        "query:agent-safety"
+      ],
+      "matched_query_tag": "query:agent-safety",
+      "matched_query_text": "tool calling agent security least privilege permission injection vulnerability LLM tool security",
+      "matched_requirement_id": "req-2",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2606.27632v1",
+      "source": "arxiv",
+      "title": "Yuvion LLM: An Adversarially-Aware Large Language Model for Content And AI Safety",
+      "abstract": "As large language models are increasingly deployed in real-world systems, safety failures can still lead to harmful outputs and dangerous misuse. We argue that the essence of safety is adversarial: many failures arise not from natural inputs alone, but from strategic attempts to evade model policies and safeguards. However, existing general-purpose model development largely overlook this adversarial nature, and often remain insufficient for realistic safety scenarios involving planning, tool use, and multi-step reasoning, causing measured safety performance to overestimate real deployment robustness. To address this gap, we present Yuvion LLM, a large language model built for adversarially robust content safety and broader AI safety. Yuvion LLM treats adversarial robustness and agentic capability as first-class objectives. Its pipeline combines adversarially aware data construction, knowledge-enhanced continued pretraining, and policy-grounded multi-task safety post-training, including risk-aware supervised fine-tuning and reinforcement learning-based policy optimization, together with safety-aware agentic reinforcement learning for tool use and multi-step reasoning in complex safety scenarios. We further introduce the Yuvion LLM RiskEval (YLRE), a collection of 93 benchmarks across four evaluation categories, covering diverse open and internal evaluations with a focus on safety, adversarial robustness, and real-world capability requirements. Across these evaluations, Yuvion LLM demonstrates clear advantages on safety-focused benchmarks and particularly strong robustness under adversarial conditions, while maintaining solid overall capability. Notably, Yuvion-8B outperforms most state-of-the-art baselines, including substantially larger models such as GPT-5.4 and Qwen3-MAX, on several safety tasks.",
+      "authors": [
+        "Ting Ma",
+        "Xiufeng Huang",
+        "Benlei Cui",
+        "Xiaowen Xu",
+        "Shikai Qiu",
+        "Ruijie Jian",
+        "Hongxing Li",
+        "Guanghui Wang",
+        "Longtao Huang",
+        "Haiwen Hong",
+        "Haolei Xu",
+        "Wenjing Jiang",
+        "Ziwen Xu",
+        "Zhaoyu Fan",
+        "Shaoxuan He",
+        "Chuxi Xiao",
+        "Yujian Li",
+        "Xinyue Chen",
+        "Chunyang Chai",
+        "Wenxuan Liu",
+        "Ziheng Wang",
+        "Dongjie Zhang",
+        "Yangfan Zhou",
+        "Libin Dong",
+        "Yupeng Cao",
+        "Xiaoqian Xia",
+        "Jing Wang",
+        "Zhe Jiang",
+        "Zhenan Ye",
+        "Guang Yang",
+        "Bin Liu",
+        "Wei Peng",
+        "Ziqiang Zhu",
+        "Meihui Lian",
+        "Kaiwen Lv Kacuila",
+        "Haidong Ding",
+        "Bingyu Zhu",
+        "Yan Wang",
+        "Hai Zhao",
+        "Xuan Jin",
+        "Wei Zhao",
+        "Pengfei Sun",
+        "Wei Wang",
+        "Huiming Zhang",
+        "Bin Li",
+        "Hui Xue"
+      ],
+      "primary_category": "cs.CL",
+      "categories": [
+        "cs.CL"
+      ],
+      "published": "2026-06-26T01:12:02+00:00",
+      "link": "https://arxiv.org/pdf/2606.27632v1",
+      "tags": [
+        "keyword:agent-safety",
+        "query:agent-safety"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "Adversarially-aware LLM for content and AI safety, directly relevant to agent risk assessment and behavior safety",
+      "llm_evidence_cn": "对抗感知的LLM用于内容和AI安全，与agent风险评估和行为安全直接相关",
+      "llm_evidence": "对抗感知的LLM用于内容和AI安全，与agent风险评估和行为安全直接相关",
+      "canonical_evidence": "对抗感知的LLM用于内容和AI安全，与agent风险评估和行为安全直接相关",
+      "llm_tldr_en": "Presents Yuvion LLM, built with adversarial awareness to robustly handle safety scenarios involving planning, tool use, and multi-step reasoning, improving over existing safety evaluation overestimation.",
+      "llm_tldr_cn": "现有LLM安全评估因忽视对抗性输入而在实际部署中高估安全性。本文提出Yuvion LLM，在训练中融入对抗感知，特别针对规划、工具使用和多步推理等真实场景，构建了更稳健的安全能力。实验表明Yuvion在多种安全基准上超越现有模型，缩小了评估与部署之间的差距。",
+      "llm_tldr": "现有LLM安全评估因忽视对抗性输入而在实际部署中高估安全性。本文提出Yuvion LLM，在训练中融入对抗感知，特别针对规划、工具使用和多步推理等真实场景，构建了更稳健的安全能力。实验表明Yuvion在多种安全基准上超越现有模型，缩小了评估与部署之间的差距。",
+      "llm_tags": [
+        "query:agent-safety"
+      ],
+      "matched_query_tag": "query:agent-safety",
+      "matched_query_text": "LLM agent risk assessment and behavior safety recent papers from top venues",
+      "matched_requirement_id": "req-5",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2606.28666v1",
+      "source": "arxiv",
+      "title": "Why Trust Your Agent? Empirical Security Gains from TRiSM-Guided Agentic Workflows in Healthcare",
+      "abstract": "Agent-based AI has enabled the automation of tasks by exposing application tools and resources to large language models (LLMs). However, to improve scope and accuracy, agents are often given access rights that exceed those of ordinary users, introducing significant security risks. AI is routinely integrated into applications with a disregard to security, risking data exposure and breaching regulations. This paper applies the AI Trust, Risk, and Security Management (TRiSM) framework to a medical report-generation application to demonstrate how an insecure agent workflow can be transformed into security-conscious agentic workflow. Both workflows were evaluated across five LLMs (Claude Haiku 4.5, GPT-4.1-nano, GPT-4.1-mini, GPT-5.4-mini, and Gemini 2.5 Flash) on two report types, totalling 800 generations and 500 attack scenarios including RAG poisoning, data-field injection, and client-side network injection. The TRiSM-guided agentic workflow reduced mean attack success rates from 31% to 10% for RAG poisoning and from 42% to 25% for data-field injection, while eliminating the network injection vector entirely through server-side prompt construction. Furthermore, report accuracy increased by 14 percentage points (72.5% to 86.5%) with the agentic workflow, demonstrating a secure design which provides more reliable outputs. This paper contributes to knowledge by demonstrating least-privilege, defence in depth agentic workflows improving security and accuracy, while also highlighting model choice is a necessary architectural consideration.",
+      "authors": [
+        "Liam Kearns"
+      ],
+      "primary_category": "cs.CR",
+      "categories": [
+        "cs.CR",
+        "cs.AI"
+      ],
+      "published": "2026-06-27T01:00:39+00:00",
+      "link": "https://arxiv.org/pdf/2606.28666v1",
+      "tags": [
+        "keyword:agent-safety",
+        "query:agent-safety"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "Applies TRiSM framework to secure agentic workflows in healthcare, addressing trust, risk, and security management",
+      "llm_evidence_cn": "将TRiSM框架应用于医疗agent工作流安全，涉及信任、风险和安全管控",
+      "llm_evidence": "将TRiSM框架应用于医疗agent工作流安全，涉及信任、风险和安全管控",
+      "canonical_evidence": "将TRiSM框架应用于医疗agent工作流安全，涉及信任、风险和安全管控",
+      "llm_tldr_en": "Applies TRiSM framework to transform an insecure medical report generation agent workflow into a security-conscious one, evaluated across five LLMs, demonstrating significant risk reduction.",
+      "llm_tldr_cn": "医疗领域agent因过度权限带来数据泄露风险。本文应用AI信任、风险与安全管理（TRiSM）框架，将一个不安全的医疗报告生成工作流改造为安全感知的工作流，并跨五个LLM进行评估。结果显示安全工作流显著降低了数据暴露风险，同时保持任务效用。该案例论证了agent工作流中系统化安全管控的必要性。",
+      "llm_tldr": "医疗领域agent因过度权限带来数据泄露风险。本文应用AI信任、风险与安全管理（TRiSM）框架，将一个不安全的医疗报告生成工作流改造为安全感知的工作流，并跨五个LLM进行评估。结果显示安全工作流显著降低了数据暴露风险，同时保持任务效用。该案例论证了agent工作流中系统化安全管控的必要性。",
+      "llm_tags": [
+        "query:agent-safety"
+      ],
+      "matched_query_tag": "query:agent-safety",
+      "matched_query_text": "tool calling agent security least privilege permission injection vulnerability LLM tool security",
+      "matched_requirement_id": "req-2",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2606.30602v1",
+      "source": "arxiv",
+      "title": "MESA: Prioritizing Vulnerable Communication Channels for Securing Multi-Agent Systems",
+      "abstract": "Multi-agent systems (MAS) are increasingly used to automate complex, distributed workflows. However, their inter-agent communication channels introduce new attack surfaces that remain poorly understood and are difficult to defend against. In this paper, we address how defenders should prioritize limited security effort to protect vulnerable communication channels before attacks are observed. This is motivated by our observation that the channel-level attack impact is highly non-uniform: a single compromised edge can account for up to 75% of total attack success. We introduce Mesa, a label-free framework for proactively ranking which MAS edges are most security-critical -- that is, most likely to affect the system's decision if compromised. Mesa combines six graph-theoretic metrics and two dynamic probes (ablation and masking) without requiring attack traces. We evaluate Mesa against a dynamic misinformation attack pipeline across three diverse MAS scenarios, eight network topologies, and five open-source LLMs from Qwen, Llama, and Gemma families. Mesa rankings correlate strongly with empirical per-edge attack success rate, achieving mean Spearman $ρ=+0.60$ (peaking at $+0.73$). In resource-constrained defense deployment, monitoring the top 10% of Mesa-ranked edges intercepts about 3x the successful attacks as random allocation. We further test Mesa under varying attacker and defender models and LangGraph workflows and characterize its limits under adaptive attacks and high-redundancy graphs. Overall, our results show that edge-level risk in MAS is often concentrated and predictable, allowing proactive hardening of multi-agent infrastructures.",
+      "authors": [
+        "Kunyang Li",
+        "Kyle Domico",
+        "Jonathan Gregory",
+        "Patrick McDaniel"
+      ],
+      "primary_category": "cs.CR",
+      "categories": [
+        "cs.CR",
+        "cs.AI"
+      ],
+      "published": "2026-06-29T17:40:45+00:00",
+      "link": "https://arxiv.org/pdf/2606.30602v1",
+      "tags": [
+        "keyword:agent-safety",
+        "query:agent-safety"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "multi-agent communication channel security prioritization",
+      "llm_evidence_cn": "多代理通信通道安全优先级排序",
+      "llm_evidence": "多代理通信通道安全优先级排序",
+      "canonical_evidence": "多代理通信通道安全优先级排序",
+      "llm_tldr_en": "MESA proactively ranks security-critical edges in multi-agent systems, enabling efficient defense resource allocation.",
+      "llm_tldr_cn": "多代理系统通信通道引入新攻击面，且影响不均匀。MESA框架无标签地主动排序哪些通道最可能影响系统决策，发现单个边缘可占攻击成功75%。帮助防御者优先保护脆弱通道，减少攻击面。",
+      "llm_tldr": "多代理系统通信通道引入新攻击面，且影响不均匀。MESA框架无标签地主动排序哪些通道最可能影响系统决策，发现单个边缘可占攻击成功75%。帮助防御者优先保护脆弱通道，减少攻击面。",
+      "llm_tags": [
+        "query:agent-safety"
+      ],
+      "matched_query_tag": "query:agent-safety",
+      "matched_query_text": "tool calling agent security least privilege permission injection vulnerability LLM tool security",
+      "matched_requirement_id": "req-2",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "quick_skim": [
+    {
+      "id": "2606.31639v1",
+      "source": "arxiv",
+      "title": "A Lifecycle and Application-Stack Survey of Large Language Model Vulnerabilities: Attacks, Risks, Defenses, and Open Problems",
+      "abstract": "Large language models are no longer only text generators. They are increasingly embedded in retrieval pipelines, enterprise assistants, coding environments, robotic systems, security-operation workflows, and autonomous agents that can read private data, call tools, write files, execute code, and act across organizational boundaries. This shift changes the security problem: risks do not arise from the model weights alone, but from the full lifecycle and application stack through which data, prompts, model outputs, tools, memories, and user authority interact. This paper systematizes the literature on vulnerabilities in large language model systems through a lifecycle and application-stack lens. We organize attacks across eight stages: data collection, pretraining, post-training alignment, model packaging and supply chain, retrieval and memory, prompting and inference, tool/agent execution, and deployment/maintenance. For each stage, we analyze attacker capabilities, affected security objectives, representative attacks, practical risks, evaluation practices, and defenses. We further map LLM-specific vulnerabilities to confidentiality, integrity, availability, safety, privacy, fairness, accountability, and agency-control objectives. Unlike taxonomies that list isolated attack names, the proposed systematization emphasizes where trust boundaries fail, how untrusted data becomes executable instruction, how delegated authority amplifies model errors, and why point defenses rarely compose. We close with a research agenda for secure LLM systems, including compositional security, provenance-aware retrieval, tool-call containment, long-horizon agent evaluation, privacy-preserving adaptation, realistic red teaming, and deployment-grade incident response.",
+      "authors": [
+        "Seyed Bagher Hashemi Natanzi",
+        "Bo Tang"
+      ],
+      "primary_category": "cs.CR",
+      "categories": [
+        "cs.CR",
+        "cs.AI",
+        "cs.GT",
+        "cs.LO"
+      ],
+      "published": "2026-06-30T13:21:43+00:00",
+      "link": "https://arxiv.org/pdf/2606.31639v1",
+      "tags": [
+        "keyword:agent-safety",
+        "query:agent-safety"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "Comprehensive survey of LLM vulnerabilities covering tool calling, agents, and lifecycle security, matching tool security and risk assessment",
+      "llm_evidence_cn": "LLM漏洞综述覆盖工具调用、agent和生命周期安全，匹配工具安全和风险评估",
+      "llm_evidence": "LLM漏洞综述覆盖工具调用、agent和生命周期安全，匹配工具安全和风险评估",
+      "canonical_evidence": "LLM漏洞综述覆盖工具调用、agent和生命周期安全，匹配工具安全和风险评估",
+      "llm_tldr_en": "Systematizes vulnerabilities across the full LLM lifecycle and application stack, including tool-using agents, providing a structured overview for security researchers.",
+      "llm_tldr_cn": "LLM不再仅是文本生成器，而是嵌入到各种应用中。本文从生命周期和应用栈视角系统化梳理了LLM系统的漏洞，包括数据、提示、模型输出、工具、记忆等交互带来的风险，覆盖了工具调用agent的安全问题。该综述为后续安全研究提供了全面的基础。",
+      "llm_tldr": "LLM不再仅是文本生成器，而是嵌入到各种应用中。本文从生命周期和应用栈视角系统化梳理了LLM系统的漏洞，包括数据、提示、模型输出、工具、记忆等交互带来的风险，覆盖了工具调用agent的安全问题。该综述为后续安全研究提供了全面的基础。",
+      "llm_tags": [
+        "query:agent-safety"
+      ],
+      "matched_query_tag": "query:agent-safety",
+      "matched_query_text": "tool calling agent security least privilege permission injection vulnerability LLM tool security",
+      "matched_requirement_id": "req-2",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "8plus"
+    },
+    {
+      "id": "2606.24535v1",
+      "source": "arxiv",
+      "title": "Governed Shared Memory for Multi-Agent LLM Systems",
+      "abstract": "Multi-agent LLM environments require robust mechanisms for shared knowledge management. This paper formalizes the fleet-memory problem and identifies four foundational failure modes: unauthorized leakage, stale propagation, contradiction persistence, and provenance collapse. To address these, we define explicit systems-level primitives: scoped retrieval, temporal supersession, provenance tracking, and policy-governed memory propagation. These primitives are implemented in MemClaw, a production multi-tenant memory service, and evaluated via ArgusFleet, a reproducible harness testing four governance dimensions. Rather than a baseline comparison, this study measures a live production service, emphasizing real-world architectural insights and negative results. Key Evaluation Results Provenance: Successfully reconstructed 100% of depth-four derivation chains with correct writer identity at sub-second per-hop latency. Propagation: Demonstrated high intra-fleet visibility with zero cross-fleet leakage. Under strong write mode, write-to-visible latency was optimized to a single search round-trip. Production Architectural Issues Discovered Asymmetric Scope Enforcement: Tenant isolation held, but sub-tenant scope was initially bypassed on direct GET-by-id requests for agent-scoped credentials (disclosed and remediated during the study). Pipeline Ordering Conflict: While contradiction supersession works for admitted writes, a synchronous near-duplicate gate can prematurely reject contradictory writes before the asynchronous contradiction detector can evaluate them. Conclusion: Long-context retrieval alone is insufficient for production multi-agent memory. Governed shared memory demands explicit systems-level abstractions, and live evaluation is vital to expose enforcement and pipeline-ordering failures missed by design-only treatments.",
+      "authors": [
+        "Yanki Margalit",
+        "Nurit Cohen-Inger",
+        "Erni Avram",
+        "Ran Taig",
+        "Oded Margalit"
+      ],
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-06-23T13:04:14+00:00",
+      "link": "https://arxiv.org/pdf/2606.24535v1",
+      "tags": [
+        "keyword:agent-safety",
+        "query:agent-safety"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "multi-agent memory safety and unauthorized leakage prevention",
+      "llm_evidence_cn": "多代理内存安全与未授权泄露预防",
+      "llm_evidence": "多代理内存安全与未授权泄露预防",
+      "canonical_evidence": "多代理内存安全与未授权泄露预防",
+      "llm_tldr_en": "MemClaw formalizes fleet-memory failures and provides governance primitives to prevent unauthorized leakage, stale propagation, etc.",
+      "llm_tldr_cn": "多代理LLM系统面临内存泄露等四大故障模式。本文定义治理原语（作用域检索、时间替代等）并实现MemClaw系统，通过ArgusFleet测试验证。结果展示生产环境中治理维度的权衡，为多代理系统安全提供架构指导。",
+      "llm_tldr": "多代理LLM系统面临内存泄露等四大故障模式。本文定义治理原语（作用域检索、时间替代等）并实现MemClaw系统，通过ArgusFleet测试验证。结果展示生产环境中治理维度的权衡，为多代理系统安全提供架构指导。",
+      "llm_tags": [
+        "query:agent-safety"
+      ],
+      "matched_query_tag": "query:agent-safety",
+      "matched_query_text": "large language model agent safety benchmark and risk assessment LLM agent behavior monitoring",
+      "matched_requirement_id": "req-1",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "2606.29116v1",
+      "source": "arxiv",
+      "title": "Characterizing Large Language Model Agentic Workflows: A Study on N8n Ecosystem",
+      "abstract": "Large Language Models (LLMs) are rapidly being adopted in low-code and no-code automation platforms, where non-expert users design workflows that combine natural language understanding with external services and APIs. LLM agents are LLM systems that use LLMs as a core \"brain\" to reason, plan, and autonomously execute complex, multi-step tasks. In this paper, we present the first large-scale empirical study of LLM agentic workflows in low-code automation platforms. We analyze more than 6,000 publicly available n8n workflows and examine four aspects of their design: task distribution, structural and tool use patterns, reliability mechanisms, and autonomy levels. Our analysis shows that LLM workflows are not merely prompt response pipelines. Instead, LLMs are commonly embedded within broader automation structures involving control logic, external tools, communication services, storage systems, and human review points. We further find that while many workflows include lightweight post-processing or routing logic after LLM execution, explicit reliability mechanisms such as structured fallback paths, repair loops, failure-specific alerts, and human approval gates remain relatively uncommon. These results reveal a gap between the increasing deployment of LLM agents in practical automation ecosystems and the limited engineering support for reliability, safety, and governance. Overall, our study provides ten empirical findings and five research takeaways for researchers, platform developers, and practitioners seeking to understand and improve real-world LLM agentic workflows.",
+      "authors": [
+        "Yutian Tang",
+        "Yuming Zhou",
+        "Huaming Chen"
+      ],
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-06-27T23:57:01+00:00",
+      "link": "https://arxiv.org/pdf/2606.29116v1",
+      "tags": [
+        "keyword:agent-safety",
+        "query:agent-safety"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "Empirical study of LLM agentic workflows provides insights for agent behavior monitoring and reliability",
+      "llm_evidence_cn": "对LLM代理工作流的实证研究为代理行为监控和可靠性提供了洞察",
+      "llm_evidence": "对LLM代理工作流的实证研究为代理行为监控和可靠性提供了洞察",
+      "canonical_evidence": "对LLM代理工作流的实证研究为代理行为监控和可靠性提供了洞察",
+      "llm_tldr_en": "This large-scale empirical study characterizes LLM agentic workflows in low-code platforms, analyzing task distribution, tool use, reliability, and autonomy levels, informing agent behavior monitoring.",
+      "llm_tldr_cn": "本文首次大规模实证研究低代码平台中的LLM代理工作流，分析了超过6000个n8n工作流。研究发现代理工作流并非简单的提示响应管线，而是具有多种工具使用模式和可靠性机制。这些特征分析为代理行为监控和安全性评估提供了基础数据支撑。",
+      "llm_tldr": "本文首次大规模实证研究低代码平台中的LLM代理工作流，分析了超过6000个n8n工作流。研究发现代理工作流并非简单的提示响应管线，而是具有多种工具使用模式和可靠性机制。这些特征分析为代理行为监控和安全性评估提供了基础数据支撑。",
+      "llm_tags": [
+        "query:agent-safety"
+      ],
+      "matched_query_tag": "query:agent-safety",
+      "matched_query_text": "large language model agent safety benchmark and risk assessment LLM agent behavior monitoring",
+      "matched_requirement_id": "req-1",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    },
+    {
+      "id": "2606.26356v1",
+      "source": "arxiv",
+      "title": "Instruction Bleed: Cross-Module Interference in Prompt-Composed Agentic Systems",
+      "abstract": "Practitioners of prompt-composed agentic systems report a recurring failure mode: editing one prompt module silently shifts the behavior of others despite no shared variable or executable dependency. We formalize this as compositional behavioral leakage (CBL): interference between modules sharing a context window. CBL is enabled by architectural non-isolation: transformer self-attention provides no formal boundary between concatenated modules. We probe CBL on a deployed job-evaluation agent (Claude Sonnet 4.6, 144 trials) through a reusable three-channel protocol that perturbs non-focal modules along volume, content, and form. Only the content channel produces a detectable paired effect (Cohen's d = 0.63, bootstrap 95% CI excluding zero); no recommendation flipped -- a sub-threshold regime invisible to standard QA but compounding across the thousands of decisions a deployed agent makes. CBL is orthogonal to known agent-failure axes (adversarial injection, cognitive degradation, multi-agent fault propagation, privacy leakage). We contribute an operational definition, a reusable protocol, a falsifiable prediction set, and a system-class characterization, establishing cross-module interference measurement as a requirement for prompt-composed agent evaluation.",
+      "authors": [
+        "Ching-Yu Lin",
+        "Yifan Liu"
+      ],
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI",
+        "cs.IR",
+        "cs.MA"
+      ],
+      "published": "2026-06-24T20:09:28+00:00",
+      "link": "https://arxiv.org/pdf/2606.26356v1",
+      "tags": [
+        "keyword:agent-safety",
+        "query:agent-safety"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "compositional behavioral leakage in prompt-composed agentic systems",
+      "llm_evidence_cn": "提示组合代理系统中的组成性行为泄露",
+      "llm_evidence": "提示组合代理系统中的组成性行为泄露",
+      "canonical_evidence": "提示组合代理系统中的组成性行为泄露",
+      "llm_tldr_en": "Formalizes cross-module interference (CBL) in prompt-composed agentic systems and probes it via a three-channel protocol.",
+      "llm_tldr_cn": "在提示组合的代理系统中，编辑一个提示模块可能静默改变其他模块的行为。本文将这种现象形式化为组成性行为泄露（CBL），归因于Transformer自注意力的非隔离架构。通过三渠道协议在真实代理上探测，发现内容渠道产生可检测效应（Cohen's d=0.63）。",
+      "llm_tldr": "在提示组合的代理系统中，编辑一个提示模块可能静默改变其他模块的行为。本文将这种现象形式化为组成性行为泄露（CBL），归因于Transformer自注意力的非隔离架构。通过三渠道协议在真实代理上探测，发现内容渠道产生可检测效应（Cohen's d=0.63）。",
+      "llm_tags": [
+        "query:agent-safety"
+      ],
+      "matched_query_tag": "query:agent-safety",
+      "matched_query_text": "large language model agent safety benchmark and risk assessment LLM agent behavior monitoring",
+      "matched_requirement_id": "req-1",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "2606.32034v1",
+      "source": "arxiv",
+      "title": "QVal: Cheaply Evaluating Dense Supervision Signals for Long-Horizon LLM Agents",
+      "abstract": "LLM agents increasingly act over long horizons, where a single trajectory can contain hundreds or thousands of actions. In these settings, outcome-only rewards provide too sparse guidance, failing to inform the model about the goodness of intermediate actions. Dense supervision methods aim to solve this problem by scoring intermediate steps, from intrinsic confidence to self-distillation and embedding similarities. However, it is common practice to evaluate them by measuring the downstream performance of a training pipeline that integrates them. This is expensive, conflates supervision quality with training engineering confounders, and renders different methodological families requiring distinct training setups incomparable. As a result, dense supervision methods are rarely benchmarked on common ground. We introduce QVal, a training-free testbed for directly evaluating dense supervision signals. Given a state-action pair, QVal measures how well a method's score is Q-aligned: whether it orders actions according to the Q-values of a strong reference-policy. This lets us compare signals before any training run and separate signal quality from other engineering choices. We instantiate QVal as QVal-v1.0, benchmarking 21 dense supervision methods across four diverse environments and seven methodological families, with over 1.2K evaluation experiments across six open-weight model backbones. We find that simple prompting baselines consistently outperform recent dense supervision methods from the literature, and that performance clusters strongly by family. These findings hold across model sizes, environments, and observation modalities. QVal is designed to be easily extensible to new environments and methods, enabling researchers to iterate on dense supervision methods before any training run.",
+      "authors": [
+        "Sergio Hernández-Gutiérrez",
+        "Matteo Merler",
+        "Ilze Amanda Auzina",
+        "Joschka Strüber",
+        "Ameya Prabhu",
+        "Matthias Bethge"
+      ],
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "published": "2026-06-30T17:58:23+00:00",
+      "link": "https://arxiv.org/pdf/2606.32034v1",
+      "tags": [
+        "keyword:agent-safety",
+        "query:agent-safety"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "evaluating dense supervision for long-horizon LLM agents",
+      "llm_evidence_cn": "评估长时域LLM代理的密集监督信号",
+      "llm_evidence": "评估长时域LLM代理的密集监督信号",
+      "canonical_evidence": "评估长时域LLM代理的密集监督信号",
+      "llm_tldr_en": "QVal cheaply evaluates dense supervision signals for long-horizon agents without expensive training pipelines, enabling fair comparison.",
+      "llm_tldr_cn": "长时域代理中密集监督方法评估昂贵且不可比。QVal通过代理任务直接评估监督质量，无需完整训练流水线。实验表明QVal评分与下游性能高度相关，为代理行为监督提供廉价评估工具。",
+      "llm_tldr": "长时域代理中密集监督方法评估昂贵且不可比。QVal通过代理任务直接评估监督质量，无需完整训练流水线。实验表明QVal评分与下游性能高度相关，为代理行为监督提供廉价评估工具。",
+      "llm_tags": [
+        "query:agent-safety"
+      ],
+      "matched_query_tag": "query:agent-safety",
+      "matched_query_text": "large language model agent safety benchmark and risk assessment LLM agent behavior monitoring",
+      "matched_requirement_id": "req-1",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    }
+  ]
+}
