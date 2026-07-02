@@ -1,0 +1,323 @@
+{
+  "mode": "standard",
+  "generated_at": "2026-07-02T21:21:10.162968+00:00",
+  "stats": {
+    "mode": "standard",
+    "tag_count": 1,
+    "deep_divecandidates": 5,
+    "deep_cap": 6,
+    "deep_selected": 5,
+    "quick_candidates": 3,
+    "quick_skim_target": 11,
+    "quick_selected": 3
+  },
+  "deep_dive": [
+    {
+      "id": "2606.27079v2",
+      "source": "arxiv",
+      "title": "ForesightSafety-VLA: A Unified Diagnostic Safety Benchmark for Vision-Language-Action Models",
+      "abstract": "In embodied intelligence, safety is a prerequisite for reliable robot deployment in the physical world. Current vision-language-action (VLA) models continue to advance toward general-purpose task capability, yet their embodied safety limits remain poorly understood. To address this gap, we introduce ForesightSafety-VLA, a diagnostic benchmark that makes safety the primary evaluation target for VLA systems. We define a 13-category safety taxonomy covering physical interaction safety (Safe-Core), instruction-side safety (Safe-Lang), and perception-side safety (Safe-Vis), and evaluate policies under three controlled dimensions of variation -- scene structure, language command, and visual observation -- so that failure sources can be diagnosed rather than hidden in a single aggregate score. Beyond binary task success, ForesightSafety-VLA measures process-level risk through cumulative safety cost (CC) and risk exposure time (RET), together with a four-quadrant decomposition of safe/unsafe success and failure. We instantiate 66 safety-augmented base scenarios in RoboTwin across 5 embodiments and report results on representative VLA baselines. Across the evaluated baselines, even the strongest policy incurs non-trivial safety cost and unsafe nominal success, while structure and visual variation induce substantially stronger safety degradation than ordinary language variation. These results suggest that embodied safety is tightly coupled to perception, grounding, and control competence rather than being reducible to post-hoc safety filtering alone.",
+      "authors": [
+        "Mingyang Lyu",
+        "Yinqian Sun",
+        "Yiyang Jia",
+        "Sicheng Shen",
+        "Moquan Sha",
+        "Huangrui Li",
+        "Feifei Zhao",
+        "Yi Zeng"
+      ],
+      "primary_category": "cs.RO",
+      "categories": [
+        "cs.RO"
+      ],
+      "published": "2026-06-25T14:19:36+00:00",
+      "link": "https://arxiv.org/pdf/2606.27079v2",
+      "tags": [
+        "keyword:agent-safety",
+        "query:agent-safety"
+      ],
+      "llm_score": 10.0,
+      "llm_evidence_en": "unified diagnostic safety benchmark for VLA models covering physical, instruction, and perception safety",
+      "llm_evidence_cn": "覆盖物理、指令和感知安全的VLA模型统一诊断基准",
+      "llm_evidence": "覆盖物理、指令和感知安全的VLA模型统一诊断基准",
+      "canonical_evidence": "覆盖物理、指令和感知安全的VLA模型统一诊断基准",
+      "llm_tldr_en": "ForesightSafety-VLA is a comprehensive benchmark for evaluating vision-language-action model safety across 13 categories, with controlled variations to isolate failure sources.",
+      "llm_tldr_cn": "ForesightSafety-VLA是一个面向视觉-语言-动作（VLA）模型的统一诊断安全基准。它定义了13类安全分类，涵盖物理交互安全（Safe-Core）、指令侧安全（Safe-Lang）和感知侧安全（Safe-Vis）。通过独立控制场景结构、语言命令和视觉观察三个维度的变化，系统性地定位模型安全失败的根本原因。实验表明，现有VLA模型在物理安全维度表现尚可，但在指令和感知安全维度存在显著缺陷。该基准为安全地部署具身智能系统提供了标准化评估工具和详细诊断指标，有望推动VLA安全研究的发展。",
+      "llm_tldr": "ForesightSafety-VLA是一个面向视觉-语言-动作（VLA）模型的统一诊断安全基准。它定义了13类安全分类，涵盖物理交互安全（Safe-Core）、指令侧安全（Safe-Lang）和感知侧安全（Safe-Vis）。通过独立控制场景结构、语言命令和视觉观察三个维度的变化，系统性地定位模型安全失败的根本原因。实验表明，现有VLA模型在物理安全维度表现尚可，但在指令和感知安全维度存在显著缺陷。该基准为安全地部署具身智能系统提供了标准化评估工具和详细诊断指标，有望推动VLA安全研究的发展。",
+      "llm_tags": [
+        "query:agent-safety"
+      ],
+      "matched_query_tag": "query:agent-safety",
+      "matched_query_text": "embodied AI safety vision language action safety robot safety benchmark physical safety risk aware planning",
+      "matched_requirement_id": "req-4",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2607.00218v1",
+      "source": "arxiv",
+      "title": "EgoSafetyBench: A Diagnostic Egocentric Video Benchmark for Evaluating Embodied VLMs as Runtime Safety Guards",
+      "abstract": "Vision-language models (VLMs) are now proposed as runtime safety guards for embodied agents in homes and factories. A deployable guard must catch genuinely unsafe situations while avoiding unnecessary intervention on routine but superficially alarming activity, a distinction that binary safety benchmarks obscure. We introduce EgoSafetyBench, an egocentric video benchmark of 1,200 robot-view scenarios annotated at half-second granularity, to evaluate VLMs as streaming guards across two tracks. The situational track (800 scenarios) spans four families, from routine and safe-but-suspicious scenes to obvious and contextual hazards. The visual-channel track (400 scenarios) targets in-scene text-a sign, sticker, or label visible in the scene-that can misrepresent the physical situation, pairing each misleading sign with a truthful version to test both whether a guard flags the text as misleading and whether the text corrupts its physical-safety judgment. Both tracks use contrastive ladders: near-identical scenarios differing only in a single visible deciding cue, so a correct call must hinge on that cue rather than the overall scene type. We evaluate ten open- and closed-source VLMs. We find that while guards reliably recognize videos containing hazards, they often miss specific hazardous moments, particularly contextual hazards. Furthermore, misleading in-scene signs degrade all tested guards: vulnerable models miss up to a third of hazards, while robust models over-intervene on safe content. Matched controls reveal that apparent safety robustness often reflects indiscriminate alarming rather than true physical reasoning.",
+      "authors": [
+        "Siddhant Panpatil",
+        "Arth Singh",
+        "Mijin Koo",
+        "Chaeyun Kim",
+        "Haon Park",
+        "Dasol Choi"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "published": "2026-06-30T21:50:49+00:00",
+      "link": "https://arxiv.org/pdf/2607.00218v1",
+      "tags": [
+        "keyword:agent-safety",
+        "query:agent-safety"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "egocentric video benchmark for evaluating embodied VLMs as runtime safety guards",
+      "llm_evidence_cn": "用于评估具身VLM作为运行时安全守卫的自我中心视频基准",
+      "llm_evidence": "用于评估具身VLM作为运行时安全守卫的自我中心视频基准",
+      "canonical_evidence": "用于评估具身VLM作为运行时安全守卫的自我中心视频基准",
+      "llm_tldr_en": "EgoSafetyBench provides 1,200 egocentric video scenarios with half-second annotations to evaluate VLMs as streaming safety guards for embodied agents.",
+      "llm_tldr_cn": "EgoSafetyBench是一个包含1,200个自我中心视频场景的基准，以半秒粒度标注，用于评估视觉-语言模型作为具身代理运行时安全守卫的性能。基准包括情景轨道（覆盖常规、安全可疑、明显危害和上下文危害四类场景）和视觉通道轨道（聚焦场景内文本）。与二值安全基准不同，它能够区分真正危险和表面可疑的正常活动。实验显示现有VLM在上下文危害识别上存在明显不足，该基准为具身代理的实时安全监控提供了必要的诊断和评估手段。",
+      "llm_tldr": "EgoSafetyBench是一个包含1,200个自我中心视频场景的基准，以半秒粒度标注，用于评估视觉-语言模型作为具身代理运行时安全守卫的性能。基准包括情景轨道（覆盖常规、安全可疑、明显危害和上下文危害四类场景）和视觉通道轨道（聚焦场景内文本）。与二值安全基准不同，它能够区分真正危险和表面可疑的正常活动。实验显示现有VLM在上下文危害识别上存在明显不足，该基准为具身代理的实时安全监控提供了必要的诊断和评估手段。",
+      "llm_tags": [
+        "query:agent-safety"
+      ],
+      "matched_query_tag": "query:agent-safety",
+      "matched_query_text": "embodied AI safety vision language action safety robot safety benchmark physical safety risk aware planning",
+      "matched_requirement_id": "req-4",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2607.00334v1",
+      "source": "arxiv",
+      "title": "Managed Autonomy at Runtime: Gear-Based Safety and Governance for Single- and Multi-Agent Cyber-Physical Systems",
+      "abstract": "Autonomous agents, whether LLM-driven software agents or robotic physical agents, face a common class of failure modes when operating without continuous human oversight: safety violations from unverified actions, behavioral instability from unconstrained loops, and continuity loss from unhandled error states. We develop \\system{}, a discrete-time control system that combines five execution gears (\\Gobs{}, \\Gsug{}, \\Gplan{}, \\Gexec{}, \\Gint{}) with utility-gated dispatch and event-driven fallback. For the single-agent case, we prove monotonic stability, execution safety, eventual stabilization, fallback completeness, and equivalence to a gear-constrained Markov decision process. For multi-agent cyber-physical systems (CPS), we apply the established \\smart{} managed-autonomy lifecycle and map runtime evidence into its four governance states (\\Stable{}/\\Meta{}/\\Assisted{}/\\Regulated{}). Consensus gating, swarm-level Lyapunov analysis, per-agent gear authority, and rendezvous control provide distributed safety and stability guarantees, including zero collision under the stated assumptions. We evaluate the resulting runtime on a three-agent UR5 robotic assembly cell using fault magnitudes calibrated from the NIST \\emph{Degradation Measurement of Robot Arm Position Accuracy} dataset across 10,000 Monte Carlo episodes. It achieves a 99.6\\% anomaly detection rate versus 2.1\\% for the single-agent baseline, reduces detection latency by $3.5\\times$, and supplies a formal physical-workspace safety certificate. The execution gears act as micro-level permissions beneath the \\smart{} runtime governance states, separating action control from autonomy governance.",
+      "authors": [
+        "Srini Ramaswamy",
+        "Wang Miaosheng"
+      ],
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-07-01T02:21:38+00:00",
+      "link": "https://arxiv.org/pdf/2607.00334v1",
+      "tags": [
+        "keyword:agent-safety",
+        "query:agent-safety"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "runtime safety governance for single/multi-agent CPS",
+      "llm_evidence_cn": "单/多代理信息物理系统的运行时安全治理",
+      "llm_evidence": "单/多代理信息物理系统的运行时安全治理",
+      "canonical_evidence": "单/多代理信息物理系统的运行时安全治理",
+      "llm_tldr_en": "Develops a discrete-time control system with five execution gears for agent safety, proving monotonic stability, execution safety, and fallback completeness for single and multi-agent cyber-physical systems.",
+      "llm_tldr_cn": "论文提出了一种离散时间控制系统GearControl，为单代理和多代理信息物理系统提供运行时安全与治理。系统包含五个执行档位（观察、建议、计划、执行、交互），结合效用门控调度和事件驱动回退。理论证明包括单调稳定性、执行安全性、最终稳定、回退完备性以及等价于齿轮约束马尔科夫决策过程。为代理自主系统的安全执行提供了形式化保障。",
+      "llm_tldr": "论文提出了一种离散时间控制系统GearControl，为单代理和多代理信息物理系统提供运行时安全与治理。系统包含五个执行档位（观察、建议、计划、执行、交互），结合效用门控调度和事件驱动回退。理论证明包括单调稳定性、执行安全性、最终稳定、回退完备性以及等价于齿轮约束马尔科夫决策过程。为代理自主系统的安全执行提供了形式化保障。",
+      "llm_tags": [
+        "query:agent-safety"
+      ],
+      "matched_query_tag": "query:agent-safety",
+      "matched_query_text": "large language model agent safety benchmark and risk assessment LLM agent behavior monitoring",
+      "matched_requirement_id": "req-1",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2607.01153v1",
+      "source": "arxiv",
+      "title": "Adversarial Pragmatics for AI Safety Evaluation: A Benchmark for Instruction Conflict, Embedded Commands, and Policy Ambiguity",
+      "abstract": "Safety evaluations for language models increasingly depend on judgments about ambiguous natural-language behaviour: whether a model has followed an instruction, refused appropriately, complied with a policy, resisted an embedded command, or misreported progress in an agentic task. Existing benchmarks often compress these distinctions into pass/fail labels, obscuring whether failures arise from capability limits, policy ambiguity, instruction conflict, scaffold failure, or unstable evaluator judgments.   This paper introduces adversarial pragmatics as a benchmark and annotation protocol for evaluating model behaviour under instruction conflict, embedded commands, quotation, scope ambiguity, deixis, indirect speech acts, and multi-turn agent transcripts. The contribution is empirical and methodological: a linguistically controlled taxonomy, an 18-item seed benchmark with validator-enforced metadata, a 54-row local seed pilot, an expert-evaluation protocol distinguishing task success, policy compliance, safety risk, refusal outcome, and evaluator confidence, and metrics for judge validity, diagnostic ambiguity, and taxonomy drift. The framework turns linguistic judgment methodology into a practical tool for validating safety evals, LLM judges, gold-set construction, prompt-injection tests, and safety documentation.",
+      "authors": [
+        "Brett Reynolds"
+      ],
+      "primary_category": "cs.CL",
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.SE"
+      ],
+      "published": "2026-07-01T16:33:14+00:00",
+      "link": "https://arxiv.org/pdf/2607.01153v1",
+      "tags": [
+        "keyword:agent-safety",
+        "query:agent-safety"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "safety benchmark for LLM agents, instruction conflict, policy ambiguity",
+      "llm_evidence_cn": "LLM安全基准、指令冲突、策略模糊性",
+      "llm_evidence": "LLM安全基准、指令冲突、策略模糊性",
+      "canonical_evidence": "LLM安全基准、指令冲突、策略模糊性",
+      "llm_tldr_en": "Introduces adversarial pragmatics as a benchmark to evaluate LLM behavior under instruction conflict, embedded commands, and policy ambiguity.",
+      "llm_tldr_cn": "现有安全基准将复杂语言行为简化为二值标签，忽略了失败的根本原因。本文提出对抗语用学基准和标注协议，涵盖指令冲突、嵌入命令、范围歧义等情境，从而更细粒度地评估模型行为。",
+      "llm_tldr": "现有安全基准将复杂语言行为简化为二值标签，忽略了失败的根本原因。本文提出对抗语用学基准和标注协议，涵盖指令冲突、嵌入命令、范围歧义等情境，从而更细粒度地评估模型行为。",
+      "llm_tags": [
+        "query:agent-safety"
+      ],
+      "matched_query_tag": "query:agent-safety",
+      "matched_query_text": "large language model agent safety benchmark and risk assessment LLM agent behavior monitoring",
+      "matched_requirement_id": "req-1",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2606.29073v1",
+      "source": "arxiv",
+      "title": "From Tool Connection to Execution Control: Benchmarking Security Invariants in MCP-Style Agent Runtimes",
+      "abstract": "Model Context Protocol (MCP)-style ecosystems give language-model applications a practical connection layer for tools, resources, prompts, and transports. As agents move from connection to execution, security decisions often remain split across clients, servers, prompts, approval dialogs, OAuth deployments, and logs. This paper asks whether a runtime can make execution-layer invariants explicit and testable while preserving MCP-like workflows. We define eight invariants: metadata non-authority, grant-backed approval, canonical resources, principal binding, scoped capability invocation, source-and-target data-flow authorization, deny-path audit, and explicit protocol state. We implement these invariants in HCP, a Handle-Capability Protocol reference runtime for MCP-style agent execution that represents calls through principals, resources, grants, capabilities, handles, policy decisions, data-pipe checks, and audit entries. We evaluate HCP against two MCP-like baselines: a naive connection-layer runtime and a practice-informed connection-layer mitigation baseline with metadata linting, session checks, and per-call approvals. Across 10 benchmark cases, the naive baseline permits all modeled attacks, the mitigation baseline permits 6 of 10, and HCP blocks all 10 while preserving audit evidence. Ablations identify which runtime components block attacks and preserve forensic evidence. A local in-memory microbenchmark reports sub-millisecond mean latencies for measured policy, invocation, peek, and pipe operations. A bounded GitHub README-screening sample provides ecosystem signals, not vulnerability findings. The results support a narrow claim: MCP-style agent systems need an execution-control layer in addition to connection-layer conventions.",
+      "authors": [
+        "Ting Liu"
+      ],
+      "primary_category": "cs.CR",
+      "categories": [
+        "cs.CR",
+        "cs.AI"
+      ],
+      "published": "2026-06-27T20:17:43+00:00",
+      "link": "https://arxiv.org/pdf/2606.29073v1",
+      "tags": [
+        "keyword:agent-safety",
+        "query:agent-safety"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "security invariants in agent runtimes, execution control, least privilege",
+      "llm_evidence_cn": "代理运行时安全不变量、执行控制、最小权限",
+      "llm_evidence": "代理运行时安全不变量、执行控制、最小权限",
+      "canonical_evidence": "代理运行时安全不变量、执行控制、最小权限",
+      "llm_tldr_en": "Defines eight security invariants for MCP-style agent runtimes and implements them in HCP, a handle-based runtime.",
+      "llm_tldr_cn": "本文针对MCP风格代理运行时安全决策分散的问题，定义了元数据非权威、授权批准、规范资源等八个不变量，并在HCP运行时中实现。这使得执行层安全约束明确且可测试，同时保持了MCP的工作流兼容性。",
+      "llm_tldr": "本文针对MCP风格代理运行时安全决策分散的问题，定义了元数据非权威、授权批准、规范资源等八个不变量，并在HCP运行时中实现。这使得执行层安全约束明确且可测试，同时保持了MCP的工作流兼容性。",
+      "llm_tags": [
+        "query:agent-safety"
+      ],
+      "matched_query_tag": "query:agent-safety",
+      "matched_query_text": "tool calling agent security least privilege permission injection vulnerability LLM tool security",
+      "matched_requirement_id": "req-2",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "quick_skim": [
+    {
+      "id": "2607.01084v1",
+      "source": "arxiv",
+      "title": "Can Agents Generalize to the Open World? Unveiling the Fragility of Static Training in Tool Use",
+      "abstract": "While Large Language Model (LLM) agents demonstrate proficiency in static benchmarks, their deployment in real-world scenarios is hindered by the dynamic nature of user queries, tool sets, and interaction dynamics. To address this generalization gap, we formalize OpenAgent (Tool-Use Agent in Open-World), a problem setting characterized by distributional shifts across query, action, observation, and domain dimensions. To systematically diagnose its impact, we construct a controlled sandbox environment where we define fine-grained environmental shifts across a four-tier hierarchy, Perception, Interaction, Reasoning, and Internalization, and conduct a comprehensive series of experiments. Our analysis yields a series of key insights, demonstrating that agents trained via both Supervised Fine-Tuning(SFT) and Reinforcement Learning suffer from varying degrees of performance degradation when confronting open environmental shifts. Building on these insights, we propose Perturbation-Augmented Fine-Tuning, a disturbance-based intervention strategy for SFT that lays the foundation for enhancing agent robustness and utility in realistic environments. Our code will be released at: https://github. com/LAMDA-NeSy/OpenAgent.",
+      "authors": [
+        "Song-Lin Lv",
+        "Weiming Wu",
+        "Rui Zhu",
+        "Zi-Jian Cheng",
+        "Lan-Zhe Guo"
+      ],
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-07-01T15:40:25+00:00",
+      "link": "https://arxiv.org/pdf/2607.01084v1",
+      "tags": [
+        "keyword:agent-safety",
+        "query:agent-safety"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "tool use agent generalization fragility related to security",
+      "llm_evidence_cn": "工具使用代理的泛化脆弱性与安全性相关",
+      "llm_evidence": "工具使用代理的泛化脆弱性与安全性相关",
+      "canonical_evidence": "工具使用代理的泛化脆弱性与安全性相关",
+      "llm_tldr_en": "Formalizes OpenAgent problem for tool-use agents under distributional shifts, constructs a controlled sandbox to diagnose fragility, revealing vulnerabilities in static training that impact safety and robustness.",
+      "llm_tldr_cn": "论文提出了开放世界工具使用代理（OpenAgent）问题形式化，定义查询、动作、观测和领域四个维度的分布偏移。构建分层沙盒环境（感知、交互、推理、内化）进行系统诊断。实验揭示静态训练代理面对开放世界时的脆弱性，包括对未知工具的误用和决策失误，对代理安全性提出了挑战。",
+      "llm_tldr": "论文提出了开放世界工具使用代理（OpenAgent）问题形式化，定义查询、动作、观测和领域四个维度的分布偏移。构建分层沙盒环境（感知、交互、推理、内化）进行系统诊断。实验揭示静态训练代理面对开放世界时的脆弱性，包括对未知工具的误用和决策失误，对代理安全性提出了挑战。",
+      "llm_tags": [
+        "query:agent-safety"
+      ],
+      "matched_query_tag": "query:agent-safety",
+      "matched_query_text": "tool calling agent security least privilege permission injection vulnerability LLM tool security",
+      "matched_requirement_id": "req-2",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "2606.28011v1",
+      "source": "arxiv",
+      "title": "From Detection to Action: Using LLM Agents for Fault-Tolerant Control",
+      "abstract": "We propose an agentic Large Language Model (LLM) framework for active Fault-Tolerant Control (FTC) that transforms fault detection outputs into constraint-aware recovery actions grounded in plant-specific knowledge. The approach couples (i) a multi-agent workflow that decomposes operator duties into monitoring, planning, action synthesis, simulation, validation, and reprompting; (ii) a Digital Process Plant Twin (DPPT) that exposes plant data, models, and a simulation service for pre-execution testing; and (iii) a Graph Retrieval-Augmented Generation (Graph RAG) layer built on the CPSMod ontology, which organizes plant knowledge (structure, function, hybrid dynamics, control context, and fault semantics) into a graph that supports relation-aware, multi-hop retrieval for the agents. Corrective actions are generated as minimal-risk state-machine recovery paths and corresponding discrete commands or continuous setpoint adaptations, then validated deterministically against interlocks, envelopes, and dynamic feasibility before any actuation. If no acceptable plan is found within a bounded time window, control is handed to a safety fallback. The framework is evaluated in simulation on two representative benchmarks: a discrete batch Mixing Module and a Continuous Stirred-Tank Reactor (CSTR) under closed-loop PID regulation. Results with lightweight LLMs (GPT-4o-mini and GPT-4.1-mini) show that semantically grounded agents can derive valid recovery decisions within latency budgets compatible with the respective process dynamics, demonstrating a practical pathway from detection to validated corrective action across both discrete and continuous FTC tasks.",
+      "authors": [
+        "Javal Vyas",
+        "Milapji Singh Gill",
+        "Artan Markaj",
+        "Felix Gehlhoff",
+        "Mehmet Mercangöz"
+      ],
+      "primary_category": "eess.SY",
+      "categories": [
+        "eess.SY",
+        "cs.LG"
+      ],
+      "published": "2026-06-26T12:13:58+00:00",
+      "link": "https://arxiv.org/pdf/2606.28011v1",
+      "tags": [
+        "keyword:agent-safety",
+        "query:agent-safety"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "LLM agent for fault-tolerant control enhancing safety",
+      "llm_evidence_cn": "LLM代理用于容错控制增强安全性",
+      "llm_evidence": "LLM代理用于容错控制增强安全性",
+      "canonical_evidence": "LLM代理用于容错控制增强安全性",
+      "llm_tldr_en": "Proposes an LLM multi-agent framework for active fault-tolerant control, integrating monitoring, planning, and simulation to ensure safe recovery actions in cyber-physical systems.",
+      "llm_tldr_cn": "该论文提出了一种基于大语言模型的多代理框架，用于主动容错控制。框架将操作员职责分解为监控、规划、动作合成等步骤，结合数字孪生与图检索增强生成，确保在故障发生时生成安全的恢复动作。实验验证了框架在工业过程中的有效性，为LLM代理在安全关键场景中的应用提供了方法支撑。",
+      "llm_tldr": "该论文提出了一种基于大语言模型的多代理框架，用于主动容错控制。框架将操作员职责分解为监控、规划、动作合成等步骤，结合数字孪生与图检索增强生成，确保在故障发生时生成安全的恢复动作。实验验证了框架在工业过程中的有效性，为LLM代理在安全关键场景中的应用提供了方法支撑。",
+      "llm_tags": [
+        "query:agent-safety"
+      ],
+      "matched_query_tag": "query:agent-safety",
+      "matched_query_text": "large language model agent safety benchmark and risk assessment LLM agent behavior monitoring",
+      "matched_requirement_id": "req-1",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    },
+    {
+      "id": "2607.01136v1",
+      "source": "arxiv",
+      "title": "Skills Are Not Islands: Measuring Dependency and Risk in Agent Skill Supply Chains",
+      "abstract": "Agent skills package reusable operational knowledge for Large Language Model (LLM) agents, yet as they grow in scope, they become dependency-bearing artifacts whose identities, versions, and provenance remain implicit. This opacity already causes duplicated dependencies and inconsistent installations, exposing a gap that dependency management has yet to close. We introduce Agent Skill Supply Chains (ASSCs) to characterize mixed skill-package-service dependency graphs and help close this gap. Borrowing from Software Bill of Materials (SBOMs), we design SkillDepAnalyzer to capture natural-language dependency evidence and model skills as dependency-bearing artifacts. On the SKILL-DEP benchmark, SkillDepAnalyzer recovers skill metadata and dependency graphs accurately and comprehensively, substantially outperforming an LLM-based baseline and package-centric SBOM tools. Applying SkillDepAnalyzer to over 1.43 million skills, we obtain ASSCs and explore their structural diversity and security signals. We find four structural patterns: skill metadata is activation-ready but governance-poor; dependency graphs span skill, package, and service dependencies with concentrated reuse; recursive skill reuse expands dependency graphs and creates hidden package inventory; and skill dependency clusters form around related workflows. We also find that inspecting a skill alone misses security-relevant signals hiding in its dependencies. By analyzing ASSCs, we identify and report known malicious skills persisting in ASSCs to their developers. Based on these findings, we recommend typed dependency manifests, first-class dependency-cluster management, risk-warning audit commands for skill infrastructure maintainers, and lockfile-like records for skill developers.",
+      "authors": [
+        "Changguo Jia",
+        "Tianqi Zhao",
+        "Runzhi He",
+        "Minghui Zhou"
+      ],
+      "primary_category": "cs.SE",
+      "categories": [
+        "cs.SE",
+        "cs.AI"
+      ],
+      "published": "2026-07-01T16:21:49+00:00",
+      "link": "https://arxiv.org/pdf/2607.01136v1",
+      "tags": [
+        "keyword:agent-safety",
+        "query:agent-safety"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "agent skill supply chain risk, dependency management",
+      "llm_evidence_cn": "代理技能供应链风险，依赖管理",
+      "llm_evidence": "代理技能供应链风险，依赖管理",
+      "canonical_evidence": "代理技能供应链风险，依赖管理",
+      "llm_tldr_en": "Introduces Agent Skill Supply Chains and SkillDepAnalyzer to capture dependency risk in agent skills, using a SBOM-inspired approach.",
+      "llm_tldr_cn": "本文指出代理技能包隐含依赖关系导致风险，提出代理技能供应链概念和SkillDepAnalyzer工具，借鉴软件物料清单方法，自然语言提取依赖证据并建模，在SKILL-DEP基准上有效恢复元数据和依赖关系。",
+      "llm_tldr": "本文指出代理技能包隐含依赖关系导致风险，提出代理技能供应链概念和SkillDepAnalyzer工具，借鉴软件物料清单方法，自然语言提取依赖证据并建模，在SKILL-DEP基准上有效恢复元数据和依赖关系。",
+      "llm_tags": [
+        "query:agent-safety"
+      ],
+      "matched_query_tag": "query:agent-safety",
+      "matched_query_text": "large language model agent safety benchmark and risk assessment LLM agent behavior monitoring",
+      "matched_requirement_id": "req-1",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    }
+  ]
+}
