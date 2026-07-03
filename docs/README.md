@@ -6,46 +6,47 @@
 </div>
 
 ## 每次日报
-- 最新运行日期：2026-07-02
-- 运行时间：2026-07-02 21:26:48 UTC
+- 最新运行日期：2026-07-03
+- 运行时间：2026-07-03 21:15:09 UTC
 - 运行状态：成功
-- 本次总论文数：8
-- 精读区：5
+- 本次总论文数：9
+- 精读区：6
 - 速读区：3
 
 ### 今日简报（AI）
-今日聚焦具身智能体安全与泛化，发布两份高分VLM安全诊断基准，并揭示工具使用泛化脆弱性与技能依赖风险。  
-最值得看《ForesightSafety-VLA》统一安全诊断框架和《EgoSafetyBench》第一人称视频安全守卫，以及《Skills Are Not Islands》中的技能供应链风险分析。  
-建议开发者关注开放世界泛化失败问题，在智能体系统中集成运行时安全监测与故障容错控制。
-- 详情：[/202607/02/README](/202607/02/README)
+今日聚焦LLM Agent安全风险与恶意软件检测，高分精读揭示大规模测试与动态检测方法。建议优先精读《Safety Testing LLM Agents at Scale》与《Cloak and Detonate》，速读中评估校准与约束框架也值得参考。
+- 详情：[/202607/03/README](/202607/03/README)
 
 ### 精读区论文标签
-1. [ForesightSafety-VLA: A Unified Diagnostic Safety Benchmark for Vision-Language-Action Models](/202607/02/2606.27079v2-foresightsafety-vla-a-unified-diagnostic-safety-benchmark-for-vision-language-action-models)  
+1. [Safety Testing LLM Agents at Scale: From Risk Discovery to Evidence-Grounded Verification](/202607/03/2607.01793v1-safety-testing-llm-agents-at-scale-from-risk-discovery-to-evidence-grounded-verification)  
    标签：评分：10.0/10、query:agent-safety
-   evidence：覆盖物理、指令和感知安全的VLA模型统一诊断基准
-2. [EgoSafetyBench: A Diagnostic Egocentric Video Benchmark for Evaluating Embodied VLMs as Runtime Safety Guards](/202607/02/2607.00218v1-egosafetybench-a-diagnostic-egocentric-video-benchmark-for-evaluating-embodied-vlms-as-runtime-safety-guards)  
+   evidence：大语言模型代理安全测试框架，风险发现与验证
+2. [Cloak and Detonate: Scanner Evasion and Dynamic Detection of Agent Skill Malware](/202607/03/2607.02357v1-cloak-and-detonate-scanner-evasion-and-dynamic-detection-of-agent-skill-malware)  
    标签：评分：9.0/10、query:agent-safety
-   evidence：用于评估具身VLM作为运行时安全守卫的自我中心视频基准
-3. [Managed Autonomy at Runtime: Gear-Based Safety and Governance for Single- and Multi-Agent Cyber-Physical Systems](/202607/02/2607.00334v1-managed-autonomy-at-runtime-gear-based-safety-and-governance-for-single--and-multi-agent-cyber-physical-systems)  
-   标签：评分：9.0/10、query:agent-safety
-   evidence：单/多代理信息物理系统的运行时安全治理
-4. [Adversarial Pragmatics for AI Safety Evaluation: A Benchmark for Instruction Conflict, Embedded Commands, and Policy Ambiguity](/202607/02/2607.01153v1-adversarial-pragmatics-for-ai-safety-evaluation-a-benchmark-for-instruction-conflict-embedded-commands-and-policy-ambiguity)  
-   标签：评分：9.0/10、query:agent-safety
-   evidence：LLM安全基准、指令冲突、策略模糊性
-5. [From Tool Connection to Execution Control: Benchmarking Security Invariants in MCP-Style Agent Runtimes](/202607/02/2606.29073v1-from-tool-connection-to-execution-control-benchmarking-security-invariants-in-mcp-style-agent-runtimes)  
+   evidence：代理技能恶意软件逃避与检测，涉及工具调用安全
+3. [Cognitive Firewall: A Proactive, Zero-Trust, Multi-Gate Framework for LLM Safety](/202607/03/2607.01277v1-cognitive-firewall-a-proactive-zero-trust-multi-gate-framework-for-llm-safety)  
    标签：评分：8.0/10、query:agent-safety
-   evidence：代理运行时安全不变量、执行控制、最小权限
+   evidence：主动零信任多门框架，通过意图门等检测跨多轮的有害意图
+4. [AgentFlow: Building Agent Dependency Graphs for Static Analysis of Agent Programs](/202607/03/2607.01640v1-agentflow-building-agent-dependency-graphs-for-static-analysis-of-agent-programs)  
+   标签：评分：8.0/10、query:agent-safety
+   evidence：提出Agent依赖图的静态分析框架，支持行为安全评估
+5. [When Agents Do Not Stop: Uncovering Infinite Agentic Loops in LLM Agents](/202607/03/2607.01641v1-when-agents-do-not-stop-uncovering-infinite-agentic-loops-in-llm-agents)  
+   标签：评分：8.0/10、query:agent-safety
+   evidence：无限代理循环作为行为安全失效模式
+6. [Hardware-Enforced Semantic Coordination for Safety-Critical Real-Time Autonomous Systems](/202607/03/2607.02376v1-hardware-enforced-semantic-coordination-for-safety-critical-real-time-autonomous-systems)  
+   标签：评分：8.0/10、query:agent-safety
+   evidence：面向安全关键自主系统的硬件强制协调，与具身AI安全相关
 
 ### 速读区论文标签
-1. [Can Agents Generalize to the Open World? Unveiling the Fragility of Static Training in Tool Use](/202607/02/2607.01084v1-can-agents-generalize-to-the-open-world-unveiling-the-fragility-of-static-training-in-tool-use)  
+1. [Calibrating the Evaluator: Does Probability Calibration Mitigate Preference Coupling in LLM Agent Feedback Loops?](/202607/03/2606.31371v1-calibrating-the-evaluator-does-probability-calibration-mitigate-preference-coupling-in-llm-agent-feedback-loops)  
    标签：评分：7.0/10、query:agent-safety
-   evidence：工具使用代理的泛化脆弱性与安全性相关
-2. [Skills Are Not Islands: Measuring Dependency and Risk in Agent Skill Supply Chains](/202607/02/2607.01136v1-skills-are-not-islands-measuring-dependency-and-risk-in-agent-skill-supply-chains)  
+   evidence：评估器校准减轻LLM代理反馈循环中的偏差，影响行为安全
+2. [Making Failure Safe: A Constrained, Verifiable Agent Framework for Open-Web Data Collection](/202607/03/2607.00035v1-making-failure-safe-a-constrained-verifiable-agent-framework-for-open-web-data-collection)  
    标签：评分：7.0/10、query:agent-safety
-   evidence：代理技能供应链风险，依赖管理
-3. [From Detection to Action: Using LLM Agents for Fault-Tolerant Control](/202607/02/2606.28011v1-from-detection-to-action-using-llm-agents-for-fault-tolerant-control)  
-   标签：评分：6.0/10、query:agent-safety
-   evidence：LLM代理用于容错控制增强安全性
+   evidence：约束可验证的agent框架，用于安全的工具调用和数据收集
+3. [Registry-Governed Agent Lifecycle:Completing EDDOps with Evaluation-DrivenRegistration, Promotion, and Retirement on AWS AgentCore](/202607/03/2607.00345v1-registry-governed-agent-lifecyclecompleting-eddops-with-evaluation-drivenregistration-promotion-and-retirement-on-aws-agentcore)  
+   标签：评分：7.0/10、query:agent-safety
+   evidence：评估驱动的代理生命周期安全与模型选择
 
 
 <div class="dpr-home-promo-card">

@@ -1,0 +1,367 @@
+{
+  "mode": "standard",
+  "generated_at": "2026-07-03T21:10:17.062703+00:00",
+  "stats": {
+    "mode": "standard",
+    "tag_count": 1,
+    "deep_divecandidates": 6,
+    "deep_cap": 6,
+    "deep_selected": 6,
+    "quick_candidates": 3,
+    "quick_skim_target": 11,
+    "quick_selected": 3
+  },
+  "deep_dive": [
+    {
+      "id": "2607.01793v1",
+      "source": "arxiv",
+      "title": "Safety Testing LLM Agents at Scale: From Risk Discovery to Evidence-Grounded Verification",
+      "abstract": "LLM agents increasingly perform autonomous actions through external tools, leading to complex and evolving safety risks. However, existing safety testing targets expert-designed safety violations, and the corresponding outcomes are evaluated by hard-coded rules, making them costly to extend as agents evolve. To this end, we present Vera, an end-to-end automated safety testing framework that instantiates software engineering testing principles for non-deterministic agents through a three-stage, self-reinforcing pipeline. First, a literature-driven exploration continuously discovers and structures emerging risks into taxonomies of safety risks, attack methods, and tool execution environments. Second, combinatorial composition across taxonomy dimensions produces executable safety cases, each specifying a concrete safety goal, a programmatically constructed initial state, and a deterministic verification predicate grounded in observable artifacts. Third, adaptive execution runs heterogeneous agents in isolated sandboxes where a control agent steers multi-turn interaction based on runtime observations, while evidence-grounded verifiers judge outcomes from environment state and tool-call evidence rather than model self-report. We evaluate Vera on four production agent frameworks (OpenClaw, Hermes, Codex, Claude Code), revealing substantial safety weaknesses, with average attack success rates reaching 93.9\\% under multi-channel attacks; we also release Vera-Bench, comprising 1600 executable safety cases spanning 124 risk categories across three execution settings. These results indicate that modular, executable testing infrastructure is essential for rigorous and maintainable safety evaluation of rapidly evolving agentic systems at scale. The code is publicly available at https://github.com/Yunhao-Feng/Vera.",
+      "authors": [
+        "Yunhao Feng",
+        "Ruixiao Lin",
+        "Ming Wen",
+        "Qinqin He",
+        "Yanming Guo",
+        "Yifan Ding",
+        "Yutao Wu",
+        "Jialuo Chen",
+        "Yunhao Chen",
+        "Xiaohu Du",
+        "Jianan Ma",
+        "Zixing Chen",
+        "Zhuoer Xu",
+        "Xingjun Ma",
+        "Xinhao Deng"
+      ],
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-07-02T07:08:26+00:00",
+      "link": "https://arxiv.org/pdf/2607.01793v1",
+      "tags": [
+        "keyword:agent-safety",
+        "query:agent-safety"
+      ],
+      "llm_score": 10.0,
+      "llm_evidence_en": "safety testing framework for LLM agents, risk discovery, verification",
+      "llm_evidence_cn": "大语言模型代理安全测试框架，风险发现与验证",
+      "llm_evidence": "大语言模型代理安全测试框架，风险发现与验证",
+      "canonical_evidence": "大语言模型代理安全测试框架，风险发现与验证",
+      "llm_tldr_en": "Presents Vera, an automated safety testing framework that discovers risks, composes attacks, and verifies safety violations for LLM agents, following software engineering principles.",
+      "llm_tldr_cn": "该论文针对现有安全测试成本高、难以扩展的问题，提出了Vera框架，通过文献驱动风险发现、组合攻击生成和证据接地验证三个阶段的自我增强流水线，实现了LLM代理的自动化安全测试。在多个代理任务上的实验表明，Vera能有效发现新型安全风险并生成可重现的漏洞报告。该工作为代理安全测试提供了可扩展的解决方案。",
+      "llm_tldr": "该论文针对现有安全测试成本高、难以扩展的问题，提出了Vera框架，通过文献驱动风险发现、组合攻击生成和证据接地验证三个阶段的自我增强流水线，实现了LLM代理的自动化安全测试。在多个代理任务上的实验表明，Vera能有效发现新型安全风险并生成可重现的漏洞报告。该工作为代理安全测试提供了可扩展的解决方案。",
+      "llm_tags": [
+        "query:agent-safety"
+      ],
+      "matched_query_tag": "query:agent-safety",
+      "matched_query_text": "large language model agent safety benchmark and risk assessment LLM agent behavior monitoring",
+      "matched_requirement_id": "req-1",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2607.02357v1",
+      "source": "arxiv",
+      "title": "Cloak and Detonate: Scanner Evasion and Dynamic Detection of Agent Skill Malware",
+      "abstract": "LLM coding agents increasingly rely on third-party agent skills from public marketplaces, which execute with the agent's privileges and create a software supply-chain attack surface: a malicious skill can steal credentials, exfiltrate source code, or install backdoors. Existing defenses use static skill scanners based on pattern matching or LLM-as-judge analysis, but it remains unclear whether they withstand adaptive evasions that preserve malicious behavior while changing payload appearance.   This paper first presents an adversarial study of existing skill scanners through SkillCloak, a payload-preserving evasion framework that keeps the attack semantics intact while transforming their visible form. SkillCloak uses two complementary strategies: Structural Obfuscation, which rewrites visible payload indicators into semantically equivalent forms, and Self-Extracting Skill (SFS) Packing, which hides malicious components from the install-time view and restores them during agent execution. Across eight scanners and 1,613 in-the-wild malicious skills, SFS Packing bypasses every scanner at over 90%, while Structural Obfuscation bypasses over 80% on most static scanners and reaches 96% on a hybrid scanner, showing that appearance-based auditing is insufficient.   Motivated by this finding, we propose SkillDetonate, a behavior-centric runtime auditor that executes skills in a sandbox and detects malicious effects through OS-boundary information-flow evidence rather than install-time appearance. SkillDetonate combines on-demand closure lift, which observes instructions materialized during execution, with marker-based taint analysis, which tracks sensitive-data flows across the agent context, files, processes, and network operations. The results show that SkillDetonate detects 97% of attacks at a 2% false-positive rate and sustains 87% detection on real-world malicious skills.",
+      "authors": [
+        "Zimo Ji",
+        "Congying Xu",
+        "Zongjie Li",
+        "Yudong Gao",
+        "Xin Wei",
+        "Shuai Wang",
+        "Shing-Chi Cheung"
+      ],
+      "primary_category": "cs.CR",
+      "categories": [
+        "cs.CR",
+        "cs.SE"
+      ],
+      "published": "2026-07-02T16:00:52+00:00",
+      "link": "https://arxiv.org/pdf/2607.02357v1",
+      "tags": [
+        "keyword:agent-safety",
+        "query:agent-safety"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "malicious agent skill evasion and detection in tool calling security",
+      "llm_evidence_cn": "代理技能恶意软件逃避与检测，涉及工具调用安全",
+      "llm_evidence": "代理技能恶意软件逃避与检测，涉及工具调用安全",
+      "canonical_evidence": "代理技能恶意软件逃避与检测，涉及工具调用安全",
+      "llm_tldr_en": "Presents adversarial evasion attacks on static skill scanners for LLM agent marketplaces and proposes dynamic detection methods.",
+      "llm_tldr_cn": "该论文研究LLM编码代理技能市场中的安全威胁，提出SkillCloak框架，通过两种互补策略生成绕过静态扫描器的恶意技能负载。实验证明现有基于模式匹配或LLM评判的扫描器无法抵抗自适应逃避。进而提出动态检测方法，提升对恶意技能的安全防御能力。",
+      "llm_tldr": "该论文研究LLM编码代理技能市场中的安全威胁，提出SkillCloak框架，通过两种互补策略生成绕过静态扫描器的恶意技能负载。实验证明现有基于模式匹配或LLM评判的扫描器无法抵抗自适应逃避。进而提出动态检测方法，提升对恶意技能的安全防御能力。",
+      "llm_tags": [
+        "query:agent-safety"
+      ],
+      "matched_query_tag": "query:agent-safety",
+      "matched_query_text": "tool calling agent security least privilege permission injection vulnerability LLM tool security",
+      "matched_requirement_id": "req-2",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2607.01277v1",
+      "source": "arxiv",
+      "title": "Cognitive Firewall: A Proactive, Zero-Trust, Multi-Gate Framework for LLM Safety",
+      "abstract": "Large language models (LLMs) can be induced to produce harmful content through multi turn strategies in which no single user message appears clearly unsafe. Existing runtime safeguards commonly evaluate prompts or responses as isolated messages, which limits their ability to recover ac-cumulated intent, verify asserted authority, or detect harmful objectives decomposed across a dialogue. This paper presents the Cognitive Firewall, a proactive runtime oversight framework that interposes an independent oversight model between a user and a protected target mod l. The framework decomposes safety assessment into four categorical gates: an intent gate that identi-fies the operational objective of a request, a zero trust context gate that treats claimed roles and permissions as unverified evidence, a consistency gate that detects escalation and decomposition across turns, and an output risk gate that inspects candidate responses before release. Gate decisions are combined through escalation rather than score averaging, allowing any confident danger signal to block an interaction while preserving an auditable rationale. Experiments on four jailbreak benchmarks and a benign safety test set show that the Cognitive Firewall substantially reduces attack success across single turn, multi turn, authority based, and human crafted attacks. It lowers attack success to 2 percent or below on three attack sets and to 14 percent on the most difficult human crafted set, while maintaining an 8 percent over refusal rate. These results indicate that decomposed, conversation level oversight can improve proactive containment and auditability for LLM safety.",
+      "authors": [
+        "Michele Guida",
+        "Ruslan Shikhhamzayev",
+        "Sindhuja Penchala",
+        "Stefano Iannucci",
+        "Jiacheng Li",
+        "Shahram Rahimi",
+        "Noorbakhsh Amiri Golilarz"
+      ],
+      "primary_category": "cs.CR",
+      "categories": [
+        "cs.CR"
+      ],
+      "published": "2026-07-01T06:36:29+00:00",
+      "link": "https://arxiv.org/pdf/2607.01277v1",
+      "tags": [
+        "keyword:agent-safety",
+        "query:agent-safety"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "proactive zero-trust framework for LLM runtime safety monitoring via multi-gate intent detection",
+      "llm_evidence_cn": "主动零信任多门框架，通过意图门等检测跨多轮的有害意图",
+      "llm_evidence": "主动零信任多门框架，通过意图门等检测跨多轮的有害意图",
+      "canonical_evidence": "主动零信任多门框架，通过意图门等检测跨多轮的有害意图",
+      "llm_tldr_en": "Cognitive Firewall is a proactive runtime oversight framework with four gates (intent, zero-trust, etc.) for detecting harmful intent across multi-turn LLM dialogues, outperforming isolated-prompt safeguards.",
+      "llm_tldr_cn": "本文提出认知防火墙，一种主动的零信任多门框架，通过独立监督模型在运行时分解安全评估为意图门、零信任上下文门等四个门，有效检测跨多轮的累积有害意图，弥补了现有孤立评估方法的不足。实验证明其能显著提升对多轮攻击的识别率，增强了LLM对话系统的安全性。",
+      "llm_tldr": "本文提出认知防火墙，一种主动的零信任多门框架，通过独立监督模型在运行时分解安全评估为意图门、零信任上下文门等四个门，有效检测跨多轮的累积有害意图，弥补了现有孤立评估方法的不足。实验证明其能显著提升对多轮攻击的识别率，增强了LLM对话系统的安全性。",
+      "llm_tags": [
+        "query:agent-safety"
+      ],
+      "matched_query_tag": "query:agent-safety",
+      "matched_query_text": "large language model agent safety benchmark and risk assessment LLM agent behavior monitoring",
+      "matched_requirement_id": "req-1",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2607.01640v1",
+      "source": "arxiv",
+      "title": "AgentFlow: Building Agent Dependency Graphs for Static Analysis of Agent Programs",
+      "abstract": "LLM agents are increasingly developed as source-code applications built on agent frameworks. These agent programs combine conventional host-language code with framework-defined semantics for models, prompts, tools, memory, and multi-agent orchestration logic. As a result, their behavior depends not only on traditional control and data flows, but also on a new class of agent dependencies. Such dependencies are often expressed as framework-induced semantics, such as agent constructors, tool decorators, and agent handoff declarations, making them difficult to recover with existing static analysis or dependency tracking tools. In this paper, we present AgentFlow, the first static analysis framework for recovering and analyzing agent dependencies from agent programs. AgentFlow constructs an Agent Dependency Graph (ADG), a framework-agnostic graph representation that represents agents, prompts, models, capabilities, memory states, and control policies as typed nodes, and captures their component-dependency, control-flow, and data-flow dependencies as typed edges. Built on ADGs, AgentFlow supports a range of analyses for agent governance and security, including Agent Bill of Materials (BOM) generation and prompt-to-tool risk detection. We implement AgentFlow for five representative agent frameworks and evaluate it on AgentZoo, a corpus of 5,399 real-world agent programs. Our evaluation shows that AgentFlow recovers richer agent entities and dependencies than existing AST-based agent static analysis tools, generates more dependency-aware Agent BOMs, and uncovers 238 taint-style prompt-to-tool risks in real-world agent programs. These results show that ADG provides a practical foundation for understanding, governing, and securing emerging agent software.",
+      "authors": [
+        "Shenao Wang",
+        "Xinyi Hou",
+        "Yanjie Zhao",
+        "Xiao Cheng",
+        "Haoyu Wang"
+      ],
+      "primary_category": "cs.SE",
+      "categories": [
+        "cs.SE",
+        "cs.CR"
+      ],
+      "published": "2026-07-02T03:11:41+00:00",
+      "link": "https://arxiv.org/pdf/2607.01640v1",
+      "tags": [
+        "keyword:agent-safety",
+        "query:agent-safety"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "static analysis framework for agent dependencies, enabling behavior safety assessment",
+      "llm_evidence_cn": "提出Agent依赖图的静态分析框架，支持行为安全评估",
+      "llm_evidence": "提出Agent依赖图的静态分析框架，支持行为安全评估",
+      "canonical_evidence": "提出Agent依赖图的静态分析框架，支持行为安全评估",
+      "llm_tldr_en": "AgentFlow is the first static analysis framework for recovering and analyzing agent dependencies from source code, enabling behavior safety and risk assessment of LLM agents.",
+      "llm_tldr_cn": "LLM agent程序结合主机语言和框架语义，产生传统分析无法捕获的agent依赖。本文提出AgentFlow，首个静态分析框架，从源码提取agent构造器、工具装饰器、agent交接等依赖。可用于检测权限边界和异常行为，为agent行为风险评估提供基础设施。",
+      "llm_tldr": "LLM agent程序结合主机语言和框架语义，产生传统分析无法捕获的agent依赖。本文提出AgentFlow，首个静态分析框架，从源码提取agent构造器、工具装饰器、agent交接等依赖。可用于检测权限边界和异常行为，为agent行为风险评估提供基础设施。",
+      "llm_tags": [
+        "query:agent-safety"
+      ],
+      "matched_query_tag": "query:agent-safety",
+      "matched_query_text": "LLM agent risk assessment and behavior safety recent papers from top venues",
+      "matched_requirement_id": "req-5",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2607.01641v1",
+      "source": "arxiv",
+      "title": "When Agents Do Not Stop: Uncovering Infinite Agentic Loops in LLM Agents",
+      "abstract": "LLM agents increasingly rely on iterative execution to solve tasks through planning, tool use, state updates, and agent collaboration. While this design enables flexible automation, it also creates a new class of failures: an agent may repeatedly execute model calls, tools, workflow transitions, or agent handoffs when the feedback path is not effectively bounded. We call this problem Infinite Agentic Loops (IALs). IALs are not ordinary programming loops; they arise from the interaction between agent logic, framework semantics, runtime observations, and termination mechanisms. Such failures can amplify a single request into long running model and tool execution, causing cost exhaustion, model denial of service, context growth, and repeated external side effects. We propose IAL-Scan, a static analysis tool for detecting IAL failures in real-world LLM agent projects. IAL-Scan abstracts heterogeneous agent code into a framework independent Agent IR, builds an Agentic Loop Dependence Graph (ALDG) to recover explicit and framework induced feedback paths, and checks whether these paths can repeatedly reach costly or state growing operations without an effective bound. We evaluate IAL-Scan on 6,549 LLM agent repositories. It reports 74 potential findings, among which manual review confirms 68 IAL failures across 47 projects, achieving 91.9% precision.",
+      "authors": [
+        "Xinyi Hou",
+        "Shenao Wang",
+        "Yanjie Zhao",
+        "Haoyu Wang"
+      ],
+      "primary_category": "cs.SE",
+      "categories": [
+        "cs.SE"
+      ],
+      "published": "2026-07-02T03:14:27+00:00",
+      "link": "https://arxiv.org/pdf/2607.01641v1",
+      "tags": [
+        "keyword:agent-safety",
+        "query:agent-safety"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "Infinite agentic loops as a behavior safety failure mode",
+      "llm_evidence_cn": "无限代理循环作为行为安全失效模式",
+      "llm_evidence": "无限代理循环作为行为安全失效模式",
+      "canonical_evidence": "无限代理循环作为行为安全失效模式",
+      "llm_tldr_en": "Identifies a new class of agent safety failures: infinite loops from unbounded feedback, leading to cost exhaustion and denial of service; relevant to behavior monitoring.",
+      "llm_tldr_cn": "论文发现LLM智能体在迭代执行中存在一种新安全失效模式：无限代理循环（IALs），由计划、工具调用、状态更新等反馈回路未有效终止引起。该问题可导致长时间执行、成本耗尽和服务拒绝。研究为智能体行为安全监控提供了关键故障类型，有助于设计运行时监控机制。",
+      "llm_tldr": "论文发现LLM智能体在迭代执行中存在一种新安全失效模式：无限代理循环（IALs），由计划、工具调用、状态更新等反馈回路未有效终止引起。该问题可导致长时间执行、成本耗尽和服务拒绝。研究为智能体行为安全监控提供了关键故障类型，有助于设计运行时监控机制。",
+      "llm_tags": [
+        "query:agent-safety"
+      ],
+      "matched_query_tag": "query:agent-safety",
+      "matched_query_text": "large language model agent safety benchmark and risk assessment LLM agent behavior monitoring",
+      "matched_requirement_id": "req-1",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2607.02376v1",
+      "source": "arxiv",
+      "title": "Hardware-Enforced Semantic Coordination for Safety-Critical Real-Time Autonomous Systems",
+      "abstract": "Recent advances in agentic AI are producing increasingly complex autonomous systems that integrate large language models, world models, optimization engines, specialized neural architectures, autonomous platforms, and human operators. While much current research focuses on improving reasoning capabilities, safety-critical real-time deployment also requires bounded and verifiable coordination among heterogeneous components operating concurrently under uncertainty. Software-mediated coordination presents fundamental limitations in domains where bounded latency, deterministic coordination, and enforceable safety guarantees are essential.   Hence, we propose a hardware-enforced semantic coordination architecture in which selected coordination semantics are implemented directly at the hardware level via field-programmable gate arrays (FPGAs). The approach builds on the Topic-Based Communication Space Petri Net (TB-CSPN) framework, which separates semantic reasoning from interaction management.   In this approach, selected TB-CSPN coordination mechanisms are mapped onto FPGA primitives, creating a hardware-native semantic coordination layer. Focus is not on acceleration, but on enforcing temporal synchronization, semantic gating, authorization constraints, and bounded coordination behavior directly in hardware. Semantic reasoning remains adaptive and software-driven, while embedded coordination semantics become deterministic.",
+      "authors": [
+        "Uwe M. Borghoff",
+        "Paolo Bottoni",
+        "Remo Pareschi"
+      ],
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI",
+        "cs.MA"
+      ],
+      "published": "2026-07-02T16:16:41+00:00",
+      "link": "https://arxiv.org/pdf/2607.02376v1",
+      "tags": [
+        "keyword:agent-safety"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "hardware-enforced semantic coordination for safety-critical autonomous systems, relevant to embodied AI safety",
+      "llm_evidence_cn": "面向安全关键自主系统的硬件强制协调，与具身AI安全相关",
+      "llm_evidence": "面向安全关键自主系统的硬件强制协调，与具身AI安全相关",
+      "canonical_evidence": "面向安全关键自主系统的硬件强制协调，与具身AI安全相关",
+      "llm_tldr_en": "Proposes a hardware-enforced semantic coordination architecture for safety-critical autonomous systems with LLMs, ensuring bounded latency and enforceable safety guarantees.",
+      "llm_tldr_cn": "具身AI系统需要有限延迟和可强制安全保证的协调。本文提出硬件强制语义协调架构，在选定的协调点上用硬件实现，取代软件中介。适用于机器人和其他安全关键自主系统，直接对应物理安全和风险感知规划需求。",
+      "llm_tldr": "具身AI系统需要有限延迟和可强制安全保证的协调。本文提出硬件强制语义协调架构，在选定的协调点上用硬件实现，取代软件中介。适用于机器人和其他安全关键自主系统，直接对应物理安全和风险感知规划需求。",
+      "llm_tags": [
+        "query:agent-safety"
+      ],
+      "matched_query_tag": "query:agent-safety",
+      "matched_query_text": "embodied AI safety vision language action safety robot safety benchmark physical safety risk aware planning",
+      "matched_requirement_id": "req-4",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "quick_skim": [
+    {
+      "id": "2606.31371v1",
+      "source": "arxiv",
+      "title": "Calibrating the Evaluator: Does Probability Calibration Mitigate Preference Coupling in LLM Agent Feedback Loops?",
+      "abstract": "When large language model (LLM) agents adapt their behavior through evaluator feedback, systematic evaluator biases propagate into the agent's learned strategy distribution - a phenomenon termed evaluator preference coupling. Prior work has documented this coupling and established a diagnostic framework (EPC) to measure it, but has not investigated whether calibration techniques can mitigate the effect. We present the first study of evaluator calibration as mitigation: applying probability calibration to the evaluator's pairwise judgments to reduce spurious preference propagation. In a controlled within-subjects experiment (N=5) comparing standard binary TTRL (win/loss) with confidence-calibrated TTRL (probability-weighted updates) using DeepSeek-V4-Pro as executor and GLM5.2 as evaluator, we find that calibration reduces the coupling coefficient gamma by 20-49% and Jensen-Shannon divergence by 45-67%. A symmetric-LR control confirms the effect is not due to reduced update asymmetry. We release the calibrated TTRL protocol and recommend it as a lightweight mitigation for LLM-as-judge deployment pipelines.",
+      "authors": [
+        "Zewen Liu"
+      ],
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "published": "2026-06-30T09:03:24+00:00",
+      "link": "https://arxiv.org/pdf/2606.31371v1",
+      "tags": [
+        "keyword:agent-safety",
+        "query:agent-safety"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "evaluator calibration mitigates bias in LLM agent feedback loops affecting behavior safety",
+      "llm_evidence_cn": "评估器校准减轻LLM代理反馈循环中的偏差，影响行为安全",
+      "llm_evidence": "评估器校准减轻LLM代理反馈循环中的偏差，影响行为安全",
+      "canonical_evidence": "评估器校准减轻LLM代理反馈循环中的偏差，影响行为安全",
+      "llm_tldr_en": "Studies whether probability calibration of evaluators mitigates preference coupling in LLM agent feedback loops, finding calibration reduces spurious propagation.",
+      "llm_tldr_cn": "该论文研究LLM代理通过评估反馈自适应时，评估器偏差如何传播至代理策略（称为评估器偏好耦合）。首次探索概率校准作为缓解手段，实验比较标准二进制反馈与置信度校准反馈，发现校准能减少虚假偏好传播，提升代理行为稳定性。为代理行为安全提供了校准技术方案。",
+      "llm_tldr": "该论文研究LLM代理通过评估反馈自适应时，评估器偏差如何传播至代理策略（称为评估器偏好耦合）。首次探索概率校准作为缓解手段，实验比较标准二进制反馈与置信度校准反馈，发现校准能减少虚假偏好传播，提升代理行为稳定性。为代理行为安全提供了校准技术方案。",
+      "llm_tags": [
+        "query:agent-safety"
+      ],
+      "matched_query_tag": "query:agent-safety",
+      "matched_query_text": "large language model agent safety benchmark and risk assessment LLM agent behavior monitoring",
+      "matched_requirement_id": "req-1",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "2607.00035v1",
+      "source": "arxiv",
+      "title": "Making Failure Safe: A Constrained, Verifiable Agent Framework for Open-Web Data Collection",
+      "abstract": "LLMs and agents can generate web scrapers from natural-language requirements, but direct generation remains unreliable because of dependency errors, broken selectors, schema mismatches, and heterogeneous page structures. We propose a constrained, verifiable agent framework that shifts LLM output from free-form code to typed JSON collector configurations, combining a six-type collector taxonomy, template and utility-function constraints, static Airflow DAG execution, rule-based quality checking, and structured feedback correction. Experiments on 138 tasks show that the taxonomy supports description-based requirement typing, while confirming that stable instantiation requires completing source, field, and execution constraints beyond the initial description. On 80 independently source-verified tasks, the framework runs with zero execution-stage LLM tokens and the lowest average wall-clock time, trading moderate one-shot quality for a reusable, deterministic, and verifiable execution path suited to repeated scheduled collection. These results position the framework as a reusable, low-cost, and verifiable execution path for repeated open-web data collection.",
+      "authors": [
+        "Bo Chen"
+      ],
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-06-25T14:05:37+00:00",
+      "link": "https://arxiv.org/pdf/2607.00035v1",
+      "tags": [
+        "keyword:agent-safety",
+        "query:agent-safety"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "constrained verifiable agent framework for safe tool calling and data collection",
+      "llm_evidence_cn": "约束可验证的agent框架，用于安全的工具调用和数据收集",
+      "llm_evidence": "约束可验证的agent框架，用于安全的工具调用和数据收集",
+      "canonical_evidence": "约束可验证的agent框架，用于安全的工具调用和数据收集",
+      "llm_tldr_en": "A constrained verifiable agent framework that generates typed JSON collector configurations instead of free-form code, improving reliability and safety of web data collection.",
+      "llm_tldr_cn": "LLM生成网页爬虫常因依赖错误、选择器断裂等问题不可靠。本文提出约束可验证agent框架，将LLM输出从自由代码转为类型化JSON收集器配置，结合六类收集器分类、模板约束、静态DAG执行和质量检查。实验表明该方法提高了稳定性和安全性，直接关联工具调用安全需求。",
+      "llm_tldr": "LLM生成网页爬虫常因依赖错误、选择器断裂等问题不可靠。本文提出约束可验证agent框架，将LLM输出从自由代码转为类型化JSON收集器配置，结合六类收集器分类、模板约束、静态DAG执行和质量检查。实验表明该方法提高了稳定性和安全性，直接关联工具调用安全需求。",
+      "llm_tags": [
+        "query:agent-safety"
+      ],
+      "matched_query_tag": "query:agent-safety",
+      "matched_query_text": "tool calling agent security least privilege permission injection vulnerability LLM tool security",
+      "matched_requirement_id": "req-2",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "2607.00345v1",
+      "source": "arxiv",
+      "title": "Registry-Governed Agent Lifecycle:Completing EDDOps with Evaluation-DrivenRegistration, Promotion, and Retirement on AWS AgentCore",
+      "abstract": "Enterprise adoption of LLM agents requires model selection methods that balance quality, reliability, safety, latency, and cost. Evaluation-Driven Development and Operations (EDDOps) positions evaluation as a continuous governing function across the agent lifecycle rather than a terminal checkpoint. This paper presents a practitioner-oriented instantiation of EDDOps on AWS Bedrock AgentCore and proposes a cost-to-performance framework for selecting foundation models in enterprise agent architectures. We make three contributions: a conceptual synthesis explaining why traditional TDD/BDD methods are insufficient for non-deterministic LLM agents; an architectural mapping of the EDDOps reference architecture onto AgentCore Runtime, Evaluations, Agent Registry, and CloudWatch observability; and an empirical cost-to-performance decision framework validated through a proof-of-concept comparing three foundation models across two deployment paths. Using trace data from 30 single-turn invocations across six agents, 9 multi-turn evaluations, and registry-integrated governance, we show how evaluation evidence can convert model selection from a benchmark-ranking exercise into a governed economic decision. The results suggest that managed agent platforms can support EDDOps when they provide trace-native observability, pluggable evaluator frameworks, and governed registry-based discovery.",
+      "authors": [
+        "Richard Kang",
+        "Vincent Wang"
+      ],
+      "primary_category": "cs.SE",
+      "categories": [
+        "cs.SE"
+      ],
+      "published": "2026-07-01T02:41:08+00:00",
+      "link": "https://arxiv.org/pdf/2607.00345v1",
+      "tags": [
+        "keyword:agent-safety",
+        "query:agent-safety"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "evaluation-driven agent lifecycle safety and model selection",
+      "llm_evidence_cn": "评估驱动的代理生命周期安全与模型选择",
+      "llm_evidence": "评估驱动的代理生命周期安全与模型选择",
+      "canonical_evidence": "评估驱动的代理生命周期安全与模型选择",
+      "llm_tldr_en": "Proposes EDDOps framework integrating continuous evaluation for LLM agent lifecycle, balancing quality, safety, latency, and cost on AWS Bedrock AgentCore.",
+      "llm_tldr_cn": "该论文提出评估驱动开发运维（EDDOps）框架，将安全与质量评估嵌入LLM代理的整个生命周期，而非仅作为终点检查。在AWS Bedrock AgentCore上实现了该框架，并提出了成本-性能模型选择方法。实验表明，该方法能有效平衡安全性、延迟和成本，为企业代理部署提供了可操作的安全治理方案。",
+      "llm_tldr": "该论文提出评估驱动开发运维（EDDOps）框架，将安全与质量评估嵌入LLM代理的整个生命周期，而非仅作为终点检查。在AWS Bedrock AgentCore上实现了该框架，并提出了成本-性能模型选择方法。实验表明，该方法能有效平衡安全性、延迟和成本，为企业代理部署提供了可操作的安全治理方案。",
+      "llm_tags": [
+        "query:agent-safety"
+      ],
+      "matched_query_tag": "query:agent-safety",
+      "matched_query_text": "LLM agent risk assessment and behavior safety recent papers from top venues",
+      "matched_requirement_id": "req-5",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    }
+  ]
+}
