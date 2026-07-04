@@ -1,0 +1,328 @@
+{
+  "mode": "standard",
+  "generated_at": "2026-07-04T20:44:56.008510+00:00",
+  "stats": {
+    "mode": "standard",
+    "tag_count": 1,
+    "deep_divecandidates": 6,
+    "deep_cap": 6,
+    "deep_selected": 6,
+    "quick_candidates": 2,
+    "quick_skim_target": 11,
+    "quick_selected": 2
+  },
+  "deep_dive": [
+    {
+      "id": "2606.29193v1",
+      "source": "arxiv",
+      "title": "A Multi-Dataset Benchmark for Evaluating LLM Agents in Microservice Failure Diagnosis",
+      "abstract": "LLM-based agents are reshaping microservice operations into AgentOps, where benchmarks are key to evaluating failure diagnosis over multimodal observability data. However, existing benchmarks remain largely outcome-oriented: they score only the final answer and fail to assess the systematic reasoning process in failure diagnosis. We address this gap by introducing two large-scale datasets (AIOps2025 and RCA100) under a reasoning-process evaluation paradigm that assesses agentic diagnostic capability along three dimensions: Localization (where the fault occurs), Identification (what type of fault it is), and Reason (whether the reasoning trace is grounded in relevant evidence). Together, the two datasets comprise over 500 expert-labeled failure cases across two representative microservice systems (HipsterShop and the OpenTelemetry Demo Store). They cover diverse fault scenarios across resource, network, runtime, middleware/database, and application-logic categories and provide fine-grained causal evidence to support agent learning and reasoning-process evaluation. Beyond scale and coverage, the datasets have been carefully labelled by domain experts and validated through large-scale competitions, supporting more than 6,000 participating teams. This makes them not only expert-labeled diagnostic datasets, but also competition-validated benchmarks for evaluating agentic failure diagnosis in real-world microservice environments. Datasets are available at https://www.aiops.cn/gitlab/aiops-live-benchmark/agenticopseval.",
+      "authors": [
+        "Yuanhong Cai",
+        "Xiaohui Nie",
+        "Kanglin Yin",
+        "Changhua Pei",
+        "Yongqian Sun",
+        "Shenglin Zhang",
+        "Haibin Liu",
+        "Guiyang Liu",
+        "Xidao Wen",
+        "Fang Situ",
+        "Dan Pei"
+      ],
+      "primary_category": "cs.SE",
+      "categories": [
+        "cs.SE",
+        "cs.AI"
+      ],
+      "published": "2026-06-28T04:38:05+00:00",
+      "link": "https://arxiv.org/pdf/2606.29193v1",
+      "tags": [
+        "keyword:agent-safety",
+        "query:agent-safety"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "Benchmark for LLM agent failure diagnosis reasoning process evaluation",
+      "llm_evidence_cn": "评估LLM智能体故障诊断推理过程的基准",
+      "llm_evidence": "评估LLM智能体故障诊断推理过程的基准",
+      "canonical_evidence": "评估LLM智能体故障诊断推理过程的基准",
+      "llm_tldr_en": "This paper introduces a multi-dataset benchmark for evaluating LLM agents in microservice failure diagnosis, focusing on reasoning process assessment across localization, identification, and reason dimensions.",
+      "llm_tldr_cn": "现有基准仅关注最终答案，忽略了故障诊断中的系统推理过程。本文提出AIOps2025和RCA100两个大规模数据集，基于推理评估范式从故障定位、故障类型识别和推理依据三个维度评估智能体诊断能力。实验表明该范式能更全面反映智能体诊断质量。该方法为LLM智能体安全评估提供了更细致的基准工具。",
+      "llm_tldr": "现有基准仅关注最终答案，忽略了故障诊断中的系统推理过程。本文提出AIOps2025和RCA100两个大规模数据集，基于推理评估范式从故障定位、故障类型识别和推理依据三个维度评估智能体诊断能力。实验表明该范式能更全面反映智能体诊断质量。该方法为LLM智能体安全评估提供了更细致的基准工具。",
+      "llm_tags": [
+        "query:agent-safety"
+      ],
+      "matched_query_tag": "query:agent-safety",
+      "matched_query_text": "large language model agent safety benchmark and risk assessment LLM agent behavior monitoring",
+      "matched_requirement_id": "req-1",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2607.01919v1",
+      "source": "arxiv",
+      "title": "ElephantAgent: Contextual State Continuity in Agentic Systems",
+      "abstract": "Agentic systems enhance their capabilities by invoking external tools and maintaining persistent memory. However, these external dependencies introduce novel attack surfaces. Recent tool and memory poisoning attacks show that maliciously crafted tool descriptors and poisoned memory can covertly bias agent behavior. These threats reflect a deeper issue: the lack of verifiable continuity in the agent's contextual state for planning and execution. We present ElephantAgent, a protocol that enforces Contextual State Continuity to defend against contextual state poisoning. Inspired by prior state-continuity mechanisms (e.g., Nimble), ElephantAgent extends this protection to the evolving contextual state of agentic systems. We define the contextual state as the bounded, security-critical subset of the agent's entire context (e.g., tool state and memory). Before processing each query, ElephantAgent recomputes the digest of the local contextual state and verifies it against the latest authorized digest. Using replicated trusted hardware, ElephantAgent maintains a linearizable ledger of authorized contextual state transitions and detects out-of-band state tampering. To handle in-band semantic abuse, ElephantAgent additionally provides Historical Traceability, enabling conditional post-hoc audit and recovery to a known-good prior state.",
+      "authors": [
+        "Jiankai Jin",
+        "Xiangzheng Zhang",
+        "Zhao Liu",
+        "Wenzhuo Xu",
+        "Dongdong Yang",
+        "Deyue Zhang",
+        "Quanchen Zou"
+      ],
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI",
+        "cs.CR"
+      ],
+      "published": "2026-07-02T09:18:09+00:00",
+      "link": "https://arxiv.org/pdf/2607.01919v1",
+      "tags": [
+        "keyword:agent-safety",
+        "query:agent-safety"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "defends against tool and memory poisoning via contextual state continuity",
+      "llm_evidence_cn": "通过上下文状态连续性防御工具和记忆投毒攻击",
+      "llm_evidence": "通过上下文状态连续性防御工具和记忆投毒攻击",
+      "canonical_evidence": "通过上下文状态连续性防御工具和记忆投毒攻击",
+      "llm_tldr_en": "Proposes ElephantAgent protocol enforcing contextual state continuity to protect agentic systems from tool and memory poisoning.",
+      "llm_tldr_cn": "该论文指出代理系统中的工具描述和记忆可能被恶意篡改，提出大象代理（ElephantAgent）协议，通过强制上下文状态连续性来防御状态投毒攻击。该方法扩展了状态连续性机制，为代理系统提供了可验证的安全保障。",
+      "llm_tldr": "该论文指出代理系统中的工具描述和记忆可能被恶意篡改，提出大象代理（ElephantAgent）协议，通过强制上下文状态连续性来防御状态投毒攻击。该方法扩展了状态连续性机制，为代理系统提供了可验证的安全保障。",
+      "llm_tags": [
+        "query:agent-safety"
+      ],
+      "matched_query_tag": "query:agent-safety",
+      "matched_query_text": "tool calling agent security least privilege permission injection vulnerability LLM tool security",
+      "matched_requirement_id": "req-2",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2607.02294v1",
+      "source": "arxiv",
+      "title": "Coding Agents Are Guessing: Measuring Action-Boundary Violations in Underspecified DevOps Instructions",
+      "abstract": "LLM coding agents are increasingly deployed to act autonomously on real production infrastructure. They execute shell commands, modify repositories, and call operational APIs. However, completing a task is not sufficient for safety. A wrong action can cause severe consequences. Existing agent benchmarks largely emphasize task completion, leaving open how agents behave under benign but underspecified instructions.   We present UnderSpecBench, a benchmark for measuring action-boundary violations in coding agents (i.e., Claude Code, Codex, and OpenCode) on DevOps tasks. UnderSpecBench includes 69 task families grounded in documented incidents, CVEs, or tool behavior and organized across four DevOps capability domains and nine operational control surfaces. To isolate underspecification from task difficulty, each task keeps the same environment and ground-truth safe action while varying the instruction along three axes: intent clarity, target certainty, and blast radius. The resulting 2,208 prompt variants are evaluated with deterministic, side-effect-based oracles that separate Safe Success, Wrong Target, and OverScope outcomes; non-action runs are further classified as clarification, refusal, or deferment.   Across five agent x model configurations using OpenCode, Claude Code, and Codex, the evaluation results show that underspecification does not mainly make agents fail; it makes them guess. 55.8-67.8% of runs violate at least one boundary. Target underspecification sharply degrades action quality, while blast-radius cues barely reduce action propensity. These findings show that completion-centric evaluation can overstate safe autonomy and motivate mitigations at the model, harness, and system layer.",
+      "authors": [
+        "Zimo Ji",
+        "Zekai Zhang",
+        "Congying Xu",
+        "Zongjie Li",
+        "Yudong Gao",
+        "Shuai Wang",
+        "Shing-Chi Cheung"
+      ],
+      "primary_category": "cs.SE",
+      "categories": [
+        "cs.SE"
+      ],
+      "published": "2026-07-02T15:11:39+00:00",
+      "link": "https://arxiv.org/pdf/2607.02294v1",
+      "tags": [
+        "keyword:agent-safety",
+        "query:agent-safety"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "benchmark for action-boundary violations in coding agents, directly addresses agent safety under underspecified instructions",
+      "llm_evidence_cn": "编码代理动作边界违规基准，直接处理欠指定指令下的代理安全",
+      "llm_evidence": "编码代理动作边界违规基准，直接处理欠指定指令下的代理安全",
+      "canonical_evidence": "编码代理动作边界违规基准，直接处理欠指定指令下的代理安全",
+      "llm_tldr_en": "Introduces UnderSpecBench to measure action-boundary violations in coding agents under underspecified DevOps instructions, revealing safety gaps beyond task completion.",
+      "llm_tldr_cn": "现有代理基准只关注任务完成，忽视安全风险。本文提出UnderSpecBench，包含69个基于真实事件的DevOps任务，评估编码代理在欠指定指令下执行危险动作的情况，发现主流代理均存在严重边界违规。",
+      "llm_tldr": "现有代理基准只关注任务完成，忽视安全风险。本文提出UnderSpecBench，包含69个基于真实事件的DevOps任务，评估编码代理在欠指定指令下执行危险动作的情况，发现主流代理均存在严重边界违规。",
+      "llm_tags": [
+        "query:agent-safety"
+      ],
+      "matched_query_tag": "query:agent-safety",
+      "matched_query_text": "large language model agent safety benchmark and risk assessment LLM agent behavior monitoring",
+      "matched_requirement_id": "req-1",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2606.29030v1",
+      "source": "arxiv",
+      "title": "Memory as an Attack Surface in LLM Agents: A Study on Multiple-Choice Question Answering",
+      "abstract": "AI agents extend conventional large language model (LLM) applications by integrating language understanding with task execution, external tool use, and memory mechanisms. While memory allows agents to retain prior interactions and provide more personalized and context-aware responses, it also introduces a new vulnerability: information stored in memory can influence future outputs even when the current query is clean. In this paper, we investigate memory manipulation in LLM-based agents for multiple-choice question answering. We first design and implement an LLM-based AI agent with an external memory component that stores and retrieves task-relevant information. We then introduce basic memory manipulation scenarios in which misleading or corrupted memories are inserted into the agent before it answers multiple-choice questions. Using a controlled experimental setup, we compare the agent's performance before and after memory manipulation and measure changes in answer accuracy, attack success rate, and selection of manipulated options. Our results show that even simple memory manipulations can noticeably affect the agent's final answers, causing it to select incorrect options despite receiving clean and well-formed questions.",
+      "authors": [
+        "Shahnewaz Karim Sakib",
+        "Anindya Bijoy Das"
+      ],
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI",
+        "cs.ET"
+      ],
+      "published": "2026-06-27T17:57:25+00:00",
+      "link": "https://arxiv.org/pdf/2606.29030v1",
+      "tags": [
+        "keyword:agent-safety",
+        "query:agent-safety"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "studies memory manipulation attacks in LLM agents, revealing new vulnerability",
+      "llm_evidence_cn": "研究LLM代理中的记忆操纵攻击，揭示新的安全隐患",
+      "llm_evidence": "研究LLM代理中的记忆操纵攻击，揭示新的安全隐患",
+      "canonical_evidence": "研究LLM代理中的记忆操纵攻击，揭示新的安全隐患",
+      "llm_tldr_en": "Investigates memory as an attack surface in LLM agents, demonstrates how stored information can be manipulated to influence outputs.",
+      "llm_tldr_cn": "该论文揭示了LLM代理中记忆组件作为新型攻击面，设计了具有外部记忆的QA代理，并展示了误导信息注入如何影响后续回答。强调了记忆安全在代理系统中的重要性。",
+      "llm_tldr": "该论文揭示了LLM代理中记忆组件作为新型攻击面，设计了具有外部记忆的QA代理，并展示了误导信息注入如何影响后续回答。强调了记忆安全在代理系统中的重要性。",
+      "llm_tags": [
+        "query:agent-safety"
+      ],
+      "matched_query_tag": "query:agent-safety",
+      "matched_query_text": "large language model agent safety benchmark and risk assessment LLM agent behavior monitoring",
+      "matched_requirement_id": "req-1",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2606.29225v1",
+      "source": "arxiv",
+      "title": "PolicyGuard: A Dialogue-Grounded Sub-Agent Verifier for Policy Adherence in LLM Agents",
+      "abstract": "LLM agents handle user requests on behalf of organizations through tool calls and must follow the company policies stated in their system prompts. Prior work approaches this as a safeguarding problem -- external checks that block non-compliant agent actions. We argue that policy adherence is a broader problem: real workflows unfold across many turns, require explicit user confirmation and prerequisite reads, and hinge on the content of the dialogue rather than on any single argument value. Meeting this bar requires (i) full conversation context, (ii) self-reasoning over the policy and the current dialogue, and (iii) conversation-specific remediation that guides the agent's next turn -- three capabilities that prior safeguard work has often underestimated. We introduce POLICYGUARD, a sub-agent verifier that shares the agent's view of the dialogue, reasons over the policy in context, and provides actionable feedback for the agent's next turn. On tau^2-BENCH airline across three vendors (GPT-5.4, Claude Sonnet 4.6, Gemini 2.5 Pro) with four trials per setting, POLICYGUARD improves PASS4 by +12.0 / +6.0 / +12.0 pp. Per-call analyses show POLICYGUARD achieves higher policy-violation recall while blocking roughly half as often as argument-level guards.",
+      "authors": [
+        "Seongjae Kang",
+        "Taehyung Yu",
+        "Sung Ju Hwang"
+      ],
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "published": "2026-06-28T06:27:36+00:00",
+      "link": "https://arxiv.org/pdf/2606.29225v1",
+      "tags": [
+        "keyword:agent-safety",
+        "query:agent-safety"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "PolicyGuard verifies policy adherence in LLM agent dialogues",
+      "llm_evidence_cn": "PolicyGuard验证LLM代理对话中的政策遵循情况",
+      "llm_evidence": "PolicyGuard验证LLM代理对话中的政策遵循情况",
+      "canonical_evidence": "PolicyGuard验证LLM代理对话中的政策遵循情况",
+      "llm_tldr_en": "PolicyGuard uses a dialogue-grounded sub-agent to verify policy adherence in multi-turn agent interactions, enabling remediation.",
+      "llm_tldr_cn": "该论文指出LLM代理需遵循企业政策，但现有防护仅阻止违规动作，不足以处理多轮对话中的政策遵循。提出PolicyGuard子代理，利用完整对话上下文和政策自推理，验证并引导代理合规操作，提升行为安全性。",
+      "llm_tldr": "该论文指出LLM代理需遵循企业政策，但现有防护仅阻止违规动作，不足以处理多轮对话中的政策遵循。提出PolicyGuard子代理，利用完整对话上下文和政策自推理，验证并引导代理合规操作，提升行为安全性。",
+      "llm_tags": [
+        "query:agent-safety"
+      ],
+      "matched_query_tag": "query:agent-safety",
+      "matched_query_text": "large language model agent safety benchmark and risk assessment LLM agent behavior monitoring",
+      "matched_requirement_id": "req-1",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2607.02514v1",
+      "source": "arxiv",
+      "title": "Distributed Attacks in Persistent-State AI Control",
+      "abstract": "As AI coding agents become more autonomous, they increasingly ship code iteratively, with the codebase persisting across sessions. This persistence creates a new attack surface: a misaligned or prompt-injected agent can distribute attacks across pull requests (PRs) and time its payload for the PR with the best natural cover. To study the resulting dynamics, we introduce Iterative VibeCoding, a setting for AI control, the study of safely deploying capable but potentially untrusted AI. In Iterative VibeCoding, a coding agent builds software over a sequence of PRs in a persistent codebase while pursuing a covert side task. Our benchmark includes two task families: CLI tools and Flask web services, across 20 total task variations. We use Claude Sonnet 4.5 as the attack agent and GPT-4o as the monitor. We compare gradual attacks, which distribute the side task across PRs, against non-gradual attacks concentrated in a single PR. No single monitor is robust to both: which strategy evades best (success while evading the monitor) depends on the monitor type, so a defender cannot close off both gradual and non-gradual attacks with any one monitor. High evasion (>= 65%) generalizes across model attack agent backends (Sonnet 4.5, Gemini 3.1 Pro, Kimi K2.5), confirming this is a property of the persistent-state attack surface rather than a single model's capability. Evasion also remains high across state-of-the-art monitor models and the gap between gradual and non-gradual evasion widens for more capable models. We introduce a stateful link-tracker monitor that tracks suspicious buildup across PRs. On both task families, it detects gradual attacks substantially better than diff monitors that merely see more accumulated history. Combining this stronger monitor with trajectory monitors in a four-monitor ensemble reduces gradual-attack evasion from 93% under the weakest standard diff monitor to 47%.",
+      "authors": [
+        "Josh Hills",
+        "Ida Caspary",
+        "Asa Cooper Stickland"
+      ],
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-07-02T17:59:56+00:00",
+      "link": "https://arxiv.org/pdf/2607.02514v1",
+      "tags": [
+        "keyword:agent-safety",
+        "query:agent-safety"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "studies distributed attacks via prompt injection across pull requests in persistent codebases",
+      "llm_evidence_cn": "研究通过pull request进行分布式提示注入攻击",
+      "llm_evidence": "研究通过pull request进行分布式提示注入攻击",
+      "canonical_evidence": "研究通过pull request进行分布式提示注入攻击",
+      "llm_tldr_en": "Introduces iterative coding setting where agents distribute attacks across pull requests, demonstrating new attack surface.",
+      "llm_tldr_cn": "该论文提出迭代式VibeCoding场景，研究AI编码代理如何在持续代码库中跨pull request分布恶意负载。攻击者可利用自然掩盖时机，展示了持续性状态带来的新攻击面，为AI控制研究提供了新基准。",
+      "llm_tldr": "该论文提出迭代式VibeCoding场景，研究AI编码代理如何在持续代码库中跨pull request分布恶意负载。攻击者可利用自然掩盖时机，展示了持续性状态带来的新攻击面，为AI控制研究提供了新基准。",
+      "llm_tags": [
+        "query:agent-safety"
+      ],
+      "matched_query_tag": "query:agent-safety",
+      "matched_query_text": "tool calling agent security least privilege permission injection vulnerability LLM tool security",
+      "matched_requirement_id": "req-2",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "quick_skim": [
+    {
+      "id": "2606.29026v1",
+      "source": "arxiv",
+      "title": "Preventing Error Propagation in Multi-Agent AI through Runtime Monitoring",
+      "abstract": "Multi-agent AI systems can improve answer selection by allowing different language models to exchange reasoning traces, revise initial predictions, and support a final decision. However, such communication may also introduce reliability risks: reasoning from one agent can correct another agent's mistake, but it can also mislead an agent that was initially correct. This paper studies reliable multi-agent AI communication through reasoning exchange and runtime answer revision. We develop a framework in which agents first answer multiple-choice questions independently, then share reasoning traces and revise their decisions. We conduct numerical experiments where we evaluate whether this process improves accuracy, produces more positive than negative answer transitions, and remains effective across domains such as cybersecurity, networking, and general knowledge. The results help identify when multi-agent reasoning improves reliability and when it may propagate errors.",
+      "authors": [
+        "Shahnewaz Karim Sakib",
+        "Anindya Bijoy Das"
+      ],
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI",
+        "cs.ET"
+      ],
+      "published": "2026-06-27T17:44:24+00:00",
+      "link": "https://arxiv.org/pdf/2606.29026v1",
+      "tags": [
+        "keyword:agent-safety",
+        "query:agent-safety"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "runtime monitoring to prevent error propagation in multi-agent AI",
+      "llm_evidence_cn": "运行时监控以防止多智能体系统中的错误传播",
+      "llm_evidence": "运行时监控以防止多智能体系统中的错误传播",
+      "canonical_evidence": "运行时监控以防止多智能体系统中的错误传播",
+      "llm_tldr_en": "Proposes a runtime monitoring framework for multi-agent AI that enables agents to share reasoning traces and revise answers, reducing error propagation and improving reliability.",
+      "llm_tldr_cn": "多智能体通信可能传播错误，导致可靠性问题。本文提出运行时监控框架，让智能体独立回答后共享推理轨迹并修订答案。实验表明该方法能提升准确率并减少负面纠正，为多智能体系统的行为可靠性提供了可量化的监控方案。",
+      "llm_tldr": "多智能体通信可能传播错误，导致可靠性问题。本文提出运行时监控框架，让智能体独立回答后共享推理轨迹并修订答案。实验表明该方法能提升准确率并减少负面纠正，为多智能体系统的行为可靠性提供了可量化的监控方案。",
+      "llm_tags": [
+        "query:agent-safety"
+      ],
+      "matched_query_tag": "query:agent-safety",
+      "matched_query_text": "large language model agent safety benchmark and risk assessment LLM agent behavior monitoring",
+      "matched_requirement_id": "req-1",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "2606.29602v1",
+      "source": "arxiv",
+      "title": "An Empirical Evaluation of Prompt Injection Vulnerabilities in Large Language Models Across Multilingual and Obfuscated Attack Scenarios",
+      "abstract": "Large Language Models (LLMs) have rapidly evolved, transforming industries by automating complex tasks and generating human-like content. However, as their adoption accelerates, prompt injection vulnerabilities have become increasingly apparent. Malicious actors exploit these weaknesses to generate phishing emails, deceptive websites, nd malware, posing serious security risks. This paper presents an empirical evaluation of six state-of-the-art LLMs (DeepSeek, GPT, Gemini, Grok, Llama, and Qwen) under diverse adversarial prompt scenarios, including direct and multi-stage obfuscated attacks across multiple languages and character encodings. The proposed framework measures how effectively current LLMs resist manipulation into performing harmful actions. Our findings reveal systematic vulnerabilities across all tested models. Even direct prompt injections frequently induce the generation of phishing content, websites, and malware, while elaborate prompts achieve even higher malicious compliance rates, particularly for phishing. Models such as DeepSeek, Gemini, and Grok show especially high susceptibility under complex instructions. Notably, non-English languages consistently exhibit higher compliance rates than English, exposing significant gaps in multilingual safety alignment. Although simple character encodings reduce malicious outputs, they do not eliminate them. These results highlight persistent challenges in LLM safety and underscore the urgent need for stronger defenses and improved security mechanisms to support the ethical and secure deployment of LLMs in cybersecurity sensitive contexts.",
+      "authors": [
+        "Caglar Uysal",
+        "Baturay Birinci",
+        "Süha Orhun Mutluergil",
+        "Orçun Çetin"
+      ],
+      "primary_category": "cs.CR",
+      "categories": [
+        "cs.CR"
+      ],
+      "published": "2026-06-28T20:56:57+00:00",
+      "link": "https://arxiv.org/pdf/2606.29602v1",
+      "tags": [
+        "keyword:agent-safety",
+        "query:agent-safety"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "evaluates prompt injection vulnerabilities in LLMs across languages and obfuscation",
+      "llm_evidence_cn": "评估LLM在多语言和混淆场景下的提示注入漏洞",
+      "llm_evidence": "评估LLM在多语言和混淆场景下的提示注入漏洞",
+      "canonical_evidence": "评估LLM在多语言和混淆场景下的提示注入漏洞",
+      "llm_tldr_en": "Empirical evaluation of six LLMs against direct and obfuscated prompt injection attacks, highlighting security risks.",
+      "llm_tldr_cn": "该论文对六个最先进的LLM进行系统性提示注入攻击测试，涵盖直接、多阶段混淆及多语言场景。评估框架衡量了模型被诱导生成恶意内容的风险，揭示了当前LLM在对抗攻击下的脆弱性。",
+      "llm_tldr": "该论文对六个最先进的LLM进行系统性提示注入攻击测试，涵盖直接、多阶段混淆及多语言场景。评估框架衡量了模型被诱导生成恶意内容的风险，揭示了当前LLM在对抗攻击下的脆弱性。",
+      "llm_tags": [
+        "query:agent-safety"
+      ],
+      "matched_query_tag": "query:agent-safety",
+      "matched_query_text": "tool calling agent security least privilege permission injection vulnerability LLM tool security",
+      "matched_requirement_id": "req-2",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    }
+  ]
+}

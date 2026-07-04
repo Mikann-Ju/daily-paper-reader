@@ -6,47 +6,46 @@
 </div>
 
 ## 每次日报
-- 最新运行日期：2026-07-03
-- 运行时间：2026-07-03 21:15:09 UTC
+- 最新运行日期：2026-07-04
+- 运行时间：2026-07-04 20:49:44 UTC
 - 运行状态：成功
-- 本次总论文数：9
+- 本次总论文数：8
 - 精读区：6
-- 速读区：3
+- 速读区：2
 
 ### 今日简报（AI）
-今日聚焦LLM Agent安全风险与恶意软件检测，高分精读揭示大规模测试与动态检测方法。建议优先精读《Safety Testing LLM Agents at Scale》与《Cloak and Detonate》，速读中评估校准与约束框架也值得参考。
-- 详情：[/202607/03/README](/202607/03/README)
+今日精读聚焦LLM Agent在微服务故障诊断与上下文状态延续两大方向，两篇高分论文均获9.0分。  
+最值得关注的是多数据集基准测试和上下文连续性框架，分别解决Agent可靠性与状态保持问题。  
+建议优先精读这两篇高分论文，同时留意运行时监控与提示注入防御以防范实际部署风险。
+- 详情：[/202607/04/README](/202607/04/README)
 
 ### 精读区论文标签
-1. [Safety Testing LLM Agents at Scale: From Risk Discovery to Evidence-Grounded Verification](/202607/03/2607.01793v1-safety-testing-llm-agents-at-scale-from-risk-discovery-to-evidence-grounded-verification)  
-   标签：评分：10.0/10、query:agent-safety
-   evidence：大语言模型代理安全测试框架，风险发现与验证
-2. [Cloak and Detonate: Scanner Evasion and Dynamic Detection of Agent Skill Malware](/202607/03/2607.02357v1-cloak-and-detonate-scanner-evasion-and-dynamic-detection-of-agent-skill-malware)  
+1. [A Multi-Dataset Benchmark for Evaluating LLM Agents in Microservice Failure Diagnosis](/202607/04/2606.29193v1-a-multi-dataset-benchmark-for-evaluating-llm-agents-in-microservice-failure-diagnosis)  
    标签：评分：9.0/10、query:agent-safety
-   evidence：代理技能恶意软件逃避与检测，涉及工具调用安全
-3. [Cognitive Firewall: A Proactive, Zero-Trust, Multi-Gate Framework for LLM Safety](/202607/03/2607.01277v1-cognitive-firewall-a-proactive-zero-trust-multi-gate-framework-for-llm-safety)  
+   evidence：评估LLM智能体故障诊断推理过程的基准
+2. [ElephantAgent: Contextual State Continuity in Agentic Systems](/202607/04/2607.01919v1-elephantagent-contextual-state-continuity-in-agentic-systems)  
+   标签：评分：9.0/10、query:agent-safety
+   evidence：通过上下文状态连续性防御工具和记忆投毒攻击
+3. [Coding Agents Are Guessing: Measuring Action-Boundary Violations in Underspecified DevOps Instructions](/202607/04/2607.02294v1-coding-agents-are-guessing-measuring-action-boundary-violations-in-underspecified-devops-instructions)  
+   标签：评分：9.0/10、query:agent-safety
+   evidence：编码代理动作边界违规基准，直接处理欠指定指令下的代理安全
+4. [Memory as an Attack Surface in LLM Agents: A Study on Multiple-Choice Question Answering](/202607/04/2606.29030v1-memory-as-an-attack-surface-in-llm-agents-a-study-on-multiple-choice-question-answering)  
    标签：评分：8.0/10、query:agent-safety
-   evidence：主动零信任多门框架，通过意图门等检测跨多轮的有害意图
-4. [AgentFlow: Building Agent Dependency Graphs for Static Analysis of Agent Programs](/202607/03/2607.01640v1-agentflow-building-agent-dependency-graphs-for-static-analysis-of-agent-programs)  
+   evidence：研究LLM代理中的记忆操纵攻击，揭示新的安全隐患
+5. [PolicyGuard: A Dialogue-Grounded Sub-Agent Verifier for Policy Adherence in LLM Agents](/202607/04/2606.29225v1-policyguard-a-dialogue-grounded-sub-agent-verifier-for-policy-adherence-in-llm-agents)  
    标签：评分：8.0/10、query:agent-safety
-   evidence：提出Agent依赖图的静态分析框架，支持行为安全评估
-5. [When Agents Do Not Stop: Uncovering Infinite Agentic Loops in LLM Agents](/202607/03/2607.01641v1-when-agents-do-not-stop-uncovering-infinite-agentic-loops-in-llm-agents)  
+   evidence：PolicyGuard验证LLM代理对话中的政策遵循情况
+6. [Distributed Attacks in Persistent-State AI Control](/202607/04/2607.02514v1-distributed-attacks-in-persistent-state-ai-control)  
    标签：评分：8.0/10、query:agent-safety
-   evidence：无限代理循环作为行为安全失效模式
-6. [Hardware-Enforced Semantic Coordination for Safety-Critical Real-Time Autonomous Systems](/202607/03/2607.02376v1-hardware-enforced-semantic-coordination-for-safety-critical-real-time-autonomous-systems)  
-   标签：评分：8.0/10、query:agent-safety
-   evidence：面向安全关键自主系统的硬件强制协调，与具身AI安全相关
+   evidence：研究通过pull request进行分布式提示注入攻击
 
 ### 速读区论文标签
-1. [Calibrating the Evaluator: Does Probability Calibration Mitigate Preference Coupling in LLM Agent Feedback Loops?](/202607/03/2606.31371v1-calibrating-the-evaluator-does-probability-calibration-mitigate-preference-coupling-in-llm-agent-feedback-loops)  
+1. [Preventing Error Propagation in Multi-Agent AI through Runtime Monitoring](/202607/04/2606.29026v1-preventing-error-propagation-in-multi-agent-ai-through-runtime-monitoring)  
    标签：评分：7.0/10、query:agent-safety
-   evidence：评估器校准减轻LLM代理反馈循环中的偏差，影响行为安全
-2. [Making Failure Safe: A Constrained, Verifiable Agent Framework for Open-Web Data Collection](/202607/03/2607.00035v1-making-failure-safe-a-constrained-verifiable-agent-framework-for-open-web-data-collection)  
+   evidence：运行时监控以防止多智能体系统中的错误传播
+2. [An Empirical Evaluation of Prompt Injection Vulnerabilities in Large Language Models Across Multilingual and Obfuscated Attack Scenarios](/202607/04/2606.29602v1-an-empirical-evaluation-of-prompt-injection-vulnerabilities-in-large-language-models-across-multilingual-and-obfuscated-attack-scenarios)  
    标签：评分：7.0/10、query:agent-safety
-   evidence：约束可验证的agent框架，用于安全的工具调用和数据收集
-3. [Registry-Governed Agent Lifecycle:Completing EDDOps with Evaluation-DrivenRegistration, Promotion, and Retirement on AWS AgentCore](/202607/03/2607.00345v1-registry-governed-agent-lifecyclecompleting-eddops-with-evaluation-drivenregistration-promotion-and-retirement-on-aws-agentcore)  
-   标签：评分：7.0/10、query:agent-safety
-   evidence：评估驱动的代理生命周期安全与模型选择
+   evidence：评估LLM在多语言和混淆场景下的提示注入漏洞
 
 
 <div class="dpr-home-promo-card">
