@@ -6,46 +6,34 @@
 </div>
 
 ## 每次日报
-- 最新运行日期：2026-07-04
-- 运行时间：2026-07-04 20:49:44 UTC
+- 最新运行日期：2026-07-05
+- 运行时间：2026-07-05 21:15:14 UTC
 - 运行状态：成功
-- 本次总论文数：8
-- 精读区：6
+- 本次总论文数：4
+- 精读区：2
 - 速读区：2
 
 ### 今日简报（AI）
-今日精读聚焦LLM Agent在微服务故障诊断与上下文状态延续两大方向，两篇高分论文均获9.0分。  
-最值得关注的是多数据集基准测试和上下文连续性框架，分别解决Agent可靠性与状态保持问题。  
-建议优先精读这两篇高分论文，同时留意运行时监控与提示注入防御以防范实际部署风险。
-- 详情：[/202607/04/README](/202607/04/README)
+1) 今日精选两篇8分精读：MAS-Lab多智能体系统验证框架与Claw-like智能体安全分析。  
+2) 最值得关注的方向：多智能体系统可靠性验证与工具增强型智能体的安全漏洞。  
+3) 建议优先精读《MAS-Lab》和《Claw-like Agent Security》，速读可关注实体绑定失败问题。
+- 详情：[/202607/05/README](/202607/05/README)
 
 ### 精读区论文标签
-1. [A Multi-Dataset Benchmark for Evaluating LLM Agents in Microservice Failure Diagnosis](/202607/04/2606.29193v1-a-multi-dataset-benchmark-for-evaluating-llm-agents-in-microservice-failure-diagnosis)  
-   标签：评分：9.0/10、query:agent-safety
-   evidence：评估LLM智能体故障诊断推理过程的基准
-2. [ElephantAgent: Contextual State Continuity in Agentic Systems](/202607/04/2607.01919v1-elephantagent-contextual-state-continuity-in-agentic-systems)  
-   标签：评分：9.0/10、query:agent-safety
-   evidence：通过上下文状态连续性防御工具和记忆投毒攻击
-3. [Coding Agents Are Guessing: Measuring Action-Boundary Violations in Underspecified DevOps Instructions](/202607/04/2607.02294v1-coding-agents-are-guessing-measuring-action-boundary-violations-in-underspecified-devops-instructions)  
-   标签：评分：9.0/10、query:agent-safety
-   evidence：编码代理动作边界违规基准，直接处理欠指定指令下的代理安全
-4. [Memory as an Attack Surface in LLM Agents: A Study on Multiple-Choice Question Answering](/202607/04/2606.29030v1-memory-as-an-attack-surface-in-llm-agents-a-study-on-multiple-choice-question-answering)  
+1. [MAS-Lab: A Specification-Driven Validation Framework for Reliable Multi-Agent Systems](/202607/05/2606.30546v1-mas-lab-a-specification-driven-validation-framework-for-reliable-multi-agent-systems)  
    标签：评分：8.0/10、query:agent-safety
-   evidence：研究LLM代理中的记忆操纵攻击，揭示新的安全隐患
-5. [PolicyGuard: A Dialogue-Grounded Sub-Agent Verifier for Policy Adherence in LLM Agents](/202607/04/2606.29225v1-policyguard-a-dialogue-grounded-sub-agent-verifier-for-policy-adherence-in-llm-agents)  
+   evidence：面向可靠多智能体系统的规范驱动验证框架
+2. [Understanding and Evaluating Claw-like Agent Security Through a Computer-Systems Lens](/202607/05/2606.30755v1-understanding-and-evaluating-claw-like-agent-security-through-a-computer-systems-lens)  
    标签：评分：8.0/10、query:agent-safety
-   evidence：PolicyGuard验证LLM代理对话中的政策遵循情况
-6. [Distributed Attacks in Persistent-State AI Control](/202607/04/2607.02514v1-distributed-attacks-in-persistent-state-ai-control)  
-   标签：评分：8.0/10、query:agent-safety
-   evidence：研究通过pull request进行分布式提示注入攻击
+   evidence：评估类似Claw的持久化代理安全，涉及凭据、工具和最小权限原则
 
 ### 速读区论文标签
-1. [Preventing Error Propagation in Multi-Agent AI through Runtime Monitoring](/202607/04/2606.29026v1-preventing-error-propagation-in-multi-agent-ai-through-runtime-monitoring)  
+1. [SWE-Together: Evaluating Coding Agents in Interactive User Sessions](/202607/05/2606.29957v1-swe-together-evaluating-coding-agents-in-interactive-user-sessions)  
    标签：评分：7.0/10、query:agent-safety
-   evidence：运行时监控以防止多智能体系统中的错误传播
-2. [An Empirical Evaluation of Prompt Injection Vulnerabilities in Large Language Models Across Multilingual and Obfuscated Attack Scenarios](/202607/04/2606.29602v1-an-empirical-evaluation-of-prompt-injection-vulnerabilities-in-large-language-models-across-multilingual-and-obfuscated-attack-scenarios)  
+   evidence：多轮交互编码代理基准，相关于代理行为评估和交互环境安全监测
+2. [Entity Binding Failures in Tool-Augmented Agents](/202607/05/2606.30531v1-entity-binding-failures-in-tool-augmented-agents)  
    标签：评分：7.0/10、query:agent-safety
-   evidence：评估LLM在多语言和混淆场景下的提示注入漏洞
+   evidence：将实体绑定失败识别为工具增强智能体中的独特安全与可靠性问题
 
 
 <div class="dpr-home-promo-card">

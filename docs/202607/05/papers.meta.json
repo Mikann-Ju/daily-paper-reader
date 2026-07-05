@@ -1,0 +1,69 @@
+{
+  "label": "2026-07-05",
+  "date": "2026-07-05",
+  "generated_at": "2026-07-05T21:15:19",
+  "count": 4,
+  "papers": [
+    {
+      "paper_id": "202607/05/2606.30546v1-mas-lab-a-specification-driven-validation-framework-for-reliable-multi-agent-systems",
+      "section": "deep",
+      "title_en": "MAS-Lab: A Specification-Driven Validation Framework for Reliable Multi-Agent Systems",
+      "authors": "Jordan Augé, Giovanna Carofiglio, Giulio Grassi, Jacques Samain",
+      "date": "2026-06-29",
+      "pdf": "https://arxiv.org/pdf/2606.30546v1",
+      "score": "8.0",
+      "evidence": "面向可靠多智能体系统的规范驱动验证框架",
+      "tldr": "当前基于LLM的多智能体系统（MAS）开发方式临时且命令式，缺乏显式系统级验证，导致实验行为无法可靠映射到生产环境。为此提出MAS-Lab规范驱动框架，包含声明式规范层（Spec）、状态化MAS操作系统（MAS-OS）和实验叠加层（Labs），分离语义与操作，支持可复现实验与意图验证。该框架将MAS从脚本集合转变为工程化分布式系统，确保行为可靠、可演化，并实现向生产级部署的平滑过渡。",
+      "tags": "query:agent-safety",
+      "abstract_en": "The rapid emergence of LLM-based agentic frameworks has significantly reduced the cost of assembling multi-agent systems (MAS), enabling fast prototyping and exploration of agentic behaviors. However, systems built with current tooling remain ill-suited for reliable, evolvable, and production-grade deployment. In practice, MAS are often developed in an ad-hoc and imperative manner, with agent logic, orchestration, observability, and control tightly interwoven, little to no explicit system-level validation, and development workflows optimized for demonstrations rather than long-lived, governed operation. As a result, behavior observed during experimentation rarely constitutes reliable evidence of behavior in production.   In this paper, we introduce MAS-Lab, a specification-driven framework for principled development and experimental validation of multi-agent systems properties. MAS-Lab is designed to transform MAS from collections of scripts into engineered distributed systems by separating semantic intent from operational concerns, making behavior and control explicit, supporting reproducible experimentation, and preserving continuity across lifecycle stages. MAS-Lab consists of three layers: a declarative, framework-agnostic agentic specification layer (Spec); a stateful MAS Operating System that provides execution and control primitives plugged-in by design (MAS-OS); and a set of lab overlays with integrated observability and evaluation tools (Labs). Together, these components enable intent-based validation, principled system evolution, and a seamless transition to production-grade MAS.",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "paper_id": "202607/05/2606.30755v1-understanding-and-evaluating-claw-like-agent-security-through-a-computer-systems-lens",
+      "section": "deep",
+      "title_en": "Understanding and Evaluating Claw-like Agent Security Through a Computer-Systems Lens",
+      "authors": "Peizhi Niu, Wenjie Qu, Shangding Gu, Tianneng Shi, Yuankai Li, Ahmad Tawaha, Hend Alzahrani, Vincent Siu, Boyi Li, Chenguang Wang, Jiaheng Zhang, Basel Alomair, Ming Jin, Muhao Chen, Chi Wang, Costas Spanos, Dawn Song",
+      "date": "2026-06-29",
+      "pdf": "https://arxiv.org/pdf/2606.30755v1",
+      "score": "8.0",
+      "evidence": "评估类似Claw的持久化代理安全，涉及凭据、工具和最小权限原则",
+      "tldr": "Claw-like AI代理具有持久系统级权限，其安全风险远超传统代理。现有基准仅关注模型响应，忽视跨组件故障。本文将此类代理类比为计算机系统，指出其缺少经典保护机制，构建SafeClawArena基准（406个对抗任务、四个攻击面）。评估三个平台和五个LLM，最高攻击成功率70%，恶意插件100%成功。SeClaw通过效用-安全权衡将GPT-5.4成功率从70%降至22%，但Claude-Opus-4.6已接近该下限。结果表明当前防御严重不足，亟需系统性加固方案。",
+      "tags": "query:agent-safety",
+      "abstract_en": "Claw-like AI agents (e.g., OpenClaw) are always-on processes with persistent access to credentials, files, tools, and external services. They take on system-level responsibilities -- installing packages, maintaining state, scheduling subtasks, and mediating I/O -- making security failures far more severe than in other agents. Yet existing benchmarks focus on model responses and tool calls, leaving cross-component failure modes largely unmeasured. We adopt a computer-system analogy: treating a Claw-like agent as an agentic computer system whose gateway runtime plays an OS-like mediation role, whose Skills resemble user-installed applications, and whose Plugins resemble loadable extensions with runtime privileges. Each component has a classical counterpart whose protection mechanisms -- refined over decades of cybersecurity research -- are absent on the agent side. From this perspective, we develop SafeClawArena, a benchmark of 406 adversarial tasks across four attack surfaces (Skill Supply-Chain Integrity, Persistent State Exploitation, Cross-Boundary Data Flow, and Indirect Prompt Injection), executed in containerized replicas of real agent platforms with canary-marked credentials and evaluated via automated taint tracking across nine output channels. We evaluate three platforms (OpenClaw, NemoClaw, SeClaw) and five frontier LLMs. The highest attack success rate reaches 70%; malicious Plugins succeed in 100% of cases regardless of the LLM. SeClaw cuts GPT-5.4's attack success rate from 70% to 22%, partly through utility-security tradeoffs rather than active defenses, while Claude-Opus-4.6 already sits near a 22% floor on every platform. These results expose the inadequacy of current defenses and suggest directions for future hardening. Code and data: https://github.com/sunblaze-ucb/SafeClawArena.",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "paper_id": "202607/05/2606.29957v1-swe-together-evaluating-coding-agents-in-interactive-user-sessions",
+      "section": "quick",
+      "title_en": "SWE-Together: Evaluating Coding Agents in Interactive User Sessions",
+      "authors": "Yifan Wu, Zhuokai Zhao, Songlin Li, Ho Hin Lee, Jiacheng Zhu, Shirley Wu, Tianhe Yu, Serena Li, Lizhu Zhang, Xiangjun Fan, Shengzhi Li",
+      "date": "2026-06-29",
+      "pdf": "https://arxiv.org/pdf/2606.29957v1",
+      "score": "7.0",
+      "evidence": "多轮交互编码代理基准，相关于代理行为评估和交互环境安全监测",
+      "tldr": "现有编码智能体基准基于静态单轮任务，无法模拟用户实时反馈和目标演化。本文从11260次真实用户-智能体会话中筛选109个仓库级任务，构建多轮交互基准SWE-Together。通过LLM用户模拟器重放交互过程，以仓库最终正确性和纠正反馈轮次评估智能体。实验发现更强大的智能体在更高成功率的同时需要更少的干预，证明了该基准的有效性，能更好反映真实用户体验。",
+      "tags": "query:agent-safety",
+      "abstract_en": "Most coding-agent benchmarks are static: an agent receives a complete task description up front and is judged only by its final code. Real coding assistance is interactive, with users clarifying goals, adding constraints, and correcting mistakes over multiple turns. We introduce SWE-Together, a multi-turn benchmark reconstructed from real user-agent coding sessions. To make real interactions verifiable, we curate 109 repository-level tasks from 11,260 recorded sessions, selecting sessions with recoverable repository states, clear user goals, and observable outcomes. To replay these interactions across agents, we build a reactive LLM-based user simulator that preserves the original users' intents and provides feedback when the coding agent's progress requires it. To evaluate agents as collaborators, we measure both final repository correctness and the number of corrective feedback turns required during the interaction. Experiments with frontier coding agents show that stronger agents generally achieve higher final success rates while requiring fewer interventions, suggesting an improved user experience.",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "paper_id": "202607/05/2606.30531v1-entity-binding-failures-in-tool-augmented-agents",
+      "section": "quick",
+      "title_en": "Entity Binding Failures in Tool-Augmented Agents",
+      "authors": "Rahul Suresh Babu, Shashank Indukuri",
+      "date": "2026-06-29",
+      "pdf": "https://arxiv.org/pdf/2606.30531v1",
+      "score": "7.0",
+      "evidence": "将实体绑定失败识别为工具增强智能体中的独特安全与可靠性问题",
+      "tldr": "工具增强型智能体即便选对工具也会因实体绑定错误而失败，例如联系错人或操作错账户。本文形式化区分工具与实体正确性，提出包括前置解析、置信门控、歧义澄清与溯源追踪的实体感知方法。实验表明，现有方法虽零工具错误，但仍有24-26%的实体错误；实体感知方法虽消除此错误，但会因模糊延迟而降低任务完成率。研究强调安全工具使用必须可靠绑定自然语言引用到正确实体。",
+      "tags": "query:agent-safety",
+      "abstract_en": "Tool-augmented language-model agents are often evaluated by whether they select the correct tool, produce valid API arguments, and complete the requested task. However, an agent may choose the right tool and still act on the wrong external entity. For example, a request to \"email Alex about the launch\" may lead the agent to contact the wrong Alex, attach the wrong launch document, reply in the wrong thread, or update the wrong customer account. We call these errors entity binding failures. This paper studies entity binding failures as a distinct reliability and safety problem in tool-augmented agents. We formalize the separation between tool correctness and entity correctness, introduce a taxonomy of wrong-entity failures in enterprise workflows, and evaluate entity-aware execution mechanisms including entity-resolution preconditions, confidence-gated binding, clarification under ambiguity, and provenance tracking. In a controlled diagnostic evaluation across 60 tasks, five model backends, and six tool-use methods, all methods achieved 0.0 percent wrong-tool error, yet action-oriented baselines still produced wrong-entity actions in 24.0-26.0 percent of runs. Entity-aware methods eliminated wrong-entity actions and risk-weighted wrong-entity exposure in this setting, but reduced direct task completion by deferring under ambiguity. These findings show that safe tool use requires not only selecting the correct tool, but also reliably binding natural-language references to the correct real-world entity before action.",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "errors": []
+}

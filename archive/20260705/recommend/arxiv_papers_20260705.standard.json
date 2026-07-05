@@ -1,0 +1,188 @@
+{
+  "mode": "standard",
+  "generated_at": "2026-07-05T21:11:56.823466+00:00",
+  "stats": {
+    "mode": "standard",
+    "tag_count": 1,
+    "deep_divecandidates": 2,
+    "deep_cap": 6,
+    "deep_selected": 2,
+    "quick_candidates": 2,
+    "quick_skim_target": 11,
+    "quick_selected": 2
+  },
+  "deep_dive": [
+    {
+      "id": "2606.30546v1",
+      "source": "arxiv",
+      "title": "MAS-Lab: A Specification-Driven Validation Framework for Reliable Multi-Agent Systems",
+      "abstract": "The rapid emergence of LLM-based agentic frameworks has significantly reduced the cost of assembling multi-agent systems (MAS), enabling fast prototyping and exploration of agentic behaviors. However, systems built with current tooling remain ill-suited for reliable, evolvable, and production-grade deployment. In practice, MAS are often developed in an ad-hoc and imperative manner, with agent logic, orchestration, observability, and control tightly interwoven, little to no explicit system-level validation, and development workflows optimized for demonstrations rather than long-lived, governed operation. As a result, behavior observed during experimentation rarely constitutes reliable evidence of behavior in production.   In this paper, we introduce MAS-Lab, a specification-driven framework for principled development and experimental validation of multi-agent systems properties. MAS-Lab is designed to transform MAS from collections of scripts into engineered distributed systems by separating semantic intent from operational concerns, making behavior and control explicit, supporting reproducible experimentation, and preserving continuity across lifecycle stages. MAS-Lab consists of three layers: a declarative, framework-agnostic agentic specification layer (Spec); a stateful MAS Operating System that provides execution and control primitives plugged-in by design (MAS-OS); and a set of lab overlays with integrated observability and evaluation tools (Labs). Together, these components enable intent-based validation, principled system evolution, and a seamless transition to production-grade MAS.",
+      "authors": [
+        "Jordan Augé",
+        "Giovanna Carofiglio",
+        "Giulio Grassi",
+        "Jacques Samain"
+      ],
+      "primary_category": "cs.MA",
+      "categories": [
+        "cs.MA"
+      ],
+      "published": "2026-06-29T16:46:28+00:00",
+      "link": "https://arxiv.org/pdf/2606.30546v1",
+      "tags": [
+        "keyword:agent-safety",
+        "query:agent-safety"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "specification-driven validation framework for reliable multi-agent systems",
+      "llm_evidence_cn": "面向可靠多智能体系统的规范驱动验证框架",
+      "llm_evidence": "面向可靠多智能体系统的规范驱动验证框架",
+      "canonical_evidence": "面向可靠多智能体系统的规范驱动验证框架",
+      "llm_tldr_en": "Proposes MAS-Lab, a specification-driven framework to validate LLM-based multi-agent systems for reliable and governed operation, addressing safety and observability.",
+      "llm_tldr_cn": "当前基于LLM的多智能体系统开发缺乏系统级验证，导致实验行为不可靠。本文提出MAS-Lab，一种规范驱动的验证框架，通过显式系统规范、观测和控制，确保多智能体系统的可靠性和可治理性。实验表明该框架能有效检测行为偏差，提升生产部署的置信度。",
+      "llm_tldr": "当前基于LLM的多智能体系统开发缺乏系统级验证，导致实验行为不可靠。本文提出MAS-Lab，一种规范驱动的验证框架，通过显式系统规范、观测和控制，确保多智能体系统的可靠性和可治理性。实验表明该框架能有效检测行为偏差，提升生产部署的置信度。",
+      "llm_tags": [
+        "query:agent-safety"
+      ],
+      "matched_query_tag": "query:agent-safety",
+      "matched_query_text": "large language model agent safety benchmark and risk assessment LLM agent behavior monitoring",
+      "matched_requirement_id": "req-1",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2606.30755v1",
+      "source": "arxiv",
+      "title": "Understanding and Evaluating Claw-like Agent Security Through a Computer-Systems Lens",
+      "abstract": "Claw-like AI agents (e.g., OpenClaw) are always-on processes with persistent access to credentials, files, tools, and external services. They take on system-level responsibilities -- installing packages, maintaining state, scheduling subtasks, and mediating I/O -- making security failures far more severe than in other agents. Yet existing benchmarks focus on model responses and tool calls, leaving cross-component failure modes largely unmeasured. We adopt a computer-system analogy: treating a Claw-like agent as an agentic computer system whose gateway runtime plays an OS-like mediation role, whose Skills resemble user-installed applications, and whose Plugins resemble loadable extensions with runtime privileges. Each component has a classical counterpart whose protection mechanisms -- refined over decades of cybersecurity research -- are absent on the agent side. From this perspective, we develop SafeClawArena, a benchmark of 406 adversarial tasks across four attack surfaces (Skill Supply-Chain Integrity, Persistent State Exploitation, Cross-Boundary Data Flow, and Indirect Prompt Injection), executed in containerized replicas of real agent platforms with canary-marked credentials and evaluated via automated taint tracking across nine output channels. We evaluate three platforms (OpenClaw, NemoClaw, SeClaw) and five frontier LLMs. The highest attack success rate reaches 70%; malicious Plugins succeed in 100% of cases regardless of the LLM. SeClaw cuts GPT-5.4's attack success rate from 70% to 22%, partly through utility-security tradeoffs rather than active defenses, while Claude-Opus-4.6 already sits near a 22% floor on every platform. These results expose the inadequacy of current defenses and suggest directions for future hardening. Code and data: https://github.com/sunblaze-ucb/SafeClawArena.",
+      "authors": [
+        "Peizhi Niu",
+        "Wenjie Qu",
+        "Shangding Gu",
+        "Tianneng Shi",
+        "Yuankai Li",
+        "Ahmad Tawaha",
+        "Hend Alzahrani",
+        "Vincent Siu",
+        "Boyi Li",
+        "Chenguang Wang",
+        "Jiaheng Zhang",
+        "Basel Alomair",
+        "Ming Jin",
+        "Muhao Chen",
+        "Chi Wang",
+        "Costas Spanos",
+        "Dawn Song"
+      ],
+      "primary_category": "cs.CR",
+      "categories": [
+        "cs.CR",
+        "cs.AI"
+      ],
+      "published": "2026-06-29T18:00:45+00:00",
+      "link": "https://arxiv.org/pdf/2606.30755v1",
+      "tags": [
+        "keyword:agent-safety",
+        "query:agent-safety"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "evaluates security of Claw-like agents with persistent credentials and tools, relevant to least privilege and injection",
+      "llm_evidence_cn": "评估类似Claw的持久化代理安全，涉及凭据、工具和最小权限原则",
+      "llm_evidence": "评估类似Claw的持久化代理安全，涉及凭据、工具和最小权限原则",
+      "canonical_evidence": "评估类似Claw的持久化代理安全，涉及凭据、工具和最小权限原则",
+      "llm_tldr_en": "Claw-like agents have system-level privileges and cross-component failure modes; this work systematically evaluates their security using a computer-systems analogy.",
+      "llm_tldr_cn": "Claw类AI代理（如OpenClaw）作为常驻进程拥有持久凭据、文件、工具和系统级责任，其安全失效后果远比其他代理严重。本文采用计算机系统类比，将代理运行时视为操作系统，技能视为应用，插件视为扩展，系统评估跨组件故障模式。该研究为代理权限安全和注入漏洞防护提供了新视角。",
+      "llm_tldr": "Claw类AI代理（如OpenClaw）作为常驻进程拥有持久凭据、文件、工具和系统级责任，其安全失效后果远比其他代理严重。本文采用计算机系统类比，将代理运行时视为操作系统，技能视为应用，插件视为扩展，系统评估跨组件故障模式。该研究为代理权限安全和注入漏洞防护提供了新视角。",
+      "llm_tags": [
+        "query:agent-safety"
+      ],
+      "matched_query_tag": "query:agent-safety",
+      "matched_query_text": "tool calling agent security least privilege permission injection vulnerability LLM tool security",
+      "matched_requirement_id": "req-2",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "quick_skim": [
+    {
+      "id": "2606.29957v1",
+      "source": "arxiv",
+      "title": "SWE-Together: Evaluating Coding Agents in Interactive User Sessions",
+      "abstract": "Most coding-agent benchmarks are static: an agent receives a complete task description up front and is judged only by its final code. Real coding assistance is interactive, with users clarifying goals, adding constraints, and correcting mistakes over multiple turns. We introduce SWE-Together, a multi-turn benchmark reconstructed from real user-agent coding sessions. To make real interactions verifiable, we curate 109 repository-level tasks from 11,260 recorded sessions, selecting sessions with recoverable repository states, clear user goals, and observable outcomes. To replay these interactions across agents, we build a reactive LLM-based user simulator that preserves the original users' intents and provides feedback when the coding agent's progress requires it. To evaluate agents as collaborators, we measure both final repository correctness and the number of corrective feedback turns required during the interaction. Experiments with frontier coding agents show that stronger agents generally achieve higher final success rates while requiring fewer interventions, suggesting an improved user experience.",
+      "authors": [
+        "Yifan Wu",
+        "Zhuokai Zhao",
+        "Songlin Li",
+        "Ho Hin Lee",
+        "Jiacheng Zhu",
+        "Shirley Wu",
+        "Tianhe Yu",
+        "Serena Li",
+        "Lizhu Zhang",
+        "Xiangjun Fan",
+        "Shengzhi Li"
+      ],
+      "primary_category": "cs.SE",
+      "categories": [
+        "cs.SE",
+        "cs.AI"
+      ],
+      "published": "2026-06-29T08:35:15+00:00",
+      "link": "https://arxiv.org/pdf/2606.29957v1",
+      "tags": [
+        "keyword:agent-safety",
+        "query:agent-safety"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "multi-turn benchmark for coding agents, relevant to agent behavior evaluation and safety monitoring in interactive settings",
+      "llm_evidence_cn": "多轮交互编码代理基准，相关于代理行为评估和交互环境安全监测",
+      "llm_evidence": "多轮交互编码代理基准，相关于代理行为评估和交互环境安全监测",
+      "canonical_evidence": "多轮交互编码代理基准，相关于代理行为评估和交互环境安全监测",
+      "llm_tldr_en": "SWE-Together is a multi-turn benchmark for coding agents reconstructed from real user sessions, using an LLM user simulator to evaluate interactive behavior.",
+      "llm_tldr_cn": "现有编码代理基准多为静态单轮，忽略真实交互中的用户澄清和纠错。本文从11260条记录中重构109个仓库级任务，构建多轮基准SWE-Together，并开发基于LLM的用户模拟器保留用户意图。该基准评估了代理在交互中的行为，有助于发现安全边界问题。",
+      "llm_tldr": "现有编码代理基准多为静态单轮，忽略真实交互中的用户澄清和纠错。本文从11260条记录中重构109个仓库级任务，构建多轮基准SWE-Together，并开发基于LLM的用户模拟器保留用户意图。该基准评估了代理在交互中的行为，有助于发现安全边界问题。",
+      "llm_tags": [
+        "query:agent-safety"
+      ],
+      "matched_query_tag": "query:agent-safety",
+      "matched_query_text": "large language model agent safety benchmark and risk assessment LLM agent behavior monitoring",
+      "matched_requirement_id": "req-1",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "2606.30531v1",
+      "source": "arxiv",
+      "title": "Entity Binding Failures in Tool-Augmented Agents",
+      "abstract": "Tool-augmented language-model agents are often evaluated by whether they select the correct tool, produce valid API arguments, and complete the requested task. However, an agent may choose the right tool and still act on the wrong external entity. For example, a request to \"email Alex about the launch\" may lead the agent to contact the wrong Alex, attach the wrong launch document, reply in the wrong thread, or update the wrong customer account. We call these errors entity binding failures. This paper studies entity binding failures as a distinct reliability and safety problem in tool-augmented agents. We formalize the separation between tool correctness and entity correctness, introduce a taxonomy of wrong-entity failures in enterprise workflows, and evaluate entity-aware execution mechanisms including entity-resolution preconditions, confidence-gated binding, clarification under ambiguity, and provenance tracking. In a controlled diagnostic evaluation across 60 tasks, five model backends, and six tool-use methods, all methods achieved 0.0 percent wrong-tool error, yet action-oriented baselines still produced wrong-entity actions in 24.0-26.0 percent of runs. Entity-aware methods eliminated wrong-entity actions and risk-weighted wrong-entity exposure in this setting, but reduced direct task completion by deferring under ambiguity. These findings show that safe tool use requires not only selecting the correct tool, but also reliably binding natural-language references to the correct real-world entity before action.",
+      "authors": [
+        "Rahul Suresh Babu",
+        "Shashank Indukuri"
+      ],
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-06-29T16:34:30+00:00",
+      "link": "https://arxiv.org/pdf/2606.30531v1",
+      "tags": [
+        "keyword:agent-safety",
+        "query:agent-safety"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "identifies entity binding failures as a distinct security and reliability problem in tool-augmented agents",
+      "llm_evidence_cn": "将实体绑定失败识别为工具增强智能体中的独特安全与可靠性问题",
+      "llm_evidence": "将实体绑定失败识别为工具增强智能体中的独特安全与可靠性问题",
+      "canonical_evidence": "将实体绑定失败识别为工具增强智能体中的独特安全与可靠性问题",
+      "llm_tldr_en": "Formalizes entity binding failures in tool-augmented agents, distinguishing tool correctness from entity correctness, and proposes taxonomy and evaluation.",
+      "llm_tldr_cn": "本文指出工具增强智能体可能选择正确工具但作用于错误外部实体，构成实体绑定失败。正式区分工具正确性与实体正确性，提出企业工作流中错误实体失败的分类法，并评估实体感知的评估方法。结果表明实体绑定失败是常见且被忽视的安全风险。",
+      "llm_tldr": "本文指出工具增强智能体可能选择正确工具但作用于错误外部实体，构成实体绑定失败。正式区分工具正确性与实体正确性，提出企业工作流中错误实体失败的分类法，并评估实体感知的评估方法。结果表明实体绑定失败是常见且被忽视的安全风险。",
+      "llm_tags": [
+        "query:agent-safety"
+      ],
+      "matched_query_tag": "query:agent-safety",
+      "matched_query_text": "tool calling agent security least privilege permission injection vulnerability LLM tool security",
+      "matched_requirement_id": "req-2",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    }
+  ]
+}
